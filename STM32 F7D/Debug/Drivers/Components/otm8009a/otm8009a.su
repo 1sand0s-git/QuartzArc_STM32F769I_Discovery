@@ -1,0 +1,2 @@
+otm8009a.c:180:13:DSI_IO_WriteCmd	16	static
+otm8009a.c:194:9:OTM8009A_Init	16	static

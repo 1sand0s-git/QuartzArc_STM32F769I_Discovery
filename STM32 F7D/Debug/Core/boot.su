@@ -1,0 +1,3 @@
+core_cm7.h:2229:22:void SCB_EnableICache()	4	static,ignoring_inline_asm
+core_cm7.h:2281:22:void SCB_EnableDCache()	24	static,ignoring_inline_asm
+boot.cpp:35:11:QA_Result SystemInitialize()	288	static
