@@ -2,7 +2,10 @@
  Quartz Arc codebase for STM32F769I-DISCO and STM32F769I-DISC1 development boards
  
  This codebase is covered by Creative Commons CC-BY-NC-SA license as outlined below.
-
+ 
+ Those wishing to implement aspects of this codebase for commercial use should 
+ contact 1sand0s.contact@gmail.com to discuss options.
+ 
 =======================================================================
 
 Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
