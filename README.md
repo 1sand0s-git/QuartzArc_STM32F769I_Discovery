@@ -6,6 +6,8 @@
  Those wishing to implement aspects of this codebase for commercial use should 
  contact 1sand0s.contact@gmail.com to discuss options.
  
+ All CMSIS, Component, HAL and Low Level drivers located in /Drivers folder of project are Copyright 2021 STMicroelectronics
+ 
 =======================================================================
 
 Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
