@@ -1,28 +1,28 @@
-QAT_Pixel.hpp:67:21:QAT_PixelARGB4444& QAT_PixelARGB4444::operator=(const uint16_t&)	16	static
-QAT_Vector.hpp:47:3:QAT_Vector2::QAT_Vector2(const QAT_Vector2&)	16	static
+QAT_Pixel.hpp:70:21:QAT_PixelARGB4444& QAT_PixelARGB4444::operator=(const uint16_t&)	16	static
+QAT_Vector.hpp:50:3:QAT_Vector2::QAT_Vector2(const QAT_Vector2&)	16	static
 new:173:33:void* operator new(std::size_t, void*)	16	static
-QAS_LCD_Fonts.hpp:73:2:QAS_LCD_Font::QAS_LCD_Font(const char*, const QAS_LCD_FontDesc*, const uint8_t*, uint16_t&, uint16_t&, uint16_t&)	32	static
-QAS_LCD_Fonts.hpp:96:7:bool QAS_LCD_Font::operator==(const char*)	24	static
-QAS_LCD_Fonts.cpp:30:6:void QAS_LCD_FontMgr::add(const char*, const QAS_LCD_FontDesc*, const uint8_t*, uint16_t, uint16_t, uint16_t)	56	static
-QAS_LCD_Fonts.cpp:38:6:void QAS_LCD_FontMgr::remove(const char*)	40	static
-QAS_LCD_Fonts.cpp:47:6:void QAS_LCD_FontMgr::clear()	16	static
-QAS_LCD_Fonts.cpp:54:8:int8_t QAS_LCD_FontMgr::find(const char*)	32	static
-QAS_LCD_Fonts.cpp:66:6:void QAS_LCD_FontMgr::setFontByName(const char*)	24	static
-QAS_LCD_Fonts.cpp:81:6:void QAS_LCD_FontMgr::setFontByIndex(uint8_t)	24	static
-QAS_LCD_Fonts.cpp:98:19:QAS_LCD_FontDesc* QAS_LCD_FontMgr::getDesc() const	16	static
-QAS_LCD_Fonts.cpp:107:10:uint8_t* QAS_LCD_FontMgr::getData() const	16	static
-QAS_LCD_Fonts.cpp:119:9:uint8_t QAS_LCD_FontMgr::getHeight() const	16	static
-QAS_LCD_Fonts.cpp:128:9:uint8_t QAS_LCD_FontMgr::getSpaceWidth() const	16	static
-QAS_LCD_Fonts.cpp:137:9:uint8_t QAS_LCD_FontMgr::getCharGap() const	16	static
-QAS_LCD_Fonts.cpp:146:10:uint16_t QAS_LCD_FontMgr::getCharWidth(char)	24	static
-QAS_LCD_Fonts.cpp:161:10:uint16_t QAS_LCD_FontMgr::getStringWidth(const char*)	24	static
-QAS_LCD_Fonts.cpp:187:6:void QAS_LCD_FontMgr::setDrawBuffer(QAD_LTDC_Buffer*)	16	static
-QAS_LCD_Fonts.cpp:194:6:void QAS_LCD_FontMgr::setDrawColor(uint16_t)	16	static
-QAS_LCD_Fonts.cpp:200:6:void QAS_LCD_FontMgr::drawChar(QAT_Vector2, char&)	32	static
-QAS_LCD_Fonts.cpp:211:6:void QAS_LCD_FontMgr::drawStrL(QAT_Vector2, const char*)	48	static
-QAS_LCD_Fonts.cpp:232:6:void QAS_LCD_FontMgr::drawStrC(QAT_Vector2, const char*)	48	static
-QAS_LCD_Fonts.cpp:254:6:void QAS_LCD_FontMgr::drawStrR(QAT_Vector2, const char*)	48	static
-QAS_LCD_Fonts.cpp:279:6:void QAS_LCD_FontMgr::drawCharP(QAT_Vector2, char)	48	static
+QAS_LCD_Fonts.hpp:76:2:QAS_LCD_Font::QAS_LCD_Font(const char*, const QAS_LCD_FontDesc*, const uint8_t*, uint16_t&, uint16_t&, uint16_t&)	32	static
+QAS_LCD_Fonts.hpp:99:7:bool QAS_LCD_Font::operator==(const char*)	24	static
+QAS_LCD_Fonts.cpp:33:6:void QAS_LCD_FontMgr::add(const char*, const QAS_LCD_FontDesc*, const uint8_t*, uint16_t, uint16_t, uint16_t)	56	static
+QAS_LCD_Fonts.cpp:41:6:void QAS_LCD_FontMgr::remove(const char*)	40	static
+QAS_LCD_Fonts.cpp:50:6:void QAS_LCD_FontMgr::clear()	16	static
+QAS_LCD_Fonts.cpp:57:8:int8_t QAS_LCD_FontMgr::find(const char*)	32	static
+QAS_LCD_Fonts.cpp:69:6:void QAS_LCD_FontMgr::setFontByName(const char*)	24	static
+QAS_LCD_Fonts.cpp:84:6:void QAS_LCD_FontMgr::setFontByIndex(uint8_t)	24	static
+QAS_LCD_Fonts.cpp:101:19:QAS_LCD_FontDesc* QAS_LCD_FontMgr::getDesc() const	16	static
+QAS_LCD_Fonts.cpp:110:10:uint8_t* QAS_LCD_FontMgr::getData() const	16	static
+QAS_LCD_Fonts.cpp:122:9:uint8_t QAS_LCD_FontMgr::getHeight() const	16	static
+QAS_LCD_Fonts.cpp:131:9:uint8_t QAS_LCD_FontMgr::getSpaceWidth() const	16	static
+QAS_LCD_Fonts.cpp:140:9:uint8_t QAS_LCD_FontMgr::getCharGap() const	16	static
+QAS_LCD_Fonts.cpp:149:10:uint16_t QAS_LCD_FontMgr::getCharWidth(char)	24	static
+QAS_LCD_Fonts.cpp:164:10:uint16_t QAS_LCD_FontMgr::getStringWidth(const char*)	24	static
+QAS_LCD_Fonts.cpp:190:6:void QAS_LCD_FontMgr::setDrawBuffer(QAD_LTDC_Buffer*)	16	static
+QAS_LCD_Fonts.cpp:197:6:void QAS_LCD_FontMgr::setDrawColor(uint16_t)	16	static
+QAS_LCD_Fonts.cpp:203:6:void QAS_LCD_FontMgr::drawChar(QAT_Vector2, char&)	32	static
+QAS_LCD_Fonts.cpp:214:6:void QAS_LCD_FontMgr::drawStrL(QAT_Vector2, const char*)	48	static
+QAS_LCD_Fonts.cpp:235:6:void QAS_LCD_FontMgr::drawStrC(QAT_Vector2, const char*)	48	static
+QAS_LCD_Fonts.cpp:257:6:void QAS_LCD_FontMgr::drawStrR(QAT_Vector2, const char*)	48	static
+QAS_LCD_Fonts.cpp:282:6:void QAS_LCD_FontMgr::drawCharP(QAT_Vector2, char)	48	static
 stl_vector.h:1495:7:void std::vector<_Tp, _Alloc>::clear() [with _Tp = QAS_LCD_Font*; _Alloc = std::allocator<QAS_LCD_Font*>]	16	static
 stl_vector.h:915:7:std::vector<_Tp, _Alloc>::size_type std::vector<_Tp, _Alloc>::size() const [with _Tp = QAS_LCD_Font*; _Alloc = std::allocator<QAS_LCD_Font*>]	16	static
 stl_vector.h:1040:7:std::vector<_Tp, _Alloc>::reference std::vector<_Tp, _Alloc>::operator[](std::vector<_Tp, _Alloc>::size_type) [with _Tp = QAS_LCD_Font*; _Alloc = std::allocator<QAS_LCD_Font*>]	16	static

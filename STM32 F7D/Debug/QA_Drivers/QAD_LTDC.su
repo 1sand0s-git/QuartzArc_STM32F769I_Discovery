@@ -1,16 +1,16 @@
-QAD_LTDC.hpp:84:2:QAD_LTDC::QAD_LTDC()	16	static
-QAD_LTDC.hpp:92:19:static QAD_LTDC& QAD_LTDC::get()	8	static
-QAD_LTDC.hpp:109:14:static void QAD_LTDC::dsi_io_writecmd(uint32_t, uint8_t*)	16	static
-QAD_LTDC.cpp:30:11:QA_Result QAD_LTDC::imp_init()	144	static
-QAD_LTDC.cpp:209:6:void QAD_LTDC::imp_deinit()	16	static
-QAD_LTDC.cpp:243:6:void QAD_LTDC::imp_dsi_io_writecmd(uint32_t, uint8_t*)	32	static
-QAD_LTDC.cpp:254:6:void DSI_IO_WriteCmd(uint32_t, uint8_t*)	16	static
-QAD_LTDC.cpp:264:6:void QAD_LTDC::imp_lcdOn()	24	static
-QAD_LTDC.cpp:272:6:void QAD_LTDC::imp_lcdOff()	24	static
-QAD_LTDC.cpp:280:6:void QAD_LTDC::imp_setBrightness(uint8_t)	24	static
-QAD_LTDC.cpp:290:6:void QAD_LTDC::imp_flipLayer0Buffers()	24	static
-QAD_LTDC.cpp:315:6:void QAD_LTDC::imp_flipLayer1Buffers()	24	static
-QAD_LTDC.cpp:343:7:void* QAD_LTDC::imp_getLayer0BackBufferPtr()	16	static
-QAD_LTDC.cpp:362:18:QAD_LTDC_Buffer* QAD_LTDC::imp_getLayer0BackBuffer()	16	static
-QAD_LTDC.cpp:381:7:void* QAD_LTDC::imp_getLayer1BackBufferPtr()	16	static
-QAD_LTDC.cpp:400:18:QAD_LTDC_Buffer* QAD_LTDC::imp_getLayer1BackBuffer()	16	static
+QAD_LTDC.hpp:87:2:QAD_LTDC::QAD_LTDC()	16	static
+QAD_LTDC.hpp:95:19:static QAD_LTDC& QAD_LTDC::get()	8	static
+QAD_LTDC.hpp:112:14:static void QAD_LTDC::dsi_io_writecmd(uint32_t, uint8_t*)	16	static
+QAD_LTDC.cpp:33:11:QA_Result QAD_LTDC::imp_init()	144	static
+QAD_LTDC.cpp:212:6:void QAD_LTDC::imp_deinit()	16	static
+QAD_LTDC.cpp:246:6:void QAD_LTDC::imp_dsi_io_writecmd(uint32_t, uint8_t*)	32	static
+QAD_LTDC.cpp:257:6:void DSI_IO_WriteCmd(uint32_t, uint8_t*)	16	static
+QAD_LTDC.cpp:267:6:void QAD_LTDC::imp_lcdOn()	24	static
+QAD_LTDC.cpp:275:6:void QAD_LTDC::imp_lcdOff()	24	static
+QAD_LTDC.cpp:283:6:void QAD_LTDC::imp_setBrightness(uint8_t)	24	static
+QAD_LTDC.cpp:293:6:void QAD_LTDC::imp_flipLayer0Buffers()	24	static
+QAD_LTDC.cpp:318:6:void QAD_LTDC::imp_flipLayer1Buffers()	24	static
+QAD_LTDC.cpp:346:7:void* QAD_LTDC::imp_getLayer0BackBufferPtr()	16	static
+QAD_LTDC.cpp:365:18:QAD_LTDC_Buffer* QAD_LTDC::imp_getLayer0BackBuffer()	16	static
+QAD_LTDC.cpp:384:7:void* QAD_LTDC::imp_getLayer1BackBufferPtr()	16	static
+QAD_LTDC.cpp:403:18:QAD_LTDC_Buffer* QAD_LTDC::imp_getLayer1BackBuffer()	16	static

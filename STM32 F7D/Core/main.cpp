@@ -97,17 +97,17 @@ int main(void) {
 
   //Fill out initialization structure required to create UART class (defined in QAS_Serial_Dev_UART.hpp)
   QAS_Serial_Dev_UART_InitStruct sSerialInit;
-  sSerialInit.uart.uart        = QAD_UART1;
-  sSerialInit.uart.baudrate    = QAD_UART1_BAUDRATE;
-  sSerialInit.uart.irqpriority = QAD_IRQPRIORITY_UART1;
-  sSerialInit.uart.txgpio      = QAD_UART1_TX_PORT;
-  sSerialInit.uart.txpin       = QAD_UART1_TX_PIN;
-  sSerialInit.uart.txaf        = QAD_UART1_TX_AF;
-  sSerialInit.uart.rxgpio      = QAD_UART1_RX_PORT;
-  sSerialInit.uart.rxpin       = QAD_UART1_RX_PIN;
-  sSerialInit.uart.rxaf        = QAD_UART1_RX_AF;
-  sSerialInit.txfifo_size      = QAD_UART1_TX_FIFOSIZE;
-  sSerialInit.rxfifo_size      = QAD_UART1_RX_FIFOSIZE;
+  sSerialInit.sUART_Init.uart        = QAD_UART1;
+  sSerialInit.sUART_Init.baudrate    = QAD_UART1_BAUDRATE;
+  sSerialInit.sUART_Init.irqpriority = QAD_IRQPRIORITY_UART1;
+  sSerialInit.sUART_Init.txgpio      = QAD_UART1_TX_PORT;
+  sSerialInit.sUART_Init.txpin       = QAD_UART1_TX_PIN;
+  sSerialInit.sUART_Init.txaf        = QAD_UART1_TX_AF;
+  sSerialInit.sUART_Init.rxgpio      = QAD_UART1_RX_PORT;
+  sSerialInit.sUART_Init.rxpin       = QAD_UART1_RX_PIN;
+  sSerialInit.sUART_Init.rxaf        = QAD_UART1_RX_AF;
+  sSerialInit.uTXFIFO_Size           = QAD_UART1_TX_FIFOSIZE;
+  sSerialInit.uRXFIFO_Size           = QAD_UART1_RX_FIFOSIZE;
 
   //Create the UART class, passing to it a reference to the initialization structure
   UART_STLink = new QAS_Serial_Dev_UART(sSerialInit);

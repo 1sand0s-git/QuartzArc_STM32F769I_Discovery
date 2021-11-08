@@ -98,14 +98,16 @@ private:
 	//UART Peripheral Data
 	QAD_UART_Data m_sUARTs[QAD_UART_PeriphCount];
 
+
 	//------------
 	//Constructors
+
 	QAD_UARTMgr();
 
 public:
 
-	//-----------------------------------------------
-	//Delete copy constructor and assignment operator
+	//------------------------------------------------------------------------------
+	//Delete copy constructor and assignment operator due to being a singleton class
 	QAD_UARTMgr(const QAD_UARTMgr& other) = delete;
 	QAD_UARTMgr& operator=(const QAD_UARTMgr& other) = delete;
 

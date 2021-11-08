@@ -83,8 +83,8 @@ all: main-build
 main-build: STM32\ F7D.elf secondary-outputs
 
 # Tool invocations
-STM32\ F7D.elf: $(OBJS) $(USER_OBJS) C:\Users\binar\Desktop\Quartz\ Arc\STM32\ F7D\Quartz-Arc---STM32-F7D\STM32\ F7D\STM32F769NIHX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-g++ -o "STM32 F7D.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"C:\Users\binar\Desktop\Quartz Arc\STM32 F7D\Quartz-Arc---STM32-F7D\STM32 F7D\STM32F769NIHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32 F7D.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+STM32\ F7D.elf: $(OBJS) $(USER_OBJS) C:\Users\binar\Desktop\Quartz\ Arc\QA\ Codebase\ Repos\QA_STM32F769IDISCO\QuartzArc_STM32F769I_Discovery\STM32\ F7D\STM32F769NIHX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-g++ -o "STM32 F7D.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"C:\Users\binar\Desktop\Quartz Arc\QA Codebase Repos\QA_STM32F769IDISCO\QuartzArc_STM32F769I_Discovery\STM32 F7D\STM32F769NIHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32 F7D.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
