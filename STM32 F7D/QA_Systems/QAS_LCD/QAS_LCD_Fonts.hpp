@@ -195,17 +195,17 @@ public:
 	void setDrawBuffer(QAD_LTDC_Buffer* pBuffer);
 	void setDrawColor(uint16_t uColor);
 
-	void drawChar(QAT_Vector2 cPos, char& ch);
-	void drawStrL(QAT_Vector2 cPos, const char* str);
-	void drawStrC(QAT_Vector2 cPos, const char* str);
-	void drawStrR(QAT_Vector2 cPos, const char* str);
+	void drawChar(QAT_Vector2_16 cPos, char& ch);
+	void drawStrL(QAT_Vector2_16 cPos, const char* str);
+	void drawStrC(QAT_Vector2_16 cPos, const char* str);
+	void drawStrR(QAT_Vector2_16 cPos, const char* str);
 
 private:
 
 	//-----------------
 	//Rendering Methods
 
-	void drawCharP(QAT_Vector2 cPos, char ch);
+	void drawCharP(QAT_Vector2_16 cPos, char ch);
 
 };
 

@@ -161,40 +161,39 @@ int main(void) {
   //QAS_LCD::flipLayer0();
   //QAS_LCD::flipLayer1();
 
-  QAS_LCD::setDrawBuffer(Layer0);
+  QAS_LCD::setDrawBuffer(QAD_LTDC_Layer0);
   QAS_LCD::setDrawColor(0xFFFF);
   QAS_LCD::clearBuffer();
 
   //Shapes
   QAS_LCD::setDrawColor(0xF000);
-  QAS_LCD::drawLine(QAT_Vector2(0, 240), QAT_Vector2(799, 240));  //Causes error
-  QAS_LCD::drawLine(QAT_Vector2(10, 240), QAT_Vector2(789, 240));  //Causes error
-  QAS_LCD::drawLine(QAT_Vector2(400, 0), QAT_Vector2(400, 479));    //Causes error
-  QAS_LCD::drawLine(QAT_Vector2(0, 0), QAT_Vector2(799, 479));        //Causes error
+  QAS_LCD::drawLine(QAT_Vector2_16(0, 240), QAT_Vector2_16(799, 240));  //Causes error
+  QAS_LCD::drawLine(QAT_Vector2_16(10, 240), QAT_Vector2_16(789, 240));  //Causes error
+  QAS_LCD::drawLine(QAT_Vector2_16(400, 0), QAT_Vector2_16(400, 479));    //Causes error
+  QAS_LCD::drawLine(QAT_Vector2_16(0, 0), QAT_Vector2_16(799, 479));        //Causes error
 
-  QAS_LCD::drawRect(QAT_Vector2(200, 120), QAT_Vector2(600, 360));      //Doesn't cause errors
+  QAS_LCD::drawRect(QAT_Vector2_16(200, 120), QAT_Vector2_16(600, 360));      //Doesn't cause errors
 
   QAS_LCD::setDrawColor(0xF00F);
-  QAS_LCD::drawRectFill(QAT_Vector2(300, 180), QAT_Vector2(500, 300));  //Causes error
+  QAS_LCD::drawRectFill(QAT_Vector2_16(300, 180), QAT_Vector2_16(500, 300));  //Causes error
 
   //Fonts
   QAS_LCD::setDrawColor(0xF000);
   //QAS_LCD::setFontByName("SegoeUI20ptSB");
-  //QAS_LCD::setFontByIndex(0);
   QAS_LCD::setFontByIndex(0);
-  QAS_LCD::drawStrC(QAT_Vector2(400, 100), "Hello World!");
+  QAS_LCD::drawStrC(QAT_Vector2_16(400, 100), "Hello World!");
 
   QAS_LCD::setDrawColor(0xF077);
   //QAS_LCD::setFontByName("SegoeUI20pt");
   QAS_LCD::setFontByIndex(1);
-  QAS_LCD::drawStrC(QAT_Vector2(400, 150), "Welcome to");
+  QAS_LCD::drawStrC(QAT_Vector2_16(400, 150), "Welcome to");
 
   QAS_LCD::setDrawColor(0xF337);
   //QAS_LCD::setFontByName("SegoeUI20pt");
   QAS_LCD::setFontByIndex(0);
-  QAS_LCD::drawStrC(QAT_Vector2(400, 200), "ABCDefghIJKLmnopQRSTuvwxYZ!@#$%^");
+  QAS_LCD::drawStrC(QAT_Vector2_16(400, 200), "ABCDefghIJKLmnopQRSTuvwxYZ!@#$%^");
 
-  QAS_LCD::setDrawBuffer(Layer1);
+  QAS_LCD::setDrawBuffer(QAD_LTDC_Layer1);
   QAS_LCD::setDrawColor(0x0000);
   QAS_LCD::clearBuffer();
 

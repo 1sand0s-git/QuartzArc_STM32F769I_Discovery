@@ -29,37 +29,60 @@
 	//------------------------------------------
 
 
-//QAT_PixelARGB4444
-class QAT_PixelARGB4444 {
+//-----------------
+//QAT_Pixel_ARGB4444
+//
+//Class used to assist with the storage/manipulation of 16bit pixel data,
+//with 4 bits for each for the Alpha, Red, Green and Blue color components
+//
+//The class is designed to only take up 16bits (2 bytes) of space to be
+//usable for referencing into frame-buffer arrays, while adding functionality
+//to aid in manipulation of individual A, R, G & B components
+class QAT_Pixel_ARGB4444 {
 private:
 
-	uint16_t m_uPxl;
+	uint16_t m_uPxl; //The actual pixel data
 
+	//Used to compact alpha, red, green and blue components into a 16bit value
+	//a, r, g & b should be values in between 0 and 15
+	//Returns the 16bit pixel value
 	uint16_t makePxl(uint8_t& a, uint8_t& r, uint8_t& g, uint8_t& b) {
 		return ((a & 0x0F) << 12) | ((r & 0x0F) << 8) | ((g & 0x0F) << 4) | (b & 0x0F);
 	}
 
 public:
 
+	//------------
 	//Constructors
-	QAT_PixelARGB4444() :
+
+	//Default constructor
+	//Creates a transparent, black pixel
+	QAT_Pixel_ARGB4444() :
 		m_uPxl(0) {}
 
-	QAT_PixelARGB4444(uint16_t pxl) :
+	//Constructor to accept a 16bit pixel value
+	QAT_Pixel_ARGB4444(uint16_t pxl) :
 		m_uPxl(pxl) {}
 
-	QAT_PixelARGB4444(uint8_t a, uint8_t r, uint8_t g, uint8_t b) :
+	//Constructor to accept individual Alpha, Red, Green and Blue components
+	QAT_Pixel_ARGB4444(uint8_t a, uint8_t r, uint8_t g, uint8_t b) :
 		m_uPxl(makePxl(a, r, g, b)) {}
 
-	QAT_PixelARGB4444(const QAT_PixelARGB4444& other) :
+	//Copy Constructor
+	QAT_Pixel_ARGB4444(const QAT_Pixel_ARGB4444& other) :
 		m_uPxl(other.pxl()) {}
 
-	//Operator
-	bool operator==(const QAT_PixelARGB4444& other) const {
+
+	//---------
+	//Operators
+
+	//Equality operator
+	bool operator==(const QAT_Pixel_ARGB4444& other) const {
 		return (m_uPxl == other.pxl());
 	}
 
-	QAT_PixelARGB4444& operator=(const QAT_PixelARGB4444& other) {
+	//Assignment operator to accept another QAD_Pixel_ARGB4444 class
+	QAT_Pixel_ARGB4444& operator=(const QAT_Pixel_ARGB4444& other) {
 		if (*this == other)
 			return *this;
 
@@ -67,52 +90,71 @@ public:
 		return *this;
 	}
 
-	QAT_PixelARGB4444& operator=(const uint16_t& other) {
+	//Assignment operator to accept a 16bit pixel value
+	QAT_Pixel_ARGB4444& operator=(const uint16_t& other) {
 		m_uPxl = other;
 		return *this;
 	}
 
-	//Pxl
+
+	//------------
+	//Data Methods
+
+	//Returns the current 16bit pixel value
 	uint16_t pxl(void) const {
 		return m_uPxl;
 	}
 
-	void pxl(uint16_t& pxl) {
+	//Sets the current 16bit pixel value
+	void pxl(uint16_t pxl) {
 		m_uPxl = pxl;
 	}
 
-	//A
+	//Sets the current pixel using individual Alpha, Red, Green and Blue components
+	void pxl(uint8_t a, uint8_t r, uint8_t g, uint8_t b) {
+		m_uPxl = makePxl(a, r, g, b);
+	}
+
+
+	//Returns the current 4 bit Alpha component of the pixel
 	uint8_t a(void) const {
 		return (m_uPxl & 0xF000) >> 12;
 	}
 
+	//Sets the 4 bit Alpha component of the pixel
 	void a(uint8_t a) {
 		m_uPxl = (m_uPxl & 0x0FFF) | ((a & 0x0F) << 12);
 	}
 
-	//R
+
+	//Returns the current 4 bit Red component of the pixel
 	uint8_t r(void) const {
 		return (m_uPxl & 0x0F00) >> 8;
 	}
 
+	//Sets the 4 bit Red component of the pixel
 	void r(uint8_t r) {
 		m_uPxl = (m_uPxl & 0xF0FF) | ((r & 0x0F) << 8);
 	}
 
-	//G
+
+	//Returns the current 4 bit Green component of the pixel
 	uint8_t g(void) const {
 		return (m_uPxl & 0x00F0) >> 4;
 	}
 
+	//Sets the 4 bit Green component of the pixel
 	void g(uint8_t g) {
 		m_uPxl = (m_uPxl & 0xFF0F) | ((g & 0x0F) << 4);
 	}
 
-	//B
+
+	//Returns the current 4 bit Blue component of the pixel
 	uint8_t b(void) const {
 		return (m_uPxl & 0x000F);
 	}
 
+	//Sets the 4 bit Blue component of the pixel
 	void b(uint8_t b) {
 		m_uPxl = (m_uPxl & 0xFFF0) | (b & 0x0F);
 	}

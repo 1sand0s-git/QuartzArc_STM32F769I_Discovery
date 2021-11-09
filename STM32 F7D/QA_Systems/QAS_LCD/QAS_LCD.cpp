@@ -98,10 +98,10 @@ void QAS_LCD::imp_flipLayer1(void) {
 void QAS_LCD::imp_setDrawBuffer(QAD_LTDC_LayerIdx eLayer) {
 
 	switch (eLayer) {
-	  case (Layer0):
+	  case (QAD_LTDC_Layer0):
 	  	m_pDrawBuffer = QAD_LTDC::getLayer0BackBuffer();
 	  	break;
-	  case (Layer1):
+	  case (QAD_LTDC_Layer1):
 	  	m_pDrawBuffer = QAD_LTDC::getLayer1BackBuffer();
 	  	break;
 	}
@@ -130,14 +130,14 @@ void QAS_LCD::imp_clearBuffer(void) {
 
 //QAS_LCD::imp_drawPixel
 //QAS_LCD Rendering Method
-void QAS_LCD::imp_drawPixel(QAT_Vector2& cPos) {
+void QAS_LCD::imp_drawPixel(QAT_Vector2_16& cPos) {
   m_pDrawBuffer->pixel[cPos.x + (cPos.y & QAD_LTDC_WIDTH)].pxl(m_uDrawColor);
 }
 
 
 //QAS_LCD::imp_drawLine
 //QAS_LCD Rendering Method
-void QAS_LCD::imp_drawLine(QAT_Vector2& cStart, QAT_Vector2& cEnd) {
+void QAS_LCD::imp_drawLine(QAT_Vector2_16& cStart, QAT_Vector2_16& cEnd) {
   if (cStart.x == cEnd.x)
   	imp_drawVLine(cStart, cEnd); else
   if (cStart.y == cEnd.y)
@@ -148,7 +148,7 @@ void QAS_LCD::imp_drawLine(QAT_Vector2& cStart, QAT_Vector2& cEnd) {
 
 //QAS_LCD::imp_drawHLine
 //QAS_LCD Rendering Method
-void QAS_LCD::imp_drawHLine(QAT_Vector2& cStart, QAT_Vector2& cEnd) {
+void QAS_LCD::imp_drawHLine(QAT_Vector2_16& cStart, QAT_Vector2_16& cEnd) {
   uint32_t xs;
   uint32_t xe;
   if (cStart.x < cEnd.x) {
@@ -168,7 +168,7 @@ void QAS_LCD::imp_drawHLine(QAT_Vector2& cStart, QAT_Vector2& cEnd) {
 
 //QAS_LCD::imp_drawVLine
 //QAS_LCD Rendering Method
-void QAS_LCD::imp_drawVLine(QAT_Vector2& cStart, QAT_Vector2& cEnd) {
+void QAS_LCD::imp_drawVLine(QAT_Vector2_16& cStart, QAT_Vector2_16& cEnd) {
   uint32_t ys;
   uint32_t ye;
   if (cStart.y < cEnd.y) {
@@ -188,7 +188,7 @@ void QAS_LCD::imp_drawVLine(QAT_Vector2& cStart, QAT_Vector2& cEnd) {
 
 //QAS_LCD::imp_drawALine
 //QAS_LCD Rendering Method
-void QAS_LCD::imp_drawALine(QAT_Vector2& cStart, QAT_Vector2& cEnd) {
+void QAS_LCD::imp_drawALine(QAT_Vector2_16& cStart, QAT_Vector2_16& cEnd) {
   int16_t uDeltaX = QAS_LCD_ABS(cEnd.x-cStart.x);
   int16_t uDeltaY = QAS_LCD_ABS(cEnd.y-cStart.y);
   int16_t uX = cStart.x;
@@ -252,7 +252,7 @@ void QAS_LCD::imp_drawALine(QAT_Vector2& cStart, QAT_Vector2& cEnd) {
 
 //QAS_LCD::imp_drawRect
 //QAS_LCD Rendering Method
-void QAS_LCD::imp_drawRect(QAT_Vector2& cStart, QAT_Vector2& cEnd) {
+void QAS_LCD::imp_drawRect(QAT_Vector2_16& cStart, QAT_Vector2_16& cEnd) {
   uint32_t xs;
   uint32_t xe;
   if (cStart.x < cEnd.y) {
@@ -291,7 +291,7 @@ void QAS_LCD::imp_drawRect(QAT_Vector2& cStart, QAT_Vector2& cEnd) {
 
 //QAS_LCD::imp_drawRectFill
 //QAS_LCD Rendering Method
-void QAS_LCD::imp_drawRectFill(QAT_Vector2& cStart, QAT_Vector2& cEnd) {
+void QAS_LCD::imp_drawRectFill(QAT_Vector2_16& cStart, QAT_Vector2_16& cEnd) {
   uint32_t xs;
   uint32_t xe;
   if (cStart.x < cEnd.x) {

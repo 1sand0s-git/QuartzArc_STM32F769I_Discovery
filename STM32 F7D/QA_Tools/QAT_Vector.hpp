@@ -29,39 +29,62 @@
 	//------------------------------------------
 
 
-//----
-//----
-//QAT_Vector2
-class QAT_Vector2 {
+//-----------
+//QAT_Vector2_16
+//
+//2D Vector structure used for providing X/Y coordinate data for LCD rendering methods
+//The X and Y components are both 16bit values which works with the 800 pixel wide and 480 pixel high
+//coordinate values required for the STM32F769I Discovery's LCD panel
+class QAT_Vector2_16 {
 public:
 
-	uint16_t x;
-	uint16_t y;
+	//A union is used to allow 16bit x and y components to be accessed separately,
+	//or accessed as a single 32 bit value.
+	//Being able to copy, compare and manipulate the vector as a single 32bit value
+	//allows for better performance.
+	union {
+    struct {
+    	uint16_t x;    //X component of vector
+    	uint16_t y;    //Y component of vector
+    };
+    uint32_t val;
+	};
 
 public:
 
+	//------------
   //Constructors
-  QAT_Vector2() :
-    x(0), y(0) {}
 
-  QAT_Vector2(uint16_t x, uint16_t y) :
+	//Default constructor. Sets both X and Y components to zero
+  QAT_Vector2_16() :
+    val(0) {}
+
+  //Constructor used to set individual X and Y components
+  QAT_Vector2_16(uint16_t x, uint16_t y) :
     x(x), y(y) {}
 
-  QAT_Vector2(const QAT_Vector2& other) :
-    x(other.x),
-		y(other.y) {}
+  //Copy Constructor
+  //Copies data as single 32bit value for performance reasons
+  QAT_Vector2_16(const QAT_Vector2_16& other) :
+    val(other.val) {}
 
+
+  //---------
   //Operators
-  bool operator==(const QAT_Vector2& other) const {
-    return ((x == other.x) && (y == other.y));
+
+  //Equality operator
+  //Performs equality operation as a single 32bit value for performance reasons
+  bool operator==(const QAT_Vector2_16& other) const {
+    return (val == other.val);
   }
 
-  QAT_Vector2& operator=(const QAT_Vector2& other) {
+  //Assinment operator
+  //Performs assignment as a single 32bit value for performance reasons
+  QAT_Vector2_16& operator=(const QAT_Vector2_16& other) {
     if (*this == other)
       return *this;
 
-    x = other.x;
-    y = other.y;
+    val = other.val;
     return *this;
   }
 

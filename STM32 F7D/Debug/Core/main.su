@@ -1,34 +1,34 @@
-QAD_FMC.hpp:112:2:QAD_FMC::QAD_FMC()	16	static
-QAD_FMC.hpp:127:19:static QAD_FMC& QAD_FMC::get()	8	static
-QAD_FMC.hpp:140:20:static QA_Result QAD_FMC::init()	8	static
-QAD_FMC.hpp:171:20:static QA_Result QAD_FMC::test()	8	static
+QAD_FMC.hpp:115:2:QAD_FMC::QAD_FMC()	16	static
+QAD_FMC.hpp:130:19:static QAD_FMC& QAD_FMC::get()	8	static
+QAD_FMC.hpp:143:20:static QA_Result QAD_FMC::init()	8	static
+QAD_FMC.hpp:174:20:static QA_Result QAD_FMC::test()	8	static
 gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
 QAT_FIFO.hpp:67:2:QAT_FIFOBuffer::QAT_FIFOBuffer(uint16_t)	16	static
 QAS_Serial_Dev_Base.hpp:81:2:QAS_Serial_Dev_Base::QAS_Serial_Dev_Base(uint16_t, uint16_t, QAS_Serial_Dev_Base::DeviceType)	24	static
 QAD_UART.hpp:97:2:QAD_UART::QAD_UART(QAD_UART_InitStruct&)	16	static
 QAS_Serial_Dev_UART.hpp:78:3:QAS_Serial_Dev_UART::QAS_Serial_Dev_UART(QAS_Serial_Dev_UART_InitStruct&)	16	static
-QAT_Vector.hpp:47:3:QAT_Vector2::QAT_Vector2(uint16_t, uint16_t)	16	static
-QAT_Vector.hpp:50:3:QAT_Vector2::QAT_Vector2(const QAT_Vector2&)	16	static
+QAT_Vector.hpp:63:3:QAT_Vector2_16::QAT_Vector2_16(uint16_t, uint16_t)	16	static
+QAT_Vector.hpp:68:3:QAT_Vector2_16::QAT_Vector2_16(const QAT_Vector2_16&)	16	static
 stl_vector.h:125:14:std::_Vector_base<QAS_LCD_Font*, std::allocator<QAS_LCD_Font*> >::_Vector_impl::~_Vector_impl()	16	static
 stl_vector.h:285:7:std::_Vector_base<_Tp, _Alloc>::_Vector_base() [with _Tp = QAS_LCD_Font*; _Alloc = std::allocator<QAS_LCD_Font*>]	16	static
 stl_vector.h:484:7:std::vector<_Tp, _Alloc>::vector() [with _Tp = QAS_LCD_Font*; _Alloc = std::allocator<QAS_LCD_Font*>]	16	static
 QAS_LCD_Fonts.hpp:148:2:QAS_LCD_FontMgr::QAS_LCD_FontMgr()	16	static
 QAS_LCD_Fonts.hpp:156:2:QAS_LCD_FontMgr::~QAS_LCD_FontMgr()	32	static
-QAS_LCD.hpp:55:2:QAS_LCD::QAS_LCD()	16	static
-QAS_LCD.hpp:45:7:QAS_LCD::~QAS_LCD()	16	static
-QAS_LCD.hpp:68:19:void __tcf_0()	8	static
-QAS_LCD.hpp:67:19:static QAS_LCD& QAS_LCD::get()	8	static
-QAS_LCD.hpp:75:20:static QA_Result QAS_LCD::init()	8	static
-QAS_LCD.hpp:86:15:static void QAS_LCD::flipLayer0()	8	static
-QAS_LCD.hpp:90:15:static void QAS_LCD::flipLayer1()	8	static
-QAS_LCD.hpp:94:15:static void QAS_LCD::setDrawBuffer(QAD_LTDC_LayerIdx)	16	static
-QAS_LCD.hpp:98:15:static void QAS_LCD::setDrawColor(uint16_t)	16	static
-QAS_LCD.hpp:105:15:static void QAS_LCD::clearBuffer()	8	static
-QAS_LCD.hpp:113:15:static void QAS_LCD::drawLine(QAT_Vector2, QAT_Vector2)	16	static
-QAS_LCD.hpp:117:15:static void QAS_LCD::drawRect(QAT_Vector2, QAT_Vector2)	16	static
-QAS_LCD.hpp:121:15:static void QAS_LCD::drawRectFill(QAT_Vector2, QAT_Vector2)	16	static
-QAS_LCD.hpp:132:15:static void QAS_LCD::setFontByIndex(uint8_t)	16	static
-QAS_LCD.hpp:144:15:static void QAS_LCD::drawStrC(QAT_Vector2, const char*)	32	static
+QAS_LCD.hpp:75:2:QAS_LCD::QAS_LCD()	16	static
+QAS_LCD.hpp:58:7:QAS_LCD::~QAS_LCD()	16	static
+QAS_LCD.hpp:93:19:void __tcf_0()	8	static
+QAS_LCD.hpp:92:19:static QAS_LCD& QAS_LCD::get()	8	static
+QAS_LCD.hpp:103:20:static QA_Result QAS_LCD::init()	8	static
+QAS_LCD.hpp:118:15:static void QAS_LCD::flipLayer0()	8	static
+QAS_LCD.hpp:124:15:static void QAS_LCD::flipLayer1()	8	static
+QAS_LCD.hpp:130:15:static void QAS_LCD::setDrawBuffer(QAD_LTDC_LayerIdx)	16	static
+QAS_LCD.hpp:136:15:static void QAS_LCD::setDrawColor(uint16_t)	16	static
+QAS_LCD.hpp:151:15:static void QAS_LCD::clearBuffer()	8	static
+QAS_LCD.hpp:166:15:static void QAS_LCD::drawLine(QAT_Vector2_16, QAT_Vector2_16)	16	static
+QAS_LCD.hpp:173:15:static void QAS_LCD::drawRect(QAT_Vector2_16, QAT_Vector2_16)	16	static
+QAS_LCD.hpp:180:15:static void QAS_LCD::drawRectFill(QAT_Vector2_16, QAT_Vector2_16)	16	static
+QAS_LCD.hpp:197:15:static void QAS_LCD::setFontByIndex(uint8_t)	16	static
+QAS_LCD.hpp:221:15:static void QAS_LCD::drawStrC(QAT_Vector2_16, const char*)	32	static
 main.cpp:66:5:int main()	128	static
 unique_ptr.h:862:5:typename std::_MakeUniq<_Tp>::__array std::make_unique(std::size_t) [with _Tp = unsigned char []]	24	static
 unique_ptr.h:856:5:) [with _Tp = QAT_FIFOBuffer; _Args = {short unsigned int&}]	24	static

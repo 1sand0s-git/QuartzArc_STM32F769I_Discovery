@@ -200,7 +200,7 @@ void QAS_LCD_FontMgr::setDrawColor(uint16_t uColor) {
 
 //QAS_LCD_FontMgr::drawChar
 //QAS_LCD_FontMgr Data Methods
-void QAS_LCD_FontMgr::drawChar(QAT_Vector2 cPos, char& ch) {
+void QAS_LCD_FontMgr::drawChar(QAT_Vector2_16 cPos, char& ch) {
   if ((m_pBuffer == NULL) || (m_iCurrentIdx < 0))
     return;
 
@@ -211,14 +211,14 @@ void QAS_LCD_FontMgr::drawChar(QAT_Vector2 cPos, char& ch) {
 
 //QAS_LCD_FontMgr::drawStrL
 //QAS_LCD_FontMgr Data Methods
-void QAS_LCD_FontMgr::drawStrL(QAT_Vector2 cPos, const char* str) {
+void QAS_LCD_FontMgr::drawStrL(QAT_Vector2_16 cPos, const char* str) {
   if ((m_pBuffer == NULL) || (m_iCurrentIdx < 0))
     return;
 
   uint8_t uLen = strlen(str);
   if (uLen < 0) return;
 
-  QAT_Vector2 cDrawPos = cPos;
+  QAT_Vector2_16 cDrawPos = cPos;
   for (uint8_t i=0; i<uLen; i++) {
   	if ((str[i] >= 33) && (str[i] <= 126)) {
       drawCharP(cDrawPos, str[i]);
@@ -232,14 +232,14 @@ void QAS_LCD_FontMgr::drawStrL(QAT_Vector2 cPos, const char* str) {
 
 //QAS_LCD_FontMgr::drawStrC
 //QAS_LCD_FontMgr Data Methods
-void QAS_LCD_FontMgr::drawStrC(QAT_Vector2 cPos, const char* str) {
+void QAS_LCD_FontMgr::drawStrC(QAT_Vector2_16 cPos, const char* str) {
   if ((m_pBuffer == NULL) || (m_iCurrentIdx < 0))
     return;
 
   uint8_t uLen = strlen(str);
   if (uLen < 0) return;
 
-  QAT_Vector2 cDrawPos = cPos;
+  QAT_Vector2_16 cDrawPos = cPos;
   cDrawPos.x -= (getStringWidth(str) / 2);
   for (uint8_t i=0; i<uLen; i++) {
   	if ((str[i] >= 33) && (str[i] <= 126)) {
@@ -254,14 +254,14 @@ void QAS_LCD_FontMgr::drawStrC(QAT_Vector2 cPos, const char* str) {
 
 //QAS_LCD_FontMgr::drawStrR
 //QAS_LCD_FontMgr Data Methods
-void QAS_LCD_FontMgr::drawStrR(QAT_Vector2 cPos, const char* str) {
+void QAS_LCD_FontMgr::drawStrR(QAT_Vector2_16 cPos, const char* str) {
   if ((m_pBuffer == NULL) || (m_iCurrentIdx < 0))
     return;
 
   uint8_t uLen = strlen(str);
   if (uLen < 0) return;
 
-  QAT_Vector2 cDrawPos = cPos;
+  QAT_Vector2_16 cDrawPos = cPos;
   cDrawPos.x -= getStringWidth(str);
   for (uint8_t i=0; i<uLen; i++) {
   	if ((str[i] >= 33) && (str[i] <= 126)) {
@@ -279,7 +279,7 @@ void QAS_LCD_FontMgr::drawStrR(QAT_Vector2 cPos, const char* str) {
 
 //QAS_LCD_FontMgr::drawCharP
 //QAS_LCD_FontMgr Private Rendering Method
-void QAS_LCD_FontMgr::drawCharP(QAT_Vector2 cPos, char ch) {
+void QAS_LCD_FontMgr::drawCharP(QAT_Vector2_16 cPos, char ch) {
   uint16_t uLetter = (uint8_t)ch - 33;
   uint16_t uWidth  = m_pCurrent->m_pDesc[uLetter].uWidth;
   uint32_t uOffset = m_pCurrent->m_pDesc[uLetter].uOffset;

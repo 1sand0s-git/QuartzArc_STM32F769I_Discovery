@@ -72,6 +72,9 @@ typedef struct {
 //Singleton class
 //Driver class for flexible memory controller (FMC) peripheral, which is used to provide an interface to
 //the 16 megabyte SDRAM module included on the STM32F769I-DISCO / STM32F769I-DISC1 development boards
+//This is setup as a singleton class due to only one FMC and one SDRAM module being available on the
+//STM32F769I Discovery board, meaning that potential conflicts are prevented by not allowing more than
+//one instance of the class to exist.
 class QAD_FMC {
 private:
 
@@ -108,7 +111,7 @@ private:
 	//------------
 	//Constructors
 
-	//As this is a private method in a singleton class, this method will be called the first time the get() method is called
+	//As this is a private method in a singleton class, this method will be called the first time the class's get() method is called
 	QAD_FMC() :
 	  m_eState(QA_NotInitialized) {}
 

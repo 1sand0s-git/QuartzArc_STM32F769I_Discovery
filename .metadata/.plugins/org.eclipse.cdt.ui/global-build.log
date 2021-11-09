@@ -284,3 +284,997 @@ Finished building: STM32 F7D.bin
  
 Finished building: STM32 F7D.list
  
+13:22:08 **** Incremental Build of configuration Debug for project STM32 F7D ****
+make -j8 all 
+arm-none-eabi-g++ "../QA_Systems/QAS_LCD/QAS_LCD.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F769xx -c -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Drivers/Componenets/Common -I../Drivers/Components/otm8009a -I../Core -I../QA_Drivers -I../QA_Drivers/QAD_PeripheralManagers -I../QA_Tools -I../QA_Systems -I../QA_Systems/QAS_Serial -I../QA_Systems/QAS_LCD -I../QA_Systems/QAS_LCD/QAS_LCD_Fonts -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"QA_Systems/QAS_LCD/QAS_LCD.d" -MT"QA_Systems/QAS_LCD/QAS_LCD.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "QA_Systems/QAS_LCD/QAS_LCD.o"
+arm-none-eabi-g++ "../QA_Systems/QAS_LCD/QAS_LCD_Fonts.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F769xx -c -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Drivers/Componenets/Common -I../Drivers/Components/otm8009a -I../Core -I../QA_Drivers -I../QA_Drivers/QAD_PeripheralManagers -I../QA_Tools -I../QA_Systems -I../QA_Systems/QAS_Serial -I../QA_Systems/QAS_LCD -I../QA_Systems/QAS_LCD/QAS_LCD_Fonts -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"QA_Systems/QAS_LCD/QAS_LCD_Fonts.d" -MT"QA_Systems/QAS_LCD/QAS_LCD_Fonts.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "QA_Systems/QAS_LCD/QAS_LCD_Fonts.o"
+arm-none-eabi-g++ "../QA_Drivers/QAD_FMC.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F769xx -c -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Drivers/Componenets/Common -I../Drivers/Components/otm8009a -I../Core -I../QA_Drivers -I../QA_Drivers/QAD_PeripheralManagers -I../QA_Tools -I../QA_Systems -I../QA_Systems/QAS_Serial -I../QA_Systems/QAS_LCD -I../QA_Systems/QAS_LCD/QAS_LCD_Fonts -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"QA_Drivers/QAD_FMC.d" -MT"QA_Drivers/QAD_FMC.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "QA_Drivers/QAD_FMC.o"
+arm-none-eabi-g++ "../QA_Drivers/QAD_LTDC.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F769xx -c -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Drivers/Componenets/Common -I../Drivers/Components/otm8009a -I../Core -I../QA_Drivers -I../QA_Drivers/QAD_PeripheralManagers -I../QA_Tools -I../QA_Systems -I../QA_Systems/QAS_Serial -I../QA_Systems/QAS_LCD -I../QA_Systems/QAS_LCD/QAS_LCD_Fonts -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"QA_Drivers/QAD_LTDC.d" -MT"QA_Drivers/QAD_LTDC.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "QA_Drivers/QAD_LTDC.o"
+arm-none-eabi-g++ "../Core/main.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F769xx -c -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Drivers/Componenets/Common -I../Drivers/Components/otm8009a -I../Core -I../QA_Drivers -I../QA_Drivers/QAD_PeripheralManagers -I../QA_Tools -I../QA_Systems -I../QA_Systems/QAS_Serial -I../QA_Systems/QAS_LCD -I../QA_Systems/QAS_LCD/QAS_LCD_Fonts -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/main.d" -MT"Core/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/main.o"
+../QA_Drivers/QAD_LTDC.cpp:352:6: error: no declaration matches 'void QAD_LTDC::imp_dsi_io_writecmd(uint32_t, uint8_t*)'
+  352 | void QAD_LTDC::imp_dsi_io_writecmd(uint32_t uNumParams, uint8_t* pParams) {
+      |      ^~~~~~~~
+../QA_Drivers/QAD_LTDC.cpp:352:6: note: no functions named 'void QAD_LTDC::imp_dsi_io_writecmd(uint32_t, uint8_t*)'
+In file included from ../QA_Drivers/QAD_LTDC.cpp:19:
+../QA_Drivers/QAD_LTDC.hpp:116:7: note: 'class QAD_LTDC' defined here
+  116 | class QAD_LTDC {
+      |       ^~~~~~~~
+../QA_Drivers/QAD_LTDC.cpp: In member function 'void QAD_LTDC::imp_flipLayer0Buffers()':
+../QA_Drivers/QAD_LTDC.cpp:399:11: error: 'Buffer0' was not declared in this scope
+  399 |     case (Buffer0): {
+      |           ^~~~~~~
+../QA_Drivers/QAD_LTDC.cpp:401:23: error: 'Buffer1' was not declared in this scope
+  401 |      m_eLayer0Front = Buffer1;
+      |                       ^~~~~~~
+../QA_Drivers/QAD_LTDC.cpp:406:11: error: 'Buffer1' was not declared in this scope
+  406 |     case (Buffer1): {
+      |           ^~~~~~~
+../QA_Drivers/QAD_LTDC.cpp:398:10: warning: enumeration value 'QAD_LTDC_Buffer0' not handled in switch [-Wswitch]
+  398 |   switch (m_eLayer0Front) {
+      |          ^
+../QA_Drivers/QAD_LTDC.cpp:398:10: warning: enumeration value 'QAD_LTDC_Buffer1' not handled in switch [-Wswitch]
+../QA_Drivers/QAD_LTDC.cpp: In member function 'void QAD_LTDC::imp_flipLayer1Buffers()':
+../QA_Drivers/QAD_LTDC.cpp:424:11: error: 'Buffer0' was not declared in this scope
+  424 |     case (Buffer0): {
+      |           ^~~~~~~
+../QA_Drivers/QAD_LTDC.cpp:426:23: error: 'Buffer1' was not declared in this scope
+  426 |      m_eLayer1Front = Buffer1;
+      |                       ^~~~~~~
+../QA_Drivers/QAD_LTDC.cpp:431:11: error: 'Buffer1' was not declared in this scope
+  431 |     case (Buffer1): {
+      |           ^~~~~~~
+../QA_Drivers/QAD_LTDC.cpp:423:10: warning: enumeration value 'QAD_LTDC_Buffer0' not handled in switch [-Wswitch]
+  423 |   switch (m_eLayer1Front) {
+      |          ^
+../QA_Drivers/QAD_LTDC.cpp:423:10: warning: enumeration value 'QAD_LTDC_Buffer1' not handled in switch [-Wswitch]
+../QA_Drivers/QAD_LTDC.cpp: In member function 'void* QAD_LTDC::imp_getLayer0BackBufferPtr()':
+../QA_Drivers/QAD_LTDC.cpp:453:10: error: 'Buffer0' was not declared in this scope
+  453 |    case (Buffer0):
+      |          ^~~~~~~
+../QA_Drivers/QAD_LTDC.cpp:456:10: error: 'Buffer1' was not declared in this scope
+  456 |    case (Buffer1):
+      |          ^~~~~~~
+../QA_Drivers/QAD_LTDC.cpp:452:9: warning: enumeration value 'QAD_LTDC_Buffer0' not handled in switch [-Wswitch]
+  452 |  switch (m_eLayer0Back) {
+      |         ^
+../QA_Drivers/QAD_LTDC.cpp:452:9: warning: enumeration value 'QAD_LTDC_Buffer1' not handled in switch [-Wswitch]
+../QA_Drivers/QAD_LTDC.cpp: In member function 'QAD_LTDC_Buffer* QAD_LTDC::imp_getLayer0BackBuffer()':
+../QA_Drivers/QAD_LTDC.cpp:472:10: error: 'Buffer0' was not declared in this scope
+  472 |    case (Buffer0):
+      |          ^~~~~~~
+../QA_Drivers/QAD_LTDC.cpp:475:10: error: 'Buffer1' was not declared in this scope
+  475 |    case (Buffer1):
+      |          ^~~~~~~
+../QA_Drivers/QAD_LTDC.cpp:471:9: warning: enumeration value 'QAD_LTDC_Buffer0' not handled in switch [-Wswitch]
+  471 |  switch (m_eLayer0Back) {
+      |         ^
+../QA_Drivers/QAD_LTDC.cpp:471:9: warning: enumeration value 'QAD_LTDC_Buffer1' not handled in switch [-Wswitch]
+../QA_Drivers/QAD_LTDC.cpp: In member function 'void* QAD_LTDC::imp_getLayer1BackBufferPtr()':
+../QA_Drivers/QAD_LTDC.cpp:491:10: error: 'Buffer0' was not declared in this scope
+  491 |    case (Buffer0):
+      |          ^~~~~~~
+../QA_Drivers/QAD_LTDC.cpp:494:10: error: 'Buffer1' was not declared in this scope
+  494 |    case (Buffer1):
+      |          ^~~~~~~
+../QA_Drivers/QAD_LTDC.cpp:490:9: warning: enumeration value 'QAD_LTDC_Buffer0' not handled in switch [-Wswitch]
+  490 |  switch (m_eLayer1Back) {
+      |         ^
+../QA_Drivers/QAD_LTDC.cpp:490:9: warning: enumeration value 'QAD_LTDC_Buffer1' not handled in switch [-Wswitch]
+../QA_Drivers/QAD_LTDC.cpp: In member function 'QAD_LTDC_Buffer* QAD_LTDC::imp_getLayer1BackBuffer()':
+../QA_Drivers/QAD_LTDC.cpp:510:10: error: 'Buffer0' was not declared in this scope
+  510 |    case (Buffer0):
+      |          ^~~~~~~
+../QA_Drivers/QAD_LTDC.cpp:513:10: error: 'Buffer1' was not declared in this scope
+  513 |    case (Buffer1):
+      |          ^~~~~~~
+../QA_Drivers/QAD_LTDC.cpp:509:9: warning: enumeration value 'QAD_LTDC_Buffer0' not handled in switch [-Wswitch]
+  509 |  switch (m_eLayer1Back) {
+      |         ^
+../QA_Drivers/QAD_LTDC.cpp:509:9: warning: enumeration value 'QAD_LTDC_Buffer1' not handled in switch [-Wswitch]
+../QA_Drivers/QAD_LTDC.cpp: In function 'void DSI_IO_WriteCmd(uint32_t, uint8_t*)':
+../QA_Drivers/QAD_LTDC.cpp:531:13: error: 'dsi_io_writecmd' is not a member of 'QAD_LTDC'
+  531 |   QAD_LTDC::dsi_io_writecmd(NbrParam, pParams);
+      |             ^~~~~~~~~~~~~~~
+make: *** [QA_Drivers/subdir.mk:31: QA_Drivers/QAD_LTDC.o] Error 1
+make: *** Waiting for unfinished jobs....
+In file included from ../QA_Systems/QAS_LCD/QAS_LCD_Fonts.cpp:19:
+../QA_Systems/QAS_LCD/QAS_LCD_Fonts.hpp:198:16: error: 'QAT_Vector2' has not been declared
+  198 |  void drawChar(QAT_Vector2 cPos, char& ch);
+      |                ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD_Fonts.hpp:199:16: error: 'QAT_Vector2' has not been declared
+  199 |  void drawStrL(QAT_Vector2 cPos, const char* str);
+      |                ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD_Fonts.hpp:200:16: error: 'QAT_Vector2' has not been declared
+  200 |  void drawStrC(QAT_Vector2 cPos, const char* str);
+      |                ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD_Fonts.hpp:201:16: error: 'QAT_Vector2' has not been declared
+  201 |  void drawStrR(QAT_Vector2 cPos, const char* str);
+      |                ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD_Fonts.hpp:208:17: error: 'QAT_Vector2' has not been declared
+  208 |  void drawCharP(QAT_Vector2 cPos, char ch);
+      |                 ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD_Fonts.cpp:203:32: error: variable or field 'drawChar' declared void
+  203 | void QAS_LCD_FontMgr::drawChar(QAT_Vector2 cPos, char& ch) {
+      |                                ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD_Fonts.cpp:203:32: error: 'QAT_Vector2' was not declared in this scope; did you mean 'QAT_Vector2_16'?
+  203 | void QAS_LCD_FontMgr::drawChar(QAT_Vector2 cPos, char& ch) {
+      |                                ^~~~~~~~~~~
+      |                                QAT_Vector2_16
+../QA_Systems/QAS_LCD/QAS_LCD_Fonts.cpp:203:50: error: expected primary-expression before 'char'
+  203 | void QAS_LCD_FontMgr::drawChar(QAT_Vector2 cPos, char& ch) {
+      |                                                  ^~~~
+../QA_Systems/QAS_LCD/QAS_LCD_Fonts.cpp:214:32: error: variable or field 'drawStrL' declared void
+  214 | void QAS_LCD_FontMgr::drawStrL(QAT_Vector2 cPos, const char* str) {
+      |                                ^~~~~~~~~~~
+In file included from ../QA_Systems/QAS_LCD/QAS_LCD.hpp:30,
+                 from ../QA_Systems/QAS_LCD/QAS_LCD.cpp:19:
+../QA_Systems/QAS_LCD/QAS_LCD_Fonts.hpp:198:16: error: 'QAT_Vector2' has not been declared
+  198 |  void drawChar(QAT_Vector2 cPos, char& ch);
+      |                ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD_Fonts.hpp:199:16: error: 'QAT_Vector2' has not been declared
+  199 |  void drawStrL(QAT_Vector2 cPos, const char* str);
+      |                ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD_Fonts.hpp:200:16: error: 'QAT_Vector2' has not been declared
+  200 |  void drawStrC(QAT_Vector2 cPos, const char* str);
+      |                ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD_Fonts.hpp:201:16: error: 'QAT_Vector2' has not been declared
+  201 |  void drawStrR(QAT_Vector2 cPos, const char* str);
+      |                ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD_Fonts.hpp:208:17: error: 'QAT_Vector2' has not been declared
+  208 |  void drawCharP(QAT_Vector2 cPos, char ch);
+      |                 ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD_Fonts.cpp:214:32: error: 'QAT_Vector2' was not declared in this scope; did you mean 'QAT_Vector2_16'?
+  214 | void QAS_LCD_FontMgr::drawStrL(QAT_Vector2 cPos, const char* str) {
+      |                                ^~~~~~~~~~~
+      |                                QAT_Vector2_16
+../QA_Systems/QAS_LCD/QAS_LCD_Fonts.cpp:214:50: error: expected primary-expression before 'const'
+  214 | void QAS_LCD_FontMgr::drawStrL(QAT_Vector2 cPos, const char* str) {
+      |                                                  ^~~~~
+../QA_Systems/QAS_LCD/QAS_LCD_Fonts.cpp:235:32: error: variable or field 'drawStrC' declared void
+  235 | void QAS_LCD_FontMgr::drawStrC(QAT_Vector2 cPos, const char* str) {
+      |                                ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD_Fonts.cpp:235:32: error: 'QAT_Vector2' was not declared in this scope; did you mean 'QAT_Vector2_16'?
+  235 | void QAS_LCD_FontMgr::drawStrC(QAT_Vector2 cPos, const char* str) {
+      |                                ^~~~~~~~~~~
+      |                                QAT_Vector2_16
+../QA_Systems/QAS_LCD/QAS_LCD_Fonts.cpp:235:50: error: expected primary-expression before 'const'
+  235 | void QAS_LCD_FontMgr::drawStrC(QAT_Vector2 cPos, const char* str) {
+      |                                                  ^~~~~
+../QA_Systems/QAS_LCD/QAS_LCD_Fonts.cpp:257:32: error: variable or field 'drawStrR' declared void
+  257 | void QAS_LCD_FontMgr::drawStrR(QAT_Vector2 cPos, const char* str) {
+      |                                ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD_Fonts.cpp:257:32: error: 'QAT_Vector2' was not declared in this scope; did you mean 'QAT_Vector2_16'?
+  257 | void QAS_LCD_FontMgr::drawStrR(QAT_Vector2 cPos, const char* str) {
+      |                                ^~~~~~~~~~~
+      |                                QAT_Vector2_16
+../QA_Systems/QAS_LCD/QAS_LCD_Fonts.cpp:257:50: error: expected primary-expression before 'const'
+  257 | void QAS_LCD_FontMgr::drawStrR(QAT_Vector2 cPos, const char* str) {
+      |                                                  ^~~~~
+../QA_Systems/QAS_LCD/QAS_LCD_Fonts.cpp:282:33: error: variable or field 'drawCharP' declared void
+  282 | void QAS_LCD_FontMgr::drawCharP(QAT_Vector2 cPos, char ch) {
+      |                                 ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD_Fonts.cpp:282:33: error: 'QAT_Vector2' was not declared in this scope; did you mean 'QAT_Vector2_16'?
+  282 | void QAS_LCD_FontMgr::drawCharP(QAT_Vector2 cPos, char ch) {
+      |                                 ^~~~~~~~~~~
+      |                                 QAT_Vector2_16
+../QA_Systems/QAS_LCD/QAS_LCD_Fonts.cpp:282:51: error: expected primary-expression before 'char'
+  282 | void QAS_LCD_FontMgr::drawCharP(QAT_Vector2 cPos, char ch) {
+      |                                                   ^~~~
+In file included from ../QA_Systems/QAS_LCD/QAS_LCD.cpp:19:
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:109:25: error: 'QAT_Vector2' has not been declared
+  109 |   static void drawPixel(QAT_Vector2 cPos) {
+      |                         ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:113:24: error: 'QAT_Vector2' has not been declared
+  113 |   static void drawLine(QAT_Vector2 cStart, QAT_Vector2 cEnd) {
+      |                        ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:113:44: error: 'QAT_Vector2' has not been declared
+  113 |   static void drawLine(QAT_Vector2 cStart, QAT_Vector2 cEnd) {
+      |                                            ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:117:24: error: 'QAT_Vector2' has not been declared
+  117 |   static void drawRect(QAT_Vector2 cStart, QAT_Vector2 cEnd) {
+      |                        ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:117:44: error: 'QAT_Vector2' has not been declared
+  117 |   static void drawRect(QAT_Vector2 cStart, QAT_Vector2 cEnd) {
+      |                                            ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:121:28: error: 'QAT_Vector2' has not been declared
+  121 |   static void drawRectFill(QAT_Vector2 cStart, QAT_Vector2 cEnd) {
+      |                            ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:121:48: error: 'QAT_Vector2' has not been declared
+  121 |   static void drawRectFill(QAT_Vector2 cStart, QAT_Vector2 cEnd) {
+      |                                                ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:136:24: error: 'QAT_Vector2' has not been declared
+  136 |   static void drawChar(QAT_Vector2 cPos, char ch) {
+      |                        ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:140:24: error: 'QAT_Vector2' has not been declared
+  140 |   static void drawStrL(QAT_Vector2 cPos, const char* str) {
+      |                        ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:144:24: error: 'QAT_Vector2' has not been declared
+  144 |   static void drawStrC(QAT_Vector2 cPos, const char* str) {
+      |                        ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:148:24: error: 'QAT_Vector2' has not been declared
+  148 |   static void drawStrR(QAT_Vector2 cPos, const char* str) {
+      |                        ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:168:22: error: 'QAT_Vector2' has not been declared
+  168 |   void imp_drawPixel(QAT_Vector2& cPos);
+      |                      ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:169:21: error: 'QAT_Vector2' has not been declared
+  169 |   void imp_drawLine(QAT_Vector2& cStart, QAT_Vector2& cEnd);
+      |                     ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:169:42: error: 'QAT_Vector2' has not been declared
+  169 |   void imp_drawLine(QAT_Vector2& cStart, QAT_Vector2& cEnd);
+      |                                          ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:170:22: error: 'QAT_Vector2' has not been declared
+  170 |   void imp_drawHLine(QAT_Vector2& cStart, QAT_Vector2& cEnd);
+      |                      ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:170:43: error: 'QAT_Vector2' has not been declared
+  170 |   void imp_drawHLine(QAT_Vector2& cStart, QAT_Vector2& cEnd);
+      |                                           ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:171:22: error: 'QAT_Vector2' has not been declared
+  171 |   void imp_drawVLine(QAT_Vector2& cStart, QAT_Vector2& cEnd);
+      |                      ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:171:43: error: 'QAT_Vector2' has not been declared
+  171 |   void imp_drawVLine(QAT_Vector2& cStart, QAT_Vector2& cEnd);
+      |                                           ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:172:22: error: 'QAT_Vector2' has not been declared
+  172 |   void imp_drawALine(QAT_Vector2& cStart, QAT_Vector2& cEnd);
+      |                      ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:172:43: error: 'QAT_Vector2' has not been declared
+  172 |   void imp_drawALine(QAT_Vector2& cStart, QAT_Vector2& cEnd);
+      |                                           ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:174:21: error: 'QAT_Vector2' has not been declared
+  174 |   void imp_drawRect(QAT_Vector2& cStart, QAT_Vector2& cEnd);
+      |                     ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:174:42: error: 'QAT_Vector2' has not been declared
+  174 |   void imp_drawRect(QAT_Vector2& cStart, QAT_Vector2& cEnd);
+      |                                          ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:175:25: error: 'QAT_Vector2' has not been declared
+  175 |   void imp_drawRectFill(QAT_Vector2& cStart, QAT_Vector2& cEnd);
+      |                         ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:175:46: error: 'QAT_Vector2' has not been declared
+  175 |   void imp_drawRectFill(QAT_Vector2& cStart, QAT_Vector2& cEnd);
+      |                                              ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.cpp: In member function 'void QAS_LCD::imp_setDrawBuffer(QAD_LTDC_LayerIdx)':
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:101:10: error: 'Layer0' was not declared in this scope; did you mean 'eLayer'?
+  101 |    case (Layer0):
+      |          ^~~~~~
+      |          eLayer
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:104:10: error: 'Layer1' was not declared in this scope; did you mean 'eLayer'?
+  104 |    case (Layer1):
+      |          ^~~~~~
+      |          eLayer
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:100:9: warning: enumeration value 'QAD_LTDC_Layer0' not handled in switch [-Wswitch]
+  100 |  switch (eLayer) {
+      |         ^
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:100:9: warning: enumeration value 'QAD_LTDC_Layer1' not handled in switch [-Wswitch]
+../QA_Systems/QAS_LCD/QAS_LCD.cpp: At global scope:
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:133:29: error: variable or field 'imp_drawPixel' declared void
+  133 | void QAS_LCD::imp_drawPixel(QAT_Vector2& cPos) {
+      |                             ^~~~~~~~~~~
+make: *** [QA_Systems/QAS_LCD/subdir.mk:22: QA_Systems/QAS_LCD/QAS_LCD_Fonts.o] Error 1
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:133:29: error: 'QAT_Vector2' was not declared in this scope; did you mean 'QAT_Vector2_16'?
+  133 | void QAS_LCD::imp_drawPixel(QAT_Vector2& cPos) {
+      |                             ^~~~~~~~~~~
+      |                             QAT_Vector2_16
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:133:42: error: 'cPos' was not declared in this scope
+  133 | void QAS_LCD::imp_drawPixel(QAT_Vector2& cPos) {
+      |                                          ^~~~
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:140:28: error: variable or field 'imp_drawLine' declared void
+  140 | void QAS_LCD::imp_drawLine(QAT_Vector2& cStart, QAT_Vector2& cEnd) {
+      |                            ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:140:28: error: 'QAT_Vector2' was not declared in this scope; did you mean 'QAT_Vector2_16'?
+  140 | void QAS_LCD::imp_drawLine(QAT_Vector2& cStart, QAT_Vector2& cEnd) {
+      |                            ^~~~~~~~~~~
+      |                            QAT_Vector2_16
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:140:41: error: 'cStart' was not declared in this scope
+  140 | void QAS_LCD::imp_drawLine(QAT_Vector2& cStart, QAT_Vector2& cEnd) {
+      |                                         ^~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:140:49: error: 'QAT_Vector2' was not declared in this scope; did you mean 'QAT_Vector2_16'?
+  140 | void QAS_LCD::imp_drawLine(QAT_Vector2& cStart, QAT_Vector2& cEnd) {
+      |                                                 ^~~~~~~~~~~
+      |                                                 QAT_Vector2_16
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:140:62: error: 'cEnd' was not declared in this scope
+  140 | void QAS_LCD::imp_drawLine(QAT_Vector2& cStart, QAT_Vector2& cEnd) {
+      |                                                              ^~~~
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:151:29: error: variable or field 'imp_drawHLine' declared void
+  151 | void QAS_LCD::imp_drawHLine(QAT_Vector2& cStart, QAT_Vector2& cEnd) {
+      |                             ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:151:29: error: 'QAT_Vector2' was not declared in this scope; did you mean 'QAT_Vector2_16'?
+  151 | void QAS_LCD::imp_drawHLine(QAT_Vector2& cStart, QAT_Vector2& cEnd) {
+      |                             ^~~~~~~~~~~
+      |                             QAT_Vector2_16
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:151:42: error: 'cStart' was not declared in this scope
+  151 | void QAS_LCD::imp_drawHLine(QAT_Vector2& cStart, QAT_Vector2& cEnd) {
+      |                                          ^~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:151:50: error: 'QAT_Vector2' was not declared in this scope; did you mean 'QAT_Vector2_16'?
+  151 | void QAS_LCD::imp_drawHLine(QAT_Vector2& cStart, QAT_Vector2& cEnd) {
+      |                                                  ^~~~~~~~~~~
+      |                                                  QAT_Vector2_16
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:151:63: error: 'cEnd' was not declared in this scope
+  151 | void QAS_LCD::imp_drawHLine(QAT_Vector2& cStart, QAT_Vector2& cEnd) {
+      |                                                               ^~~~
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:171:29: error: variable or field 'imp_drawVLine' declared void
+  171 | void QAS_LCD::imp_drawVLine(QAT_Vector2& cStart, QAT_Vector2& cEnd) {
+      |                             ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:171:29: error: 'QAT_Vector2' was not declared in this scope; did you mean 'QAT_Vector2_16'?
+  171 | void QAS_LCD::imp_drawVLine(QAT_Vector2& cStart, QAT_Vector2& cEnd) {
+      |                             ^~~~~~~~~~~
+      |                             QAT_Vector2_16
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:171:42: error: 'cStart' was not declared in this scope
+  171 | void QAS_LCD::imp_drawVLine(QAT_Vector2& cStart, QAT_Vector2& cEnd) {
+      |                                          ^~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:171:50: error: 'QAT_Vector2' was not declared in this scope; did you mean 'QAT_Vector2_16'?
+  171 | void QAS_LCD::imp_drawVLine(QAT_Vector2& cStart, QAT_Vector2& cEnd) {
+      |                                                  ^~~~~~~~~~~
+      |                                                  QAT_Vector2_16
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:171:63: error: 'cEnd' was not declared in this scope
+  171 | void QAS_LCD::imp_drawVLine(QAT_Vector2& cStart, QAT_Vector2& cEnd) {
+      |                                                               ^~~~
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:191:29: error: variable or field 'imp_drawALine' declared void
+  191 | void QAS_LCD::imp_drawALine(QAT_Vector2& cStart, QAT_Vector2& cEnd) {
+      |                             ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:191:29: error: 'QAT_Vector2' was not declared in this scope; did you mean 'QAT_Vector2_16'?
+  191 | void QAS_LCD::imp_drawALine(QAT_Vector2& cStart, QAT_Vector2& cEnd) {
+      |                             ^~~~~~~~~~~
+      |                             QAT_Vector2_16
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:191:42: error: 'cStart' was not declared in this scope
+  191 | void QAS_LCD::imp_drawALine(QAT_Vector2& cStart, QAT_Vector2& cEnd) {
+      |                                          ^~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:191:50: error: 'QAT_Vector2' was not declared in this scope; did you mean 'QAT_Vector2_16'?
+  191 | void QAS_LCD::imp_drawALine(QAT_Vector2& cStart, QAT_Vector2& cEnd) {
+      |                                                  ^~~~~~~~~~~
+      |                                                  QAT_Vector2_16
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:191:63: error: 'cEnd' was not declared in this scope
+  191 | void QAS_LCD::imp_drawALine(QAT_Vector2& cStart, QAT_Vector2& cEnd) {
+      |                                                               ^~~~
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:255:28: error: variable or field 'imp_drawRect' declared void
+  255 | void QAS_LCD::imp_drawRect(QAT_Vector2& cStart, QAT_Vector2& cEnd) {
+      |                            ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:255:28: error: 'QAT_Vector2' was not declared in this scope; did you mean 'QAT_Vector2_16'?
+  255 | void QAS_LCD::imp_drawRect(QAT_Vector2& cStart, QAT_Vector2& cEnd) {
+      |                            ^~~~~~~~~~~
+      |                            QAT_Vector2_16
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:255:41: error: 'cStart' was not declared in this scope
+  255 | void QAS_LCD::imp_drawRect(QAT_Vector2& cStart, QAT_Vector2& cEnd) {
+      |                                         ^~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:255:49: error: 'QAT_Vector2' was not declared in this scope; did you mean 'QAT_Vector2_16'?
+  255 | void QAS_LCD::imp_drawRect(QAT_Vector2& cStart, QAT_Vector2& cEnd) {
+      |                                                 ^~~~~~~~~~~
+      |                                                 QAT_Vector2_16
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:255:62: error: 'cEnd' was not declared in this scope
+  255 | void QAS_LCD::imp_drawRect(QAT_Vector2& cStart, QAT_Vector2& cEnd) {
+      |                                                              ^~~~
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:294:32: error: variable or field 'imp_drawRectFill' declared void
+  294 | void QAS_LCD::imp_drawRectFill(QAT_Vector2& cStart, QAT_Vector2& cEnd) {
+      |                                ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:294:32: error: 'QAT_Vector2' was not declared in this scope; did you mean 'QAT_Vector2_16'?
+  294 | void QAS_LCD::imp_drawRectFill(QAT_Vector2& cStart, QAT_Vector2& cEnd) {
+      |                                ^~~~~~~~~~~
+      |                                QAT_Vector2_16
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:294:45: error: 'cStart' was not declared in this scope
+  294 | void QAS_LCD::imp_drawRectFill(QAT_Vector2& cStart, QAT_Vector2& cEnd) {
+      |                                             ^~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:294:53: error: 'QAT_Vector2' was not declared in this scope; did you mean 'QAT_Vector2_16'?
+  294 | void QAS_LCD::imp_drawRectFill(QAT_Vector2& cStart, QAT_Vector2& cEnd) {
+      |                                                     ^~~~~~~~~~~
+      |                                                     QAT_Vector2_16
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:294:66: error: 'cEnd' was not declared in this scope
+  294 | void QAS_LCD::imp_drawRectFill(QAT_Vector2& cStart, QAT_Vector2& cEnd) {
+      |                                                                  ^~~~
+make: *** [QA_Systems/QAS_LCD/subdir.mk:22: QA_Systems/QAS_LCD/QAS_LCD.o] Error 1
+In file included from ../QA_Systems/QAS_LCD/QAS_LCD.hpp:30,
+                 from ../Core/main.cpp:27:
+../QA_Systems/QAS_LCD/QAS_LCD_Fonts.hpp:198:16: error: 'QAT_Vector2' has not been declared
+  198 |  void drawChar(QAT_Vector2 cPos, char& ch);
+      |                ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD_Fonts.hpp:199:16: error: 'QAT_Vector2' has not been declared
+  199 |  void drawStrL(QAT_Vector2 cPos, const char* str);
+      |                ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD_Fonts.hpp:200:16: error: 'QAT_Vector2' has not been declared
+  200 |  void drawStrC(QAT_Vector2 cPos, const char* str);
+      |                ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD_Fonts.hpp:201:16: error: 'QAT_Vector2' has not been declared
+  201 |  void drawStrR(QAT_Vector2 cPos, const char* str);
+      |                ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD_Fonts.hpp:208:17: error: 'QAT_Vector2' has not been declared
+  208 |  void drawCharP(QAT_Vector2 cPos, char ch);
+      |                 ^~~~~~~~~~~
+In file included from ../Core/main.cpp:27:
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:109:25: error: 'QAT_Vector2' has not been declared
+  109 |   static void drawPixel(QAT_Vector2 cPos) {
+      |                         ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:113:24: error: 'QAT_Vector2' has not been declared
+  113 |   static void drawLine(QAT_Vector2 cStart, QAT_Vector2 cEnd) {
+      |                        ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:113:44: error: 'QAT_Vector2' has not been declared
+  113 |   static void drawLine(QAT_Vector2 cStart, QAT_Vector2 cEnd) {
+      |                                            ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:117:24: error: 'QAT_Vector2' has not been declared
+  117 |   static void drawRect(QAT_Vector2 cStart, QAT_Vector2 cEnd) {
+      |                        ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:117:44: error: 'QAT_Vector2' has not been declared
+  117 |   static void drawRect(QAT_Vector2 cStart, QAT_Vector2 cEnd) {
+      |                                            ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:121:28: error: 'QAT_Vector2' has not been declared
+  121 |   static void drawRectFill(QAT_Vector2 cStart, QAT_Vector2 cEnd) {
+      |                            ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:121:48: error: 'QAT_Vector2' has not been declared
+  121 |   static void drawRectFill(QAT_Vector2 cStart, QAT_Vector2 cEnd) {
+      |                                                ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:136:24: error: 'QAT_Vector2' has not been declared
+  136 |   static void drawChar(QAT_Vector2 cPos, char ch) {
+      |                        ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:140:24: error: 'QAT_Vector2' has not been declared
+  140 |   static void drawStrL(QAT_Vector2 cPos, const char* str) {
+      |                        ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:144:24: error: 'QAT_Vector2' has not been declared
+  144 |   static void drawStrC(QAT_Vector2 cPos, const char* str) {
+      |                        ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:148:24: error: 'QAT_Vector2' has not been declared
+  148 |   static void drawStrR(QAT_Vector2 cPos, const char* str) {
+      |                        ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:168:22: error: 'QAT_Vector2' has not been declared
+  168 |   void imp_drawPixel(QAT_Vector2& cPos);
+      |                      ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:169:21: error: 'QAT_Vector2' has not been declared
+  169 |   void imp_drawLine(QAT_Vector2& cStart, QAT_Vector2& cEnd);
+      |                     ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:169:42: error: 'QAT_Vector2' has not been declared
+  169 |   void imp_drawLine(QAT_Vector2& cStart, QAT_Vector2& cEnd);
+      |                                          ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:170:22: error: 'QAT_Vector2' has not been declared
+  170 |   void imp_drawHLine(QAT_Vector2& cStart, QAT_Vector2& cEnd);
+      |                      ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:170:43: error: 'QAT_Vector2' has not been declared
+  170 |   void imp_drawHLine(QAT_Vector2& cStart, QAT_Vector2& cEnd);
+      |                                           ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:171:22: error: 'QAT_Vector2' has not been declared
+  171 |   void imp_drawVLine(QAT_Vector2& cStart, QAT_Vector2& cEnd);
+      |                      ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:171:43: error: 'QAT_Vector2' has not been declared
+  171 |   void imp_drawVLine(QAT_Vector2& cStart, QAT_Vector2& cEnd);
+      |                                           ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:172:22: error: 'QAT_Vector2' has not been declared
+  172 |   void imp_drawALine(QAT_Vector2& cStart, QAT_Vector2& cEnd);
+      |                      ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:172:43: error: 'QAT_Vector2' has not been declared
+  172 |   void imp_drawALine(QAT_Vector2& cStart, QAT_Vector2& cEnd);
+      |                                           ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:174:21: error: 'QAT_Vector2' has not been declared
+  174 |   void imp_drawRect(QAT_Vector2& cStart, QAT_Vector2& cEnd);
+      |                     ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:174:42: error: 'QAT_Vector2' has not been declared
+  174 |   void imp_drawRect(QAT_Vector2& cStart, QAT_Vector2& cEnd);
+      |                                          ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:175:25: error: 'QAT_Vector2' has not been declared
+  175 |   void imp_drawRectFill(QAT_Vector2& cStart, QAT_Vector2& cEnd);
+      |                         ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:175:46: error: 'QAT_Vector2' has not been declared
+  175 |   void imp_drawRectFill(QAT_Vector2& cStart, QAT_Vector2& cEnd);
+      |                                              ^~~~~~~~~~~
+../Core/main.cpp: In function 'int main()':
+../Core/main.cpp:164:26: error: 'Layer0' was not declared in this scope
+  164 |   QAS_LCD::setDrawBuffer(Layer0);
+      |                          ^~~~~~
+../Core/main.cpp:170:21: error: 'QAT_Vector2' was not declared in this scope; did you mean 'QAT_Vector2_16'?
+  170 |   QAS_LCD::drawLine(QAT_Vector2(0, 240), QAT_Vector2(799, 240));  //Causes error
+      |                     ^~~~~~~~~~~
+      |                     QAT_Vector2_16
+../Core/main.cpp:197:26: error: 'Layer1' was not declared in this scope
+  197 |   QAS_LCD::setDrawBuffer(Layer1);
+      |                          ^~~~~~
+make: *** [Core/subdir.mk:38: Core/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+13:24:08 **** Incremental Build of configuration Debug for project STM32 F7D ****
+make -j8 all 
+arm-none-eabi-g++ "../QA_Systems/QAS_LCD/QAS_LCD.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F769xx -c -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Drivers/Componenets/Common -I../Drivers/Components/otm8009a -I../Core -I../QA_Drivers -I../QA_Drivers/QAD_PeripheralManagers -I../QA_Tools -I../QA_Systems -I../QA_Systems/QAS_Serial -I../QA_Systems/QAS_LCD -I../QA_Systems/QAS_LCD/QAS_LCD_Fonts -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"QA_Systems/QAS_LCD/QAS_LCD.d" -MT"QA_Systems/QAS_LCD/QAS_LCD.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "QA_Systems/QAS_LCD/QAS_LCD.o"
+arm-none-eabi-g++ "../QA_Systems/QAS_LCD/QAS_LCD_Fonts.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F769xx -c -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Drivers/Componenets/Common -I../Drivers/Components/otm8009a -I../Core -I../QA_Drivers -I../QA_Drivers/QAD_PeripheralManagers -I../QA_Tools -I../QA_Systems -I../QA_Systems/QAS_Serial -I../QA_Systems/QAS_LCD -I../QA_Systems/QAS_LCD/QAS_LCD_Fonts -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"QA_Systems/QAS_LCD/QAS_LCD_Fonts.d" -MT"QA_Systems/QAS_LCD/QAS_LCD_Fonts.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "QA_Systems/QAS_LCD/QAS_LCD_Fonts.o"
+arm-none-eabi-g++ "../QA_Drivers/QAD_LTDC.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F769xx -c -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Drivers/Componenets/Common -I../Drivers/Components/otm8009a -I../Core -I../QA_Drivers -I../QA_Drivers/QAD_PeripheralManagers -I../QA_Tools -I../QA_Systems -I../QA_Systems/QAS_Serial -I../QA_Systems/QAS_LCD -I../QA_Systems/QAS_LCD/QAS_LCD_Fonts -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"QA_Drivers/QAD_LTDC.d" -MT"QA_Drivers/QAD_LTDC.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "QA_Drivers/QAD_LTDC.o"
+arm-none-eabi-g++ "../Core/main.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F769xx -c -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Drivers/Componenets/Common -I../Drivers/Components/otm8009a -I../Core -I../QA_Drivers -I../QA_Drivers/QAD_PeripheralManagers -I../QA_Tools -I../QA_Systems -I../QA_Systems/QAS_Serial -I../QA_Systems/QAS_LCD -I../QA_Systems/QAS_LCD/QAS_LCD_Fonts -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/main.d" -MT"Core/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/main.o"
+In file included from ../QA_Systems/QAS_LCD/QAS_LCD.hpp:30,
+                 from ../QA_Systems/QAS_LCD/QAS_LCD.cpp:19:
+../QA_Systems/QAS_LCD/QAS_LCD_Fonts.hpp:198:16: error: 'QAT_Vector2' has not been declared
+  198 |  void drawChar(QAT_Vector2 cPos, char& ch);
+      |                ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD_Fonts.hpp:199:16: error: 'QAT_Vector2' has not been declared
+  199 |  void drawStrL(QAT_Vector2 cPos, const char* str);
+      |                ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD_Fonts.hpp:200:16: error: 'QAT_Vector2' has not been declared
+  200 |  void drawStrC(QAT_Vector2 cPos, const char* str);
+      |                ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD_Fonts.hpp:201:16: error: 'QAT_Vector2' has not been declared
+  201 |  void drawStrR(QAT_Vector2 cPos, const char* str);
+      |                ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD_Fonts.hpp:208:17: error: 'QAT_Vector2' has not been declared
+  208 |  void drawCharP(QAT_Vector2 cPos, char ch);
+      |                 ^~~~~~~~~~~
+In file included from ../QA_Systems/QAS_LCD/QAS_LCD_Fonts.cpp:19:
+../QA_Systems/QAS_LCD/QAS_LCD_Fonts.hpp:198:16: error: 'QAT_Vector2' has not been declared
+  198 |  void drawChar(QAT_Vector2 cPos, char& ch);
+      |                ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD_Fonts.hpp:199:16: error: 'QAT_Vector2' has not been declared
+  199 |  void drawStrL(QAT_Vector2 cPos, const char* str);
+      |                ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD_Fonts.hpp:200:16: error: 'QAT_Vector2' has not been declared
+  200 |  void drawStrC(QAT_Vector2 cPos, const char* str);
+      |                ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD_Fonts.hpp:201:16: error: 'QAT_Vector2' has not been declared
+  201 |  void drawStrR(QAT_Vector2 cPos, const char* str);
+      |                ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD_Fonts.hpp:208:17: error: 'QAT_Vector2' has not been declared
+  208 |  void drawCharP(QAT_Vector2 cPos, char ch);
+      |                 ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD_Fonts.cpp:203:32: error: variable or field 'drawChar' declared void
+  203 | void QAS_LCD_FontMgr::drawChar(QAT_Vector2 cPos, char& ch) {
+      |                                ^~~~~~~~~~~
+In file included from ../QA_Systems/QAS_LCD/QAS_LCD.cpp:19:
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:109:25: error: 'QAT_Vector2' has not been declared
+  109 |   static void drawPixel(QAT_Vector2 cPos) {
+      |                         ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:113:24: error: 'QAT_Vector2' has not been declared
+  113 |   static void drawLine(QAT_Vector2 cStart, QAT_Vector2 cEnd) {
+      |                        ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:113:44: error: 'QAT_Vector2' has not been declared
+  113 |   static void drawLine(QAT_Vector2 cStart, QAT_Vector2 cEnd) {
+      |                                            ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:117:24: error: 'QAT_Vector2' has not been declared
+  117 |   static void drawRect(QAT_Vector2 cStart, QAT_Vector2 cEnd) {
+      |                        ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:117:44: error: 'QAT_Vector2' has not been declared
+  117 |   static void drawRect(QAT_Vector2 cStart, QAT_Vector2 cEnd) {
+      |                                            ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:121:28: error: 'QAT_Vector2' has not been declared
+  121 |   static void drawRectFill(QAT_Vector2 cStart, QAT_Vector2 cEnd) {
+      |                            ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:121:48: error: 'QAT_Vector2' has not been declared
+  121 |   static void drawRectFill(QAT_Vector2 cStart, QAT_Vector2 cEnd) {
+      |                                                ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD_Fonts.cpp:203:32: error: 'QAT_Vector2' was not declared in this scope; did you mean 'QAT_Vector2_16'?
+  203 | void QAS_LCD_FontMgr::drawChar(QAT_Vector2 cPos, char& ch) {
+      |                                ^~~~~~~~~~~
+      |                                QAT_Vector2_16
+../QA_Systems/QAS_LCD/QAS_LCD_Fonts.cpp:203:50: error: expected primary-expression before 'char'
+  203 | void QAS_LCD_FontMgr::drawChar(QAT_Vector2 cPos, char& ch) {
+      |                                                  ^~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:136:24: error: 'QAT_Vector2' has not been declared
+  136 |   static void drawChar(QAT_Vector2 cPos, char ch) {
+      |                        ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD_Fonts.cpp:214:32: error: variable or field 'drawStrL' declared void
+  214 | void QAS_LCD_FontMgr::drawStrL(QAT_Vector2 cPos, const char* str) {
+      |                                ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:140:24: error: 'QAT_Vector2' has not been declared
+  140 |   static void drawStrL(QAT_Vector2 cPos, const char* str) {
+      |                        ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:144:24: error: 'QAT_Vector2' has not been declared
+  144 |   static void drawStrC(QAT_Vector2 cPos, const char* str) {
+      |                        ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:148:24: error: 'QAT_Vector2' has not been declared
+  148 |   static void drawStrR(QAT_Vector2 cPos, const char* str) {
+      |                        ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:168:22: error: 'QAT_Vector2' has not been declared
+  168 |   void imp_drawPixel(QAT_Vector2& cPos);
+      |                      ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD_Fonts.cpp:214:32: error: 'QAT_Vector2' was not declared in this scope; did you mean 'QAT_Vector2_16'?
+  214 | void QAS_LCD_FontMgr::drawStrL(QAT_Vector2 cPos, const char* str) {
+      |                                ^~~~~~~~~~~
+      |                                QAT_Vector2_16
+../QA_Systems/QAS_LCD/QAS_LCD_Fonts.cpp:214:50: error: expected primary-expression before 'const'
+  214 | void QAS_LCD_FontMgr::drawStrL(QAT_Vector2 cPos, const char* str) {
+      |                                                  ^~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:169:21: error: 'QAT_Vector2' has not been declared
+  169 |   void imp_drawLine(QAT_Vector2& cStart, QAT_Vector2& cEnd);
+      |                     ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD_Fonts.cpp:235:32: error: variable or field 'drawStrC' declared void
+  235 | void QAS_LCD_FontMgr::drawStrC(QAT_Vector2 cPos, const char* str) {
+      |                                ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:169:42: error: 'QAT_Vector2' has not been declared
+  169 |   void imp_drawLine(QAT_Vector2& cStart, QAT_Vector2& cEnd);
+      |                                          ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:170:22: error: 'QAT_Vector2' has not been declared
+  170 |   void imp_drawHLine(QAT_Vector2& cStart, QAT_Vector2& cEnd);
+      |                      ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:170:43: error: 'QAT_Vector2' has not been declared
+  170 |   void imp_drawHLine(QAT_Vector2& cStart, QAT_Vector2& cEnd);
+      |                                           ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:171:22: error: 'QAT_Vector2' has not been declared
+  171 |   void imp_drawVLine(QAT_Vector2& cStart, QAT_Vector2& cEnd);
+      |                      ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD_Fonts.cpp:235:32: error: 'QAT_Vector2' was not declared in this scope; did you mean 'QAT_Vector2_16'?
+  235 | void QAS_LCD_FontMgr::drawStrC(QAT_Vector2 cPos, const char* str) {
+      |                                ^~~~~~~~~~~
+      |                                QAT_Vector2_16
+../QA_Systems/QAS_LCD/QAS_LCD_Fonts.cpp:235:50: error: expected primary-expression before 'const'
+  235 | void QAS_LCD_FontMgr::drawStrC(QAT_Vector2 cPos, const char* str) {
+      |                                                  ^~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:171:43: error: 'QAT_Vector2' has not been declared
+  171 |   void imp_drawVLine(QAT_Vector2& cStart, QAT_Vector2& cEnd);
+      |                                           ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD_Fonts.cpp:257:32: error: variable or field 'drawStrR' declared void
+  257 | void QAS_LCD_FontMgr::drawStrR(QAT_Vector2 cPos, const char* str) {
+      |                                ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:172:22: error: 'QAT_Vector2' has not been declared
+  172 |   void imp_drawALine(QAT_Vector2& cStart, QAT_Vector2& cEnd);
+      |                      ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:172:43: error: 'QAT_Vector2' has not been declared
+  172 |   void imp_drawALine(QAT_Vector2& cStart, QAT_Vector2& cEnd);
+      |                                           ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:174:21: error: 'QAT_Vector2' has not been declared
+  174 |   void imp_drawRect(QAT_Vector2& cStart, QAT_Vector2& cEnd);
+      |                     ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:174:42: error: 'QAT_Vector2' has not been declared
+  174 |   void imp_drawRect(QAT_Vector2& cStart, QAT_Vector2& cEnd);
+      |                                          ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD_Fonts.cpp:257:32: error: 'QAT_Vector2' was not declared in this scope; did you mean 'QAT_Vector2_16'?
+  257 | void QAS_LCD_FontMgr::drawStrR(QAT_Vector2 cPos, const char* str) {
+      |                                ^~~~~~~~~~~
+      |                                QAT_Vector2_16
+../QA_Systems/QAS_LCD/QAS_LCD_Fonts.cpp:257:50: error: expected primary-expression before 'const'
+  257 | void QAS_LCD_FontMgr::drawStrR(QAT_Vector2 cPos, const char* str) {
+      |                                                  ^~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:175:25: error: 'QAT_Vector2' has not been declared
+  175 |   void imp_drawRectFill(QAT_Vector2& cStart, QAT_Vector2& cEnd);
+      |                         ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:175:46: error: 'QAT_Vector2' has not been declared
+  175 |   void imp_drawRectFill(QAT_Vector2& cStart, QAT_Vector2& cEnd);
+      |                                              ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD_Fonts.cpp:282:33: error: variable or field 'drawCharP' declared void
+  282 | void QAS_LCD_FontMgr::drawCharP(QAT_Vector2 cPos, char ch) {
+      |                                 ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.cpp: In member function 'void QAS_LCD::imp_setDrawBuffer(QAD_LTDC_LayerIdx)':
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:101:10: error: 'Layer0' was not declared in this scope; did you mean 'eLayer'?
+  101 |    case (Layer0):
+      |          ^~~~~~
+      |          eLayer
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:104:10: error: 'Layer1' was not declared in this scope; did you mean 'eLayer'?
+  104 |    case (Layer1):
+      |          ^~~~~~
+      |          eLayer
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:100:9: warning: enumeration value 'QAD_LTDC_Layer0' not handled in switch [-Wswitch]
+  100 |  switch (eLayer) {
+      |         ^
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:100:9: warning: enumeration value 'QAD_LTDC_Layer1' not handled in switch [-Wswitch]
+../QA_Systems/QAS_LCD/QAS_LCD.cpp: At global scope:
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:133:29: error: variable or field 'imp_drawPixel' declared void
+  133 | void QAS_LCD::imp_drawPixel(QAT_Vector2& cPos) {
+      |                             ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD_Fonts.cpp:282:33: error: 'QAT_Vector2' was not declared in this scope; did you mean 'QAT_Vector2_16'?
+  282 | void QAS_LCD_FontMgr::drawCharP(QAT_Vector2 cPos, char ch) {
+      |                                 ^~~~~~~~~~~
+      |                                 QAT_Vector2_16
+../QA_Systems/QAS_LCD/QAS_LCD_Fonts.cpp:282:51: error: expected primary-expression before 'char'
+  282 | void QAS_LCD_FontMgr::drawCharP(QAT_Vector2 cPos, char ch) {
+      |                                                   ^~~~
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:133:29: error: 'QAT_Vector2' was not declared in this scope; did you mean 'QAT_Vector2_16'?
+  133 | void QAS_LCD::imp_drawPixel(QAT_Vector2& cPos) {
+      |                             ^~~~~~~~~~~
+      |                             QAT_Vector2_16
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:133:42: error: 'cPos' was not declared in this scope
+  133 | void QAS_LCD::imp_drawPixel(QAT_Vector2& cPos) {
+      |                                          ^~~~
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:140:28: error: variable or field 'imp_drawLine' declared void
+  140 | void QAS_LCD::imp_drawLine(QAT_Vector2& cStart, QAT_Vector2& cEnd) {
+      |                            ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:140:28: error: 'QAT_Vector2' was not declared in this scope; did you mean 'QAT_Vector2_16'?
+  140 | void QAS_LCD::imp_drawLine(QAT_Vector2& cStart, QAT_Vector2& cEnd) {
+      |                            ^~~~~~~~~~~
+      |                            QAT_Vector2_16
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:140:41: error: 'cStart' was not declared in this scope
+  140 | void QAS_LCD::imp_drawLine(QAT_Vector2& cStart, QAT_Vector2& cEnd) {
+      |                                         ^~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:140:49: error: 'QAT_Vector2' was not declared in this scope; did you mean 'QAT_Vector2_16'?
+  140 | void QAS_LCD::imp_drawLine(QAT_Vector2& cStart, QAT_Vector2& cEnd) {
+      |                                                 ^~~~~~~~~~~
+      |                                                 QAT_Vector2_16
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:140:62: error: 'cEnd' was not declared in this scope
+  140 | void QAS_LCD::imp_drawLine(QAT_Vector2& cStart, QAT_Vector2& cEnd) {
+      |                                                              ^~~~
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:151:29: error: variable or field 'imp_drawHLine' declared void
+  151 | void QAS_LCD::imp_drawHLine(QAT_Vector2& cStart, QAT_Vector2& cEnd) {
+      |                             ^~~~~~~~~~~
+make: *** [QA_Systems/QAS_LCD/subdir.mk:22: QA_Systems/QAS_LCD/QAS_LCD_Fonts.o] Error 1
+make: *** Waiting for unfinished jobs....
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:151:29: error: 'QAT_Vector2' was not declared in this scope; did you mean 'QAT_Vector2_16'?
+  151 | void QAS_LCD::imp_drawHLine(QAT_Vector2& cStart, QAT_Vector2& cEnd) {
+      |                             ^~~~~~~~~~~
+      |                             QAT_Vector2_16
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:151:42: error: 'cStart' was not declared in this scope
+  151 | void QAS_LCD::imp_drawHLine(QAT_Vector2& cStart, QAT_Vector2& cEnd) {
+      |                                          ^~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:151:50: error: 'QAT_Vector2' was not declared in this scope; did you mean 'QAT_Vector2_16'?
+  151 | void QAS_LCD::imp_drawHLine(QAT_Vector2& cStart, QAT_Vector2& cEnd) {
+      |                                                  ^~~~~~~~~~~
+      |                                                  QAT_Vector2_16
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:151:63: error: 'cEnd' was not declared in this scope
+  151 | void QAS_LCD::imp_drawHLine(QAT_Vector2& cStart, QAT_Vector2& cEnd) {
+      |                                                               ^~~~
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:171:29: error: variable or field 'imp_drawVLine' declared void
+  171 | void QAS_LCD::imp_drawVLine(QAT_Vector2& cStart, QAT_Vector2& cEnd) {
+      |                             ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:171:29: error: 'QAT_Vector2' was not declared in this scope; did you mean 'QAT_Vector2_16'?
+  171 | void QAS_LCD::imp_drawVLine(QAT_Vector2& cStart, QAT_Vector2& cEnd) {
+      |                             ^~~~~~~~~~~
+      |                             QAT_Vector2_16
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:171:42: error: 'cStart' was not declared in this scope
+  171 | void QAS_LCD::imp_drawVLine(QAT_Vector2& cStart, QAT_Vector2& cEnd) {
+      |                                          ^~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:171:50: error: 'QAT_Vector2' was not declared in this scope; did you mean 'QAT_Vector2_16'?
+  171 | void QAS_LCD::imp_drawVLine(QAT_Vector2& cStart, QAT_Vector2& cEnd) {
+      |                                                  ^~~~~~~~~~~
+      |                                                  QAT_Vector2_16
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:171:63: error: 'cEnd' was not declared in this scope
+  171 | void QAS_LCD::imp_drawVLine(QAT_Vector2& cStart, QAT_Vector2& cEnd) {
+      |                                                               ^~~~
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:191:29: error: variable or field 'imp_drawALine' declared void
+  191 | void QAS_LCD::imp_drawALine(QAT_Vector2& cStart, QAT_Vector2& cEnd) {
+      |                             ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:191:29: error: 'QAT_Vector2' was not declared in this scope; did you mean 'QAT_Vector2_16'?
+  191 | void QAS_LCD::imp_drawALine(QAT_Vector2& cStart, QAT_Vector2& cEnd) {
+      |                             ^~~~~~~~~~~
+      |                             QAT_Vector2_16
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:191:42: error: 'cStart' was not declared in this scope
+  191 | void QAS_LCD::imp_drawALine(QAT_Vector2& cStart, QAT_Vector2& cEnd) {
+      |                                          ^~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:191:50: error: 'QAT_Vector2' was not declared in this scope; did you mean 'QAT_Vector2_16'?
+  191 | void QAS_LCD::imp_drawALine(QAT_Vector2& cStart, QAT_Vector2& cEnd) {
+      |                                                  ^~~~~~~~~~~
+      |                                                  QAT_Vector2_16
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:191:63: error: 'cEnd' was not declared in this scope
+  191 | void QAS_LCD::imp_drawALine(QAT_Vector2& cStart, QAT_Vector2& cEnd) {
+      |                                                               ^~~~
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:255:28: error: variable or field 'imp_drawRect' declared void
+  255 | void QAS_LCD::imp_drawRect(QAT_Vector2& cStart, QAT_Vector2& cEnd) {
+      |                            ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:255:28: error: 'QAT_Vector2' was not declared in this scope; did you mean 'QAT_Vector2_16'?
+  255 | void QAS_LCD::imp_drawRect(QAT_Vector2& cStart, QAT_Vector2& cEnd) {
+      |                            ^~~~~~~~~~~
+      |                            QAT_Vector2_16
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:255:41: error: 'cStart' was not declared in this scope
+  255 | void QAS_LCD::imp_drawRect(QAT_Vector2& cStart, QAT_Vector2& cEnd) {
+      |                                         ^~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:255:49: error: 'QAT_Vector2' was not declared in this scope; did you mean 'QAT_Vector2_16'?
+  255 | void QAS_LCD::imp_drawRect(QAT_Vector2& cStart, QAT_Vector2& cEnd) {
+      |                                                 ^~~~~~~~~~~
+      |                                                 QAT_Vector2_16
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:255:62: error: 'cEnd' was not declared in this scope
+  255 | void QAS_LCD::imp_drawRect(QAT_Vector2& cStart, QAT_Vector2& cEnd) {
+      |                                                              ^~~~
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:294:32: error: variable or field 'imp_drawRectFill' declared void
+  294 | void QAS_LCD::imp_drawRectFill(QAT_Vector2& cStart, QAT_Vector2& cEnd) {
+      |                                ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:294:32: error: 'QAT_Vector2' was not declared in this scope; did you mean 'QAT_Vector2_16'?
+  294 | void QAS_LCD::imp_drawRectFill(QAT_Vector2& cStart, QAT_Vector2& cEnd) {
+      |                                ^~~~~~~~~~~
+      |                                QAT_Vector2_16
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:294:45: error: 'cStart' was not declared in this scope
+  294 | void QAS_LCD::imp_drawRectFill(QAT_Vector2& cStart, QAT_Vector2& cEnd) {
+      |                                             ^~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:294:53: error: 'QAT_Vector2' was not declared in this scope; did you mean 'QAT_Vector2_16'?
+  294 | void QAS_LCD::imp_drawRectFill(QAT_Vector2& cStart, QAT_Vector2& cEnd) {
+      |                                                     ^~~~~~~~~~~
+      |                                                     QAT_Vector2_16
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:294:66: error: 'cEnd' was not declared in this scope
+  294 | void QAS_LCD::imp_drawRectFill(QAT_Vector2& cStart, QAT_Vector2& cEnd) {
+      |                                                                  ^~~~
+make: *** [QA_Systems/QAS_LCD/subdir.mk:22: QA_Systems/QAS_LCD/QAS_LCD.o] Error 1
+In file included from ../QA_Systems/QAS_LCD/QAS_LCD.hpp:30,
+                 from ../Core/main.cpp:27:
+../QA_Systems/QAS_LCD/QAS_LCD_Fonts.hpp:198:16: error: 'QAT_Vector2' has not been declared
+  198 |  void drawChar(QAT_Vector2 cPos, char& ch);
+      |                ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD_Fonts.hpp:199:16: error: 'QAT_Vector2' has not been declared
+  199 |  void drawStrL(QAT_Vector2 cPos, const char* str);
+      |                ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD_Fonts.hpp:200:16: error: 'QAT_Vector2' has not been declared
+  200 |  void drawStrC(QAT_Vector2 cPos, const char* str);
+      |                ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD_Fonts.hpp:201:16: error: 'QAT_Vector2' has not been declared
+  201 |  void drawStrR(QAT_Vector2 cPos, const char* str);
+      |                ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD_Fonts.hpp:208:17: error: 'QAT_Vector2' has not been declared
+  208 |  void drawCharP(QAT_Vector2 cPos, char ch);
+      |                 ^~~~~~~~~~~
+In file included from ../Core/main.cpp:27:
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:109:25: error: 'QAT_Vector2' has not been declared
+  109 |   static void drawPixel(QAT_Vector2 cPos) {
+      |                         ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:113:24: error: 'QAT_Vector2' has not been declared
+  113 |   static void drawLine(QAT_Vector2 cStart, QAT_Vector2 cEnd) {
+      |                        ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:113:44: error: 'QAT_Vector2' has not been declared
+  113 |   static void drawLine(QAT_Vector2 cStart, QAT_Vector2 cEnd) {
+      |                                            ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:117:24: error: 'QAT_Vector2' has not been declared
+  117 |   static void drawRect(QAT_Vector2 cStart, QAT_Vector2 cEnd) {
+      |                        ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:117:44: error: 'QAT_Vector2' has not been declared
+  117 |   static void drawRect(QAT_Vector2 cStart, QAT_Vector2 cEnd) {
+      |                                            ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:121:28: error: 'QAT_Vector2' has not been declared
+  121 |   static void drawRectFill(QAT_Vector2 cStart, QAT_Vector2 cEnd) {
+      |                            ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:121:48: error: 'QAT_Vector2' has not been declared
+  121 |   static void drawRectFill(QAT_Vector2 cStart, QAT_Vector2 cEnd) {
+      |                                                ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:136:24: error: 'QAT_Vector2' has not been declared
+  136 |   static void drawChar(QAT_Vector2 cPos, char ch) {
+      |                        ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:140:24: error: 'QAT_Vector2' has not been declared
+  140 |   static void drawStrL(QAT_Vector2 cPos, const char* str) {
+      |                        ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:144:24: error: 'QAT_Vector2' has not been declared
+  144 |   static void drawStrC(QAT_Vector2 cPos, const char* str) {
+      |                        ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:148:24: error: 'QAT_Vector2' has not been declared
+  148 |   static void drawStrR(QAT_Vector2 cPos, const char* str) {
+      |                        ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:168:22: error: 'QAT_Vector2' has not been declared
+  168 |   void imp_drawPixel(QAT_Vector2& cPos);
+      |                      ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:169:21: error: 'QAT_Vector2' has not been declared
+  169 |   void imp_drawLine(QAT_Vector2& cStart, QAT_Vector2& cEnd);
+      |                     ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:169:42: error: 'QAT_Vector2' has not been declared
+  169 |   void imp_drawLine(QAT_Vector2& cStart, QAT_Vector2& cEnd);
+      |                                          ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:170:22: error: 'QAT_Vector2' has not been declared
+  170 |   void imp_drawHLine(QAT_Vector2& cStart, QAT_Vector2& cEnd);
+      |                      ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:170:43: error: 'QAT_Vector2' has not been declared
+  170 |   void imp_drawHLine(QAT_Vector2& cStart, QAT_Vector2& cEnd);
+      |                                           ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:171:22: error: 'QAT_Vector2' has not been declared
+  171 |   void imp_drawVLine(QAT_Vector2& cStart, QAT_Vector2& cEnd);
+      |                      ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:171:43: error: 'QAT_Vector2' has not been declared
+  171 |   void imp_drawVLine(QAT_Vector2& cStart, QAT_Vector2& cEnd);
+      |                                           ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:172:22: error: 'QAT_Vector2' has not been declared
+  172 |   void imp_drawALine(QAT_Vector2& cStart, QAT_Vector2& cEnd);
+      |                      ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:172:43: error: 'QAT_Vector2' has not been declared
+  172 |   void imp_drawALine(QAT_Vector2& cStart, QAT_Vector2& cEnd);
+      |                                           ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:174:21: error: 'QAT_Vector2' has not been declared
+  174 |   void imp_drawRect(QAT_Vector2& cStart, QAT_Vector2& cEnd);
+      |                     ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:174:42: error: 'QAT_Vector2' has not been declared
+  174 |   void imp_drawRect(QAT_Vector2& cStart, QAT_Vector2& cEnd);
+      |                                          ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:175:25: error: 'QAT_Vector2' has not been declared
+  175 |   void imp_drawRectFill(QAT_Vector2& cStart, QAT_Vector2& cEnd);
+      |                         ^~~~~~~~~~~
+../QA_Systems/QAS_LCD/QAS_LCD.hpp:175:46: error: 'QAT_Vector2' has not been declared
+  175 |   void imp_drawRectFill(QAT_Vector2& cStart, QAT_Vector2& cEnd);
+      |                                              ^~~~~~~~~~~
+../Core/main.cpp: In function 'int main()':
+../Core/main.cpp:164:26: error: 'Layer0' was not declared in this scope
+  164 |   QAS_LCD::setDrawBuffer(Layer0);
+      |                          ^~~~~~
+../Core/main.cpp:170:21: error: 'QAT_Vector2' was not declared in this scope; did you mean 'QAT_Vector2_16'?
+  170 |   QAS_LCD::drawLine(QAT_Vector2(0, 240), QAT_Vector2(799, 240));  //Causes error
+      |                     ^~~~~~~~~~~
+      |                     QAT_Vector2_16
+../Core/main.cpp:197:26: error: 'Layer1' was not declared in this scope
+  197 |   QAS_LCD::setDrawBuffer(Layer1);
+      |                          ^~~~~~
+make: *** [Core/subdir.mk:38: Core/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+13:25:58 **** Incremental Build of configuration Debug for project STM32 F7D ****
+make -j8 all 
+arm-none-eabi-g++ "../QA_Systems/QAS_LCD/QAS_LCD.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F769xx -c -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Drivers/Componenets/Common -I../Drivers/Components/otm8009a -I../Core -I../QA_Drivers -I../QA_Drivers/QAD_PeripheralManagers -I../QA_Tools -I../QA_Systems -I../QA_Systems/QAS_Serial -I../QA_Systems/QAS_LCD -I../QA_Systems/QAS_LCD/QAS_LCD_Fonts -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"QA_Systems/QAS_LCD/QAS_LCD.d" -MT"QA_Systems/QAS_LCD/QAS_LCD.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "QA_Systems/QAS_LCD/QAS_LCD.o"
+arm-none-eabi-g++ "../QA_Systems/QAS_LCD/QAS_LCD_Fonts.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F769xx -c -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Drivers/Componenets/Common -I../Drivers/Components/otm8009a -I../Core -I../QA_Drivers -I../QA_Drivers/QAD_PeripheralManagers -I../QA_Tools -I../QA_Systems -I../QA_Systems/QAS_Serial -I../QA_Systems/QAS_LCD -I../QA_Systems/QAS_LCD/QAS_LCD_Fonts -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"QA_Systems/QAS_LCD/QAS_LCD_Fonts.d" -MT"QA_Systems/QAS_LCD/QAS_LCD_Fonts.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "QA_Systems/QAS_LCD/QAS_LCD_Fonts.o"
+arm-none-eabi-g++ "../Core/main.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F769xx -c -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Drivers/Componenets/Common -I../Drivers/Components/otm8009a -I../Core -I../QA_Drivers -I../QA_Drivers/QAD_PeripheralManagers -I../QA_Tools -I../QA_Systems -I../QA_Systems/QAS_Serial -I../QA_Systems/QAS_LCD -I../QA_Systems/QAS_LCD/QAS_LCD_Fonts -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/main.d" -MT"Core/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/main.o"
+../QA_Systems/QAS_LCD/QAS_LCD.cpp: In member function 'void QAS_LCD::imp_setDrawBuffer(QAD_LTDC_LayerIdx)':
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:101:10: error: 'Layer0' was not declared in this scope; did you mean 'eLayer'?
+  101 |    case (Layer0):
+      |          ^~~~~~
+      |          eLayer
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:104:10: error: 'Layer1' was not declared in this scope; did you mean 'eLayer'?
+  104 |    case (Layer1):
+      |          ^~~~~~
+      |          eLayer
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:100:9: warning: enumeration value 'QAD_LTDC_Layer0' not handled in switch [-Wswitch]
+  100 |  switch (eLayer) {
+      |         ^
+../QA_Systems/QAS_LCD/QAS_LCD.cpp:100:9: warning: enumeration value 'QAD_LTDC_Layer1' not handled in switch [-Wswitch]
+make: *** [QA_Systems/QAS_LCD/subdir.mk:22: QA_Systems/QAS_LCD/QAS_LCD.o] Error 1
+make: *** Waiting for unfinished jobs....
+../Core/main.cpp: In function 'int main()':
+../Core/main.cpp:164:26: error: 'Layer0' was not declared in this scope
+  164 |   QAS_LCD::setDrawBuffer(Layer0);
+      |                          ^~~~~~
+../Core/main.cpp:170:21: error: 'QAT_Vector2' was not declared in this scope; did you mean 'QAT_Vector2_16'?
+  170 |   QAS_LCD::drawLine(QAT_Vector2(0, 240), QAT_Vector2(799, 240));  //Causes error
+      |                     ^~~~~~~~~~~
+      |                     QAT_Vector2_16
+../Core/main.cpp:197:26: error: 'Layer1' was not declared in this scope
+  197 |   QAS_LCD::setDrawBuffer(Layer1);
+      |                          ^~~~~~
+make: *** [Core/subdir.mk:38: Core/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+13:26:22 **** Incremental Build of configuration Debug for project STM32 F7D ****
+make -j8 all 
+arm-none-eabi-g++ "../QA_Systems/QAS_LCD/QAS_LCD.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F769xx -c -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Drivers/Componenets/Common -I../Drivers/Components/otm8009a -I../Core -I../QA_Drivers -I../QA_Drivers/QAD_PeripheralManagers -I../QA_Tools -I../QA_Systems -I../QA_Systems/QAS_Serial -I../QA_Systems/QAS_LCD -I../QA_Systems/QAS_LCD/QAS_LCD_Fonts -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"QA_Systems/QAS_LCD/QAS_LCD.d" -MT"QA_Systems/QAS_LCD/QAS_LCD.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "QA_Systems/QAS_LCD/QAS_LCD.o"
+arm-none-eabi-g++ "../Core/main.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F769xx -c -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Drivers/Componenets/Common -I../Drivers/Components/otm8009a -I../Core -I../QA_Drivers -I../QA_Drivers/QAD_PeripheralManagers -I../QA_Tools -I../QA_Systems -I../QA_Systems/QAS_Serial -I../QA_Systems/QAS_LCD -I../QA_Systems/QAS_LCD/QAS_LCD_Fonts -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/main.d" -MT"Core/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/main.o"
+../Core/main.cpp: In function 'int main()':
+../Core/main.cpp:164:26: error: 'Layer0' was not declared in this scope
+  164 |   QAS_LCD::setDrawBuffer(Layer0);
+      |                          ^~~~~~
+../Core/main.cpp:170:21: error: 'QAT_Vector2' was not declared in this scope; did you mean 'QAT_Vector2_16'?
+  170 |   QAS_LCD::drawLine(QAT_Vector2(0, 240), QAT_Vector2(799, 240));  //Causes error
+      |                     ^~~~~~~~~~~
+      |                     QAT_Vector2_16
+../Core/main.cpp:197:26: error: 'Layer1' was not declared in this scope
+  197 |   QAS_LCD::setDrawBuffer(Layer1);
+      |                          ^~~~~~
+make: *** [Core/subdir.mk:38: Core/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+13:27:18 **** Incremental Build of configuration Debug for project STM32 F7D ****
+make -j8 all 
+arm-none-eabi-g++ "../Core/main.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F769xx -c -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Drivers/Componenets/Common -I../Drivers/Components/otm8009a -I../Core -I../QA_Drivers -I../QA_Drivers/QAD_PeripheralManagers -I../QA_Tools -I../QA_Systems -I../QA_Systems/QAS_Serial -I../QA_Systems/QAS_LCD -I../QA_Systems/QAS_LCD/QAS_LCD_Fonts -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/main.d" -MT"Core/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/main.o"
+arm-none-eabi-g++ -o "STM32 F7D.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\binar\Desktop\Quartz Arc\QA Codebase Repos\QA_STM32F769IDISCO\QuartzArc_STM32F769I_Discovery\STM32 F7D\STM32F769NIHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32 F7D.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: STM32 F7D.elf
+ 
+arm-none-eabi-size   STM32\ F7D.elf 
+arm-none-eabi-objdump -h -S  STM32\ F7D.elf  > "STM32 F7D.list"
+arm-none-eabi-objcopy  -O binary  STM32\ F7D.elf  "STM32 F7D.bin"
+   text	   data	    bss	    dec	    hex	filename
+  44460	    128	   2352	  46940	   b75c	STM32 F7D.elf
+Finished building: default.size.stdout
+ 
+Finished building: STM32 F7D.bin
+ 
+Finished building: STM32 F7D.list
+ 
+16:07:04 **** Incremental Build of configuration Debug for project STM32 F7D ****
+make -j8 all 
+arm-none-eabi-size   STM32\ F7D.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44460	    128	   2352	  46940	   b75c	STM32 F7D.elf
+Finished building: default.size.stdout
+ 
+16:26:55 **** Incremental Build of configuration Debug for project STM32 F7D ****
+make -j8 all 
+arm-none-eabi-g++ "../QA_Systems/QAS_LCD/QAS_LCD.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F769xx -c -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Drivers/Componenets/Common -I../Drivers/Components/otm8009a -I../Core -I../QA_Drivers -I../QA_Drivers/QAD_PeripheralManagers -I../QA_Tools -I../QA_Systems -I../QA_Systems/QAS_Serial -I../QA_Systems/QAS_LCD -I../QA_Systems/QAS_LCD/QAS_LCD_Fonts -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"QA_Systems/QAS_LCD/QAS_LCD.d" -MT"QA_Systems/QAS_LCD/QAS_LCD.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "QA_Systems/QAS_LCD/QAS_LCD.o"
+arm-none-eabi-g++ "../QA_Systems/QAS_LCD/QAS_LCD_Fonts.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F769xx -c -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Drivers/Componenets/Common -I../Drivers/Components/otm8009a -I../Core -I../QA_Drivers -I../QA_Drivers/QAD_PeripheralManagers -I../QA_Tools -I../QA_Systems -I../QA_Systems/QAS_Serial -I../QA_Systems/QAS_LCD -I../QA_Systems/QAS_LCD/QAS_LCD_Fonts -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"QA_Systems/QAS_LCD/QAS_LCD_Fonts.d" -MT"QA_Systems/QAS_LCD/QAS_LCD_Fonts.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "QA_Systems/QAS_LCD/QAS_LCD_Fonts.o"
+arm-none-eabi-g++ "../QA_Drivers/QAD_LTDC.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F769xx -c -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Drivers/Componenets/Common -I../Drivers/Components/otm8009a -I../Core -I../QA_Drivers -I../QA_Drivers/QAD_PeripheralManagers -I../QA_Tools -I../QA_Systems -I../QA_Systems/QAS_Serial -I../QA_Systems/QAS_LCD -I../QA_Systems/QAS_LCD/QAS_LCD_Fonts -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"QA_Drivers/QAD_LTDC.d" -MT"QA_Drivers/QAD_LTDC.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "QA_Drivers/QAD_LTDC.o"
+arm-none-eabi-g++ "../Core/main.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F769xx -c -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Drivers/Componenets/Common -I../Drivers/Components/otm8009a -I../Core -I../QA_Drivers -I../QA_Drivers/QAD_PeripheralManagers -I../QA_Tools -I../QA_Systems -I../QA_Systems/QAS_Serial -I../QA_Systems/QAS_LCD -I../QA_Systems/QAS_LCD/QAS_LCD_Fonts -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/main.d" -MT"Core/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/main.o"
+arm-none-eabi-g++ -o "STM32 F7D.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\binar\Desktop\Quartz Arc\QA Codebase Repos\QA_STM32F769IDISCO\QuartzArc_STM32F769I_Discovery\STM32 F7D\STM32F769NIHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32 F7D.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: STM32 F7D.elf
+ 
+arm-none-eabi-size   STM32\ F7D.elf 
+arm-none-eabi-objdump -h -S  STM32\ F7D.elf  > "STM32 F7D.list"
+arm-none-eabi-objcopy  -O binary  STM32\ F7D.elf  "STM32 F7D.bin"
+   text	   data	    bss	    dec	    hex	filename
+  44460	    128	   2352	  46940	   b75c	STM32 F7D.elf
+Finished building: default.size.stdout
+ 
+Finished building: STM32 F7D.bin
+ 
+Finished building: STM32 F7D.list
+ 
+17:05:41 **** Incremental Build of configuration Debug for project STM32 F7D ****
+make -j8 all 
+arm-none-eabi-g++ "../QA_Systems/QAS_LCD/QAS_LCD.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F769xx -c -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Drivers/Componenets/Common -I../Drivers/Components/otm8009a -I../Core -I../QA_Drivers -I../QA_Drivers/QAD_PeripheralManagers -I../QA_Tools -I../QA_Systems -I../QA_Systems/QAS_Serial -I../QA_Systems/QAS_LCD -I../QA_Systems/QAS_LCD/QAS_LCD_Fonts -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"QA_Systems/QAS_LCD/QAS_LCD.d" -MT"QA_Systems/QAS_LCD/QAS_LCD.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "QA_Systems/QAS_LCD/QAS_LCD.o"
+arm-none-eabi-g++ "../Core/main.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F769xx -c -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Drivers/Componenets/Common -I../Drivers/Components/otm8009a -I../Core -I../QA_Drivers -I../QA_Drivers/QAD_PeripheralManagers -I../QA_Tools -I../QA_Systems -I../QA_Systems/QAS_Serial -I../QA_Systems/QAS_LCD -I../QA_Systems/QAS_LCD/QAS_LCD_Fonts -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/main.d" -MT"Core/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/main.o"
+arm-none-eabi-g++ -o "STM32 F7D.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\binar\Desktop\Quartz Arc\QA Codebase Repos\QA_STM32F769IDISCO\QuartzArc_STM32F769I_Discovery\STM32 F7D\STM32F769NIHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32 F7D.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: STM32 F7D.elf
+ 
+arm-none-eabi-size   STM32\ F7D.elf 
+arm-none-eabi-objdump -h -S  STM32\ F7D.elf  > "STM32 F7D.list"
+arm-none-eabi-objcopy  -O binary  STM32\ F7D.elf  "STM32 F7D.bin"
+   text	   data	    bss	    dec	    hex	filename
+  44460	    128	   2352	  46940	   b75c	STM32 F7D.elf
+Finished building: default.size.stdout
+ 
+Finished building: STM32 F7D.bin
+ 
+Finished building: STM32 F7D.list
+ 
+17:05:48 **** Incremental Build of configuration Debug for project STM32 F7D ****
+make -j8 all 
+arm-none-eabi-size   STM32\ F7D.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44460	    128	   2352	  46940	   b75c	STM32 F7D.elf
+Finished building: default.size.stdout
+ 

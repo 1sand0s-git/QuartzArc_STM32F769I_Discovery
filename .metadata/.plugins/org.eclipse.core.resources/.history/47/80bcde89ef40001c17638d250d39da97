@@ -1,0 +1,242 @@
+/* ----------------------------------------------------------------------- */
+/*                                                                         */
+/*   Quartz Arc                                                            */
+/*                                                                         */
+/*   STM32 F769I Discovery                                                 */
+/*                                                                         */
+/*   System: Driver                                                        */
+/*   Role: LTDC Driver                                                     */
+/*   Filename: QAD_LTDC.hpp                                                */
+/*   Date: 3rd October 2021                                                */
+/*   Created By: Benjamin Rosser                                           */
+/*                                                                         */
+/*   This code is covered by Creative Commons CC-BY-NC-SA license          */
+/*   (C) Copyright 2021 Benjamin Rosser                                    */
+/*                                                                         */
+/* ----------------------------------------------------------------------- */
+
+//Prevent Recursive Inclusion
+#ifndef __QAD_LTDC_HPP_
+#define __QAD_LTDC_HPP_
+
+
+//Includes
+#include "setup.hpp"
+
+#include "otm8009a.h"
+
+#include "QAT_Pixel.hpp"
+
+
+	//------------------------------------------
+	//------------------------------------------
+	//------------------------------------------
+
+//--------------------------------------
+//QAD_LTDC Defines for LCD panel details
+#define QAD_LTDC_WIDTH       800                                                //Width in pixels of LCD panel
+#define QAD_LTDC_HEIGHT      480                                                //Height in pixels of LCD panel
+#define QAD_LTDC_PIXELCOUNT  (QAD_LTDC_WIDTH * QAD_LTDC_HEIGHT)                 //Total number of pixels in LCD panel
+
+#define QAD_LTDC_BUFFERSIZE  (QAD_LTDC_PIXELCOUNT * sizeof(QAT_Pixel_ARGB4444)) //Size of a single display buffer at 16bits per pixel
+
+
+	//------------------------------------------
+	//------------------------------------------
+	//------------------------------------------
+
+  //-----------------------
+  //Frame Buffer Structures
+
+//-----------------
+//QAD_LTDC_LayerIdx
+//
+//Used to select which LTDC layer is being accessed
+enum QAD_LTDC_LayerIdx : uint8_t {
+	QAD_LTDC_Layer0 = 0, //LTDC Layer 0
+	QAD_LTDC_Layer1      //LTDC Layer 1
+};
+
+
+//---------------
+//QAD_LTDC_BufferIdx
+//
+//As both Layer 0 and Layer 1 are double-buffered, this enum is used to select which buffer is being accessed
+enum QAD_LTDC_BufferIdx : uint8_t {
+	QAD_LTDC_Buffer0 = 0,  //Buffer 0
+	QAD_LTDC_Buffer1       //Buffer 1
+};
+
+
+//---------------
+//QAD_LTDC_Buffer
+//
+//Structure used to represent a single 16bit per pixel buffer for the 800x480 LCD panel
+typedef struct {
+	QAT_Pixel_ARGB4444 pixel[QAD_LTDC_PIXELCOUNT]; //Array of QAT_Pixel_ARGB4444 classes to represent 16bit per pixel data within buffer
+} QAD_LTDC_Buffer;
+
+
+//---------------------
+//QAD_LTDC_DoubleBuffer
+//
+//Structure used to represent double-buffer for a single LTDC layer
+typedef struct {
+	QAD_LTDC_Buffer buffers[2];  //Array of two QAD_LTDC_Buffer structures
+} QAD_LTDC_DoubleBuffer;
+
+
+
+	//------------------------------------------
+	//------------------------------------------
+	//------------------------------------------
+
+//--------
+//QAD_LTDC
+//
+//Singleton class
+//Driver class for LCD-TFT Display Controller (LTDC) and DSI host (DSI) peripherals, which is used to provide an interface
+//to the MB1166 WVGA LCD panel and OTM8009A display controller.
+//This is seteup as a singleton class due to only one LTDC peripheral being available on the STM32F769I Discovery
+//board, meaning that potential conflicts are prevented by not allowing more than one instance of the class to exist.
+class QAD_LTDC {
+private:
+
+	QA_InitState m_eInitState;                 //Stores whether the driver is currently initialized. Member of QA_InitState enum defined in setup.hpp
+
+	const uint32_t m_uLCDClockRate    = 27429; //LCD Interface clock rate
+	const uint32_t m_uLCDLaneByteClk  = 62500; //LCD Lane byte clock rate in kHz
+	const uint32_t m_uLCDClkDivisor   = 15625; //LCD clock divisor
+
+	DSI_HandleTypeDef  m_sDSIHandle;           //Handle used by HAL functions to access the DSI peripheral
+	DSI_VidCfgTypeDef  m_sDSICfgHandle;        //Handle used by HAL functions to configure settings for DSI peripheral
+	LTDC_HandleTypeDef m_sLTDCHandle;          //Handle used by HAL functions to access the LTDC peripheral
+
+	void*              m_pLayer0Ptr;           //Pointer to double buffer for LTDC layer 0
+	void*              m_pLayer1Ptr;           //Pointer to double buffer for LTDC layer 1
+
+  QAD_LTDC_BufferIdx m_eLayer0Back;          //Index of current Layer 0 back buffer (buffer to be rendered to)
+  QAD_LTDC_BufferIdx m_eLayer0Front;         //Index to current Layer 0 front buffer (buffer currently being displayed)
+  QAD_LTDC_BufferIdx m_eLayer1Back;          //Index of current Layer 1 back buffer (buffer to be rendered to)
+  QAD_LTDC_BufferIdx m_eLayer1Front;         //Index of current Layer 1 front buffer (buffer currently being displayed)
+
+
+  //------------
+  //Constructors
+
+  //As this is a private method in a singleton class, this method will be called the first time the class's get() method is called
+	QAD_LTDC() :
+	  m_eInitState(QA_NotInitialized) {}
+
+public:
+
+	QAD_LTDC(const QAD_LTDC& other) = delete;
+	QAD_LTDC& operator=(const QAD_LTDC& other) = delete;
+
+	static QAD_LTDC& get(void) {
+		static QAD_LTDC instance;
+		return instance;
+	}
+
+
+	  //----------------------
+	  //Initialization Methods
+
+	static QA_Result init(void) {
+		return get().imp_init();
+	}
+
+	static void deinit(void) {
+		get().imp_deinit();
+	}
+
+	static void dsi_io_writecmd(uint32_t uNumParams, uint8_t* pParams) {
+		get().imp_dsi_io_writecmd(uNumParams, pParams);
+	}
+
+	  //---------------
+	  //Control Methods
+
+	static void lcdOn(void) {
+		get().imp_lcdOn();
+	}
+
+	static void lcdOff(void) {
+		get().imp_lcdOff();
+	}
+
+	static void setBrightness(uint8_t uBrightness) {
+		get().imp_setBrightness(uBrightness);
+	}
+
+    //---------------------
+	  //Layer Control Methods
+
+	static void flipLayer0Buffers(void) {
+		get().imp_flipLayer0Buffers();
+	}
+
+	static void flipLayer1Buffers(void) {
+		get().imp_flipLayer1Buffers();
+	}
+
+	  //------------------
+	  //Layer Data Methods
+
+	static void* getLayer0BackBufferPtr(void) {
+		return get().imp_getLayer0BackBufferPtr();
+	}
+
+	static QAD_LTDC_Buffer* getLayer0BackBuffer(void) {
+		return get().imp_getLayer0BackBuffer();
+	}
+
+	static void* getLayer1BackBufferPtr(void) {
+		return get().imp_getLayer1BackBufferPtr();
+	}
+
+	static QAD_LTDC_Buffer* getLayer1BackBuffer(void) {
+		return get().imp_getLayer1BackBuffer();
+	}
+
+
+private:
+
+	//Initialization Methods
+	QA_Result imp_init(void);
+	void imp_deinit(void);
+
+	//DSI Command Methods
+	void imp_dsi_io_writecmd(uint32_t uNumParams, uint8_t* pParams);
+
+	//Control Methods
+	void imp_lcdOn(void);
+	void imp_lcdOff(void);
+	void imp_setBrightness(uint8_t uBrightness);
+
+	//Layer Control Methods
+	void imp_flipLayer0Buffers(void);
+	void imp_flipLayer1Buffers(void);
+
+	//Layer Data Methods
+	void* imp_getLayer0BackBufferPtr(void);
+	QAD_LTDC_Buffer* imp_getLayer0BackBuffer(void);
+	void* imp_getLayer1BackBufferPtr(void);
+	QAD_LTDC_Buffer* imp_getLayer1BackBuffer(void);
+
+};
+
+
+
+//DSI Command Method
+void DSI_IO_WriteCmd(uint32_t NbrParam, uint8_t* pParams);
+
+
+//Prevent Recursive Inclusion
+#endif /* __QAD_LTDC_HPP */
+
+
+
+
+
+
