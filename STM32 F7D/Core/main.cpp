@@ -67,7 +67,6 @@ int main(void) {
 
 	//----------------------------------
 	//----------------------------------
-	//----------------------------------
   //System Initialization
 
 	//Calls the SystemInitialize method located within boot.hpp, which initializes the
@@ -193,7 +192,6 @@ int main(void) {
   QAS_LCD::flipLayer1();
 
 
-	//----------------------------------
 	//----------------------------------
 	//----------------------------------
   //Processing Loop
