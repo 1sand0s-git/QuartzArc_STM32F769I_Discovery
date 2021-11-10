@@ -158,45 +158,36 @@ int main(void) {
   UART_STLink->txStringCR("LCD: Initialized");
 
   //Test rendering methods to confirm LCD and rendering subsystem are working correctly
-  //QAS_LCD::flipLayer0();
-  //QAS_LCD::flipLayer1();
 
   QAS_LCD::setDrawBuffer(QAD_LTDC_Layer0);
   QAS_LCD::setDrawColor(0xFFFF);
   QAS_LCD::clearBuffer();
 
   //Shapes
-  QAS_LCD::setDrawColor(0xF000);
-  QAS_LCD::drawLine(QAT_Vector2_16(0, 240), QAT_Vector2_16(799, 240));  //Causes error
-  QAS_LCD::drawLine(QAT_Vector2_16(10, 240), QAT_Vector2_16(789, 240));  //Causes error
-  QAS_LCD::drawLine(QAT_Vector2_16(400, 0), QAT_Vector2_16(400, 479));    //Causes error
-  QAS_LCD::drawLine(QAT_Vector2_16(0, 0), QAT_Vector2_16(799, 479));        //Causes error
+  QAS_LCD::setDrawColor(0xF003);
+  QAS_LCD::drawRectFill(QAT_Vector2_16(40, 40), QAT_Vector2_16(760, 440));
 
-  QAS_LCD::drawRect(QAT_Vector2_16(200, 120), QAT_Vector2_16(600, 360));      //Doesn't cause errors
-
-  QAS_LCD::setDrawColor(0xF00F);
-  QAS_LCD::drawRectFill(QAT_Vector2_16(300, 180), QAT_Vector2_16(500, 300));  //Causes error
-
-  //Fonts
-  QAS_LCD::setDrawColor(0xF000);
-  //QAS_LCD::setFontByName("SegoeUI20ptSB");
-  QAS_LCD::setFontByIndex(0);
-  QAS_LCD::drawStrC(QAT_Vector2_16(400, 100), "Hello World!");
-
-  QAS_LCD::setDrawColor(0xF077);
-  //QAS_LCD::setFontByName("SegoeUI20pt");
-  QAS_LCD::setFontByIndex(1);
-  QAS_LCD::drawStrC(QAT_Vector2_16(400, 150), "Welcome to");
-
-  QAS_LCD::setDrawColor(0xF337);
-  //QAS_LCD::setFontByName("SegoeUI20pt");
-  QAS_LCD::setFontByIndex(0);
-  QAS_LCD::drawStrC(QAT_Vector2_16(400, 200), "ABCDefghIJKLmnopQRSTuvwxYZ!@#$%^");
+  QAS_LCD::setDrawColor(0xFFFF);
+  QAS_LCD::drawRect(QAT_Vector2_16(50, 50), QAT_Vector2_16(750, 430));
 
   QAS_LCD::setDrawBuffer(QAD_LTDC_Layer1);
   QAS_LCD::setDrawColor(0x0000);
   QAS_LCD::clearBuffer();
 
+  QAS_LCD::setDrawColor(0xFBFB);
+  QAS_LCD::setFontByName("SegoeUI12pt");
+  //QAS_LCD::setFontByIndex(0);
+  QAS_LCD::drawStrC(QAT_Vector2_16(400, 150), "Hello World!");
+
+  QAS_LCD::setDrawColor(0xFBBF);
+  //QAS_LCD::setFontByName("SegoeUI20ptSB");
+  QAS_LCD::setFontByIndex(1);
+  QAS_LCD::drawStrC(QAT_Vector2_16(400, 250), "Welcome to 1s and 0s");
+
+  /*QAS_LCD::setDrawColor(0xFFBB);
+  //QAS_LCD::setFontByName("TestFont");
+  QAS_LCD::setFontByIndex(2);
+  QAS_LCD::drawStrC(QAT_Vector2_16(400, 350), "Test Font");*/
 
   QAS_LCD::flipLayer0();
   QAS_LCD::flipLayer1();

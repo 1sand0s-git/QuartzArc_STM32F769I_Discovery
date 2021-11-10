@@ -12,24 +12,24 @@ QAT_Vector.hpp:68:3:QAT_Vector2_16::QAT_Vector2_16(const QAT_Vector2_16&)	16	sta
 stl_vector.h:125:14:std::_Vector_base<QAS_LCD_Font*, std::allocator<QAS_LCD_Font*> >::_Vector_impl::~_Vector_impl()	16	static
 stl_vector.h:285:7:std::_Vector_base<_Tp, _Alloc>::_Vector_base() [with _Tp = QAS_LCD_Font*; _Alloc = std::allocator<QAS_LCD_Font*>]	16	static
 stl_vector.h:484:7:std::vector<_Tp, _Alloc>::vector() [with _Tp = QAS_LCD_Font*; _Alloc = std::allocator<QAS_LCD_Font*>]	16	static
-QAS_LCD_Fonts.hpp:148:2:QAS_LCD_FontMgr::QAS_LCD_FontMgr()	16	static
-QAS_LCD_Fonts.hpp:156:2:QAS_LCD_FontMgr::~QAS_LCD_FontMgr()	32	static
-QAS_LCD.hpp:75:2:QAS_LCD::QAS_LCD()	16	static
-QAS_LCD.hpp:58:7:QAS_LCD::~QAS_LCD()	16	static
-QAS_LCD.hpp:93:19:void __tcf_0()	8	static
-QAS_LCD.hpp:92:19:static QAS_LCD& QAS_LCD::get()	8	static
-QAS_LCD.hpp:103:20:static QA_Result QAS_LCD::init()	8	static
-QAS_LCD.hpp:118:15:static void QAS_LCD::flipLayer0()	8	static
-QAS_LCD.hpp:124:15:static void QAS_LCD::flipLayer1()	8	static
-QAS_LCD.hpp:130:15:static void QAS_LCD::setDrawBuffer(QAD_LTDC_LayerIdx)	16	static
-QAS_LCD.hpp:136:15:static void QAS_LCD::setDrawColor(uint16_t)	16	static
-QAS_LCD.hpp:151:15:static void QAS_LCD::clearBuffer()	8	static
-QAS_LCD.hpp:166:15:static void QAS_LCD::drawLine(QAT_Vector2_16, QAT_Vector2_16)	16	static
-QAS_LCD.hpp:173:15:static void QAS_LCD::drawRect(QAT_Vector2_16, QAT_Vector2_16)	16	static
-QAS_LCD.hpp:180:15:static void QAS_LCD::drawRectFill(QAT_Vector2_16, QAT_Vector2_16)	16	static
-QAS_LCD.hpp:197:15:static void QAS_LCD::setFontByIndex(uint8_t)	16	static
-QAS_LCD.hpp:221:15:static void QAS_LCD::drawStrC(QAT_Vector2_16, const char*)	32	static
-main.cpp:66:5:int main()	128	static
+QAS_LCD_Fonts.hpp:201:2:QAS_LCD_FontMgr::QAS_LCD_FontMgr()	16	static
+QAS_LCD_Fonts.hpp:211:2:QAS_LCD_FontMgr::~QAS_LCD_FontMgr()	32	static
+QAS_LCD.hpp:73:2:QAS_LCD::QAS_LCD()	16	static
+QAS_LCD.hpp:56:7:QAS_LCD::~QAS_LCD()	16	static
+QAS_LCD.hpp:91:19:void __tcf_0()	8	static
+QAS_LCD.hpp:90:19:static QAS_LCD& QAS_LCD::get()	8	static
+QAS_LCD.hpp:101:20:static QA_Result QAS_LCD::init()	8	static
+QAS_LCD.hpp:116:15:static void QAS_LCD::flipLayer0()	8	static
+QAS_LCD.hpp:122:15:static void QAS_LCD::flipLayer1()	8	static
+QAS_LCD.hpp:128:15:static void QAS_LCD::setDrawBuffer(QAD_LTDC_LayerIdx)	16	static
+QAS_LCD.hpp:134:15:static void QAS_LCD::setDrawColor(uint16_t)	16	static
+QAS_LCD.hpp:149:15:static void QAS_LCD::clearBuffer()	8	static
+QAS_LCD.hpp:171:15:static void QAS_LCD::drawRect(QAT_Vector2_16, QAT_Vector2_16)	16	static
+QAS_LCD.hpp:178:15:static void QAS_LCD::drawRectFill(QAT_Vector2_16, QAT_Vector2_16)	16	static
+QAS_LCD.hpp:189:15:static void QAS_LCD::setFontByName(const char*)	16	static
+QAS_LCD.hpp:195:15:static void QAS_LCD::setFontByIndex(uint8_t)	16	static
+QAS_LCD.hpp:219:15:static void QAS_LCD::drawStrC(QAT_Vector2_16, const char*)	32	static
+main.cpp:66:5:int main()	96	static
 unique_ptr.h:862:5:typename std::_MakeUniq<_Tp>::__array std::make_unique(std::size_t) [with _Tp = unsigned char []]	24	static
 unique_ptr.h:856:5:) [with _Tp = QAT_FIFOBuffer; _Args = {short unsigned int&}]	24	static
 unique_ptr.h:856:5:) [with _Tp = QAD_UART; _Args = {QAD_UART_InitStruct&}]	24	static

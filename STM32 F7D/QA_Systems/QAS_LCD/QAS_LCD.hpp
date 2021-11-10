@@ -29,8 +29,6 @@
 
   //Font System Includes
 #include "QAS_LCD_Fonts.hpp"
-#include "QAS_LCD_Fonts_SegoeUI12pt.hpp"
-#include "QAS_LCD_Fonts_SegoeUI20ptSB.hpp"
 
 
   //------------------------------------------

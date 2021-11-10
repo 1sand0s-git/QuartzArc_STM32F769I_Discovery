@@ -52,7 +52,8 @@ QA_Systems/QAS_LCD/QAS_LCD.o: ../QA_Systems/QAS_LCD/QAS_LCD.cpp \
  ../QA_Systems/QAS_LCD/QAS_LCD_Fonts.hpp \
  ../QA_Systems/QAS_LCD/QAS_LCD_Fonts/QAS_LCD_Fonts_SegoeUI12pt.hpp \
  ../QA_Systems/QAS_LCD/QAS_LCD_Fonts.hpp \
- ../QA_Systems/QAS_LCD/QAS_LCD_Fonts/QAS_LCD_Fonts_SegoeUI20ptSB.hpp
+ ../QA_Systems/QAS_LCD/QAS_LCD_Fonts/QAS_LCD_Fonts_SegoeUI20ptSB.hpp \
+ ../QA_Systems/QAS_LCD/QAS_LCD_Fonts/QAS_LCD_Fonts_ShowcardGothic18pt.hpp
 
 ../QA_Systems/QAS_LCD/QAS_LCD.hpp:
 
@@ -167,3 +168,5 @@ QA_Systems/QAS_LCD/QAS_LCD.o: ../QA_Systems/QAS_LCD/QAS_LCD.cpp \
 ../QA_Systems/QAS_LCD/QAS_LCD_Fonts.hpp:
 
 ../QA_Systems/QAS_LCD/QAS_LCD_Fonts/QAS_LCD_Fonts_SegoeUI20ptSB.hpp:
+
+../QA_Systems/QAS_LCD/QAS_LCD_Fonts/QAS_LCD_Fonts_ShowcardGothic18pt.hpp:

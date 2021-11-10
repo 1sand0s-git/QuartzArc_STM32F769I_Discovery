@@ -8,17 +8,17 @@ QAD_LTDC.hpp:214:14:static void QAD_LTDC::flipLayer0Buffers()	8	static
 QAD_LTDC.hpp:220:14:static void QAD_LTDC::flipLayer1Buffers()	8	static
 QAD_LTDC.hpp:234:26:static QAD_LTDC_Buffer* QAD_LTDC::getLayer0BackBuffer()	8	static
 QAD_LTDC.hpp:244:26:static QAD_LTDC_Buffer* QAD_LTDC::getLayer1BackBuffer()	8	static
-QAS_LCD.cpp:29:11:QA_Result QAS_LCD::imp_init()	32	static
-QAS_LCD.cpp:67:6:void QAS_LCD::imp_deinit()	16	static
-QAS_LCD.cpp:84:6:void QAS_LCD::imp_flipLayer0()	16	static
-QAS_LCD.cpp:91:6:void QAS_LCD::imp_flipLayer1()	16	static
-QAS_LCD.cpp:98:6:void QAS_LCD::imp_setDrawBuffer(QAD_LTDC_LayerIdx)	16	static
-QAS_LCD.cpp:114:6:void QAS_LCD::imp_setDrawColor(uint16_t)	16	static
-QAS_LCD.cpp:125:6:void QAS_LCD::imp_clearBuffer()	24	static
-QAS_LCD.cpp:133:6:void QAS_LCD::imp_drawPixel(QAT_Vector2_16&)	16	static
-QAS_LCD.cpp:140:6:void QAS_LCD::imp_drawLine(QAT_Vector2_16&, QAT_Vector2_16&)	24	static
-QAS_LCD.cpp:151:6:void QAS_LCD::imp_drawHLine(QAT_Vector2_16&, QAT_Vector2_16&)	40	static
-QAS_LCD.cpp:171:6:void QAS_LCD::imp_drawVLine(QAT_Vector2_16&, QAT_Vector2_16&)	40	static
-QAS_LCD.cpp:191:6:void QAS_LCD::imp_drawALine(QAT_Vector2_16&, QAT_Vector2_16&)	56	static
-QAS_LCD.cpp:255:6:void QAS_LCD::imp_drawRect(QAT_Vector2_16&, QAT_Vector2_16&)	56	static
-QAS_LCD.cpp:294:6:void QAS_LCD::imp_drawRectFill(QAT_Vector2_16&, QAT_Vector2_16&)	56	static
+QAS_LCD.cpp:41:11:QA_Result QAS_LCD::imp_init()	32	static
+QAS_LCD.cpp:98:6:void QAS_LCD::imp_deinit()	16	static
+QAS_LCD.cpp:121:6:void QAS_LCD::imp_flipLayer0()	16	static
+QAS_LCD.cpp:132:6:void QAS_LCD::imp_flipLayer1()	16	static
+QAS_LCD.cpp:143:6:void QAS_LCD::imp_setDrawBuffer(QAD_LTDC_LayerIdx)	16	static
+QAS_LCD.cpp:165:6:void QAS_LCD::imp_setDrawColor(uint16_t)	16	static
+QAS_LCD.cpp:184:6:void QAS_LCD::imp_clearBuffer()	24	static
+QAS_LCD.cpp:196:6:void QAS_LCD::imp_drawPixel(QAT_Vector2_16&)	16	static
+QAS_LCD.cpp:214:6:void QAS_LCD::imp_drawLine(QAT_Vector2_16&, QAT_Vector2_16&)	24	static
+QAS_LCD.cpp:237:6:void QAS_LCD::imp_drawHLine(QAT_Vector2_16&, QAT_Vector2_16&)	40	static
+QAS_LCD.cpp:263:6:void QAS_LCD::imp_drawVLine(QAT_Vector2_16&, QAT_Vector2_16&)	40	static
+QAS_LCD.cpp:293:6:void QAS_LCD::imp_drawALine(QAT_Vector2_16&, QAT_Vector2_16&)	56	static
+QAS_LCD.cpp:363:6:void QAS_LCD::imp_drawRect(QAT_Vector2_16&, QAT_Vector2_16&)	56	static
+QAS_LCD.cpp:407:6:void QAS_LCD::imp_drawRectFill(QAT_Vector2_16&, QAT_Vector2_16&)	56	static

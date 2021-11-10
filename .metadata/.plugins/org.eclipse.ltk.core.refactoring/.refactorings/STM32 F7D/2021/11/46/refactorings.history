@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;STM32 F7D/QA_Systems/QAS_LCD/QAS_LCD_Fonts/QAS_LCD_Fonts_TestFont.hpp&apos; to &apos;QAS_LCD_Fonts_ShowcardGothic18pt.hpp&apos;" description="Rename resource &apos;QAS_LCD_Fonts_TestFont.hpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="QA_Systems/QAS_LCD/QAS_LCD_Fonts/QAS_LCD_Fonts_TestFont.hpp" name="QAS_LCD_Fonts_ShowcardGothic18pt.hpp" stamp="1636508580514" updateReferences="true"/>
+</session>

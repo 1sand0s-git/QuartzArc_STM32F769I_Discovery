@@ -54,10 +54,7 @@ Core/main.o: ../Core/main.cpp ../Core/main.hpp ../Core/setup.hpp \
  ../QA_Drivers/QAD_PeripheralManagers/QAD_UARTMgr.hpp \
  ../QA_Systems/QAS_LCD/QAS_LCD.hpp ../QA_Drivers/QAD_LTDC.hpp \
  ../Drivers/Components/otm8009a/otm8009a.h ../QA_Tools/QAT_Pixel.hpp \
- ../QA_Tools/QAT_Vector.hpp ../QA_Systems/QAS_LCD/QAS_LCD_Fonts.hpp \
- ../QA_Systems/QAS_LCD/QAS_LCD_Fonts/QAS_LCD_Fonts_SegoeUI12pt.hpp \
- ../QA_Systems/QAS_LCD/QAS_LCD_Fonts.hpp \
- ../QA_Systems/QAS_LCD/QAS_LCD_Fonts/QAS_LCD_Fonts_SegoeUI20ptSB.hpp
+ ../QA_Tools/QAT_Vector.hpp ../QA_Systems/QAS_LCD/QAS_LCD_Fonts.hpp
 
 ../Core/main.hpp:
 
@@ -186,9 +183,3 @@ Core/main.o: ../Core/main.cpp ../Core/main.hpp ../Core/setup.hpp \
 ../QA_Tools/QAT_Vector.hpp:
 
 ../QA_Systems/QAS_LCD/QAS_LCD_Fonts.hpp:
-
-../QA_Systems/QAS_LCD/QAS_LCD_Fonts/QAS_LCD_Fonts_SegoeUI12pt.hpp:
-
-../QA_Systems/QAS_LCD/QAS_LCD_Fonts.hpp:
-
-../QA_Systems/QAS_LCD/QAS_LCD_Fonts/QAS_LCD_Fonts_SegoeUI20ptSB.hpp:

@@ -6,14 +6,18 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="QAT_Vector2_16"/>
+		<item key="selection" value="_ShowcardGothic18pt_"/>
 		<list key="findhistory">
+			<item value="_TestFont_"/>
+			<item value="SegoeUI20ptSB"/>
 			<item value="QAT_Vector2"/>
 			<item value="PixelARGB4444"/>
 			<item value="Timeout"/>
 			<item value="Init.uart"/>
 		</list>
 		<list key="replacehistory">
+			<item value="_ShowcardGothic18pt_"/>
+			<item value="TestFont"/>
 			<item value="QAT_Vector2_16"/>
 			<item value="Pixel_ARGB4444"/>
 			<item value="Init.sUART_Init"/>
