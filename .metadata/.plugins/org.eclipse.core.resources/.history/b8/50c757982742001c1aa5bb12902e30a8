@@ -45,8 +45,8 @@ void  PendSV_Handler(void);
 void  SysTick_Handler(void);
 
 
-  //---------------------------
-  //Interrupt Handler Functions
+  //-------------------------
+  //Interrupt Handler Methods
 
 void USART1_IRQHandler(void);
 

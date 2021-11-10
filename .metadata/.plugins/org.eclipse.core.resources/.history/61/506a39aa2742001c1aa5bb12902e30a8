@@ -116,13 +116,13 @@ void  SysTick_Handler(void) {
 	//------------------------------------------
 	//------------------------------------------
 
-  //---------------------------
-  //---------------------------
-  //Interrupt Handler Functions
+  //-------------------------
+  //-------------------------
+  //Interrupt Handler Methods
 
 
 //USART1_IRQHandler
-//Interrupt Handler Function
+//Interrupt Handler Method
 void USART1_IRQHandler(void) {
 	UART_STLink->handler(NULL);
 }

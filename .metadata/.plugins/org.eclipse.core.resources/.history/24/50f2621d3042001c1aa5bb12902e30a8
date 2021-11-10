@@ -47,8 +47,8 @@ QAS_Serial_Dev_UART* UART_STLink;
 
 //Task Timing
 //
-//These constants are used to determine the update rate (in milliseconds) of each of the
-//tasks that are run in the processing loop within the main() function.
+//These constancts are used to determine the update rate (in milliseconds) of each of the
+//tasks that are run in the processing loop withing the main() function.
 //
 const uint32_t QA_FT_HeartbeatTickThreshold = 500;   //Time in milliseconds between heartbeat LED updates
                                                      //The rate of flashing of the heartbeat LED will be double the value defined here
@@ -79,7 +79,7 @@ int main(void) {
 
 
 	//----------------------------------
-	//Initialize the User LEDs using the QAD_GPIO_Output driver class.
+	//Initialize the Used LEDs using the QAD_GPIO_Output driver class.
 	//QAD_USERLED_RED_GPIO_PORT, QAD_USERLED_GREEN_GPIO_PORT, QAD_USER_LED_RED_GPIO_PIN and QAD_USERLED_GREEN_GPIO_PIN are defined in setup.hpp
   GPIO_UserLED_Red   = new QAD_GPIO_Output(QAD_USERLED_RED_GPIO_PORT, QAD_USERLED_RED_GPIO_PIN);
   GPIO_UserLED_Green = new QAD_GPIO_Output(QAD_USERLED_GREEN_GPIO_PORT, QAD_USERLED_GREEN_GPIO_PIN);

@@ -122,3 +122,18 @@ C Model Exception: C Model Status [Update conflict.]
 	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
 !SUBENTRY 1 org.eclipse.cdt.core 4 981 2021-11-10 11:42:01.439
 !MESSAGE Update conflict.
+!SESSION 2021-11-10 22:56:22.770 -----------------------------------------------
+eclipse.buildId=Version 1.7.0
+java.version=11.0.10
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_AU
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2021-11-10 22:56:30.813
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2021-11-10 22:56:30.860
+!MESSAGE Log4j initialized with config file C:\Users\binar\Desktop\Quartz Arc\QA Codebase Repos\QA_STM32F769IDISCO\QuartzArc_STM32F769I_Discovery\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2021-11-10 22:56:35.970
+!MESSAGE Started RMI Server, listening on port 41337
