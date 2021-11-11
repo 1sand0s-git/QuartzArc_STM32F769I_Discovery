@@ -71,8 +71,13 @@ QA_Result SystemInitialize(void) {
     //------------
     //Setup Clocks
 
-  //------------------------------
-  //Enable Clock Sources and Setup
+  //------------------
+  //Enable Oscillators
+  //
+  //Configure High Speed External (HSE) oscillator to be used for primary system clocks, and setup primary PLL to provide a 216MHz clock
+  //Configure Low Speed External (LSE) oscillator to be used for clock source for Real Timer Clock (RTC) peripheral
+  //NOTE: HSE Oscillator on STM32F769I-DISCO/STM32F769I-DISC1 board is provided by a 25MHz oscillator (labeled X2 on the PCB)
+  //      LSE Oscillator on STM32F769I-DISCO/STM32F769I-DISC1 board is provided by a 32.768kHz oscillator (labeled X3 on the PCB)
   RCC_OscInitTypeDef RCC_OscInit = {0};
   RCC_OscInit.OscillatorType = RCC_OSCILLATORTYPE_HSE | //Define HSE (High Speed External) oscillator to be configured (used for main system clock)
   		                         RCC_OSCILLATORTYPE_LSE;  //Define LSE (Low Speed External) oscillator to be configured (used for RTC - Real Time Clock)
@@ -110,10 +115,16 @@ QA_Result SystemInitialize(void) {
   		                         RCC_CLOCKTYPE_SYSCLK |
                                RCC_CLOCKTYPE_PCLK1 |
 															 RCC_CLOCKTYPE_PCLK2;
+
   RCC_ClkInit.SYSCLKSource   = RCC_SYSCLKSOURCE_PLLCLK;  //Define primary PLL clock as system clock source
+
   RCC_ClkInit.AHBCLKDivider  = RCC_SYSCLK_DIV1;          //Set clock divider for host bus (AHB), DIV1 provides an AHB frequency of 216MHz
+
   RCC_ClkInit.APB1CLKDivider = RCC_HCLK_DIV4;            //Set clock divider for peripheral bus 1 (APB1), DIV4 provides an APB1 frequency of 54MHz
+                                                         //NOTE: APB1 timer clocks are clock doubled, providing APB1 timers with 108MHz
+
   RCC_ClkInit.APB2CLKDivider = RCC_HCLK_DIV2;            //Set clock divider for peripheral bus 2 (APB2), DIV2 provides an APB2 frequency of 108MHz
+                                                         //NOTE: APB2 timer clocks are clock doubled, providing APB2 timers with 216MHz clocks
 
   if (HAL_RCC_ClockConfig(&RCC_ClkInit, FLASH_LATENCY_7) != HAL_OK) { //Initialize system clocks using required values, and setting Flash latency to 7 cycles
   	return QA_Fail;

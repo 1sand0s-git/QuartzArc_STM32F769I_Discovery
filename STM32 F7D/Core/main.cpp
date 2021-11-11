@@ -183,10 +183,10 @@ int main(void) {
   QAS_LCD::setFontByIndex(1);
   QAS_LCD::drawStrC(QAT_Vector2_16(400, 250), "Welcome to 1s and 0s");
 
-  /*QAS_LCD::setDrawColor(0xFFBB);
-  //QAS_LCD::setFontByName("TestFont");
+  QAS_LCD::setDrawColor(0xFFBB);
+  //QAS_LCD::setFontByName("ShowcardGothic18pt");
   QAS_LCD::setFontByIndex(2);
-  QAS_LCD::drawStrC(QAT_Vector2_16(400, 350), "Test Font");*/
+  QAS_LCD::drawStrC(QAT_Vector2_16(400, 350), "Test Font");
 
   QAS_LCD::flipLayer0();
   QAS_LCD::flipLayer1();
