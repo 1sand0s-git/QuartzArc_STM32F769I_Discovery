@@ -1,0 +1,26 @@
+/* ----------------------------------------------------------------------- */
+/*                                                                         */
+/*   Quartz Arc                                                            */
+/*                                                                         */
+/*   STM32 F769I Discovery                                                 */
+/*                                                                         */
+/*   System: Driver                                                        */
+/*   Role: Timer Management Driver                                         */
+/*   Filename: QAD_TimerMgr.cpp                                            */
+/*   Date: 14th November 2021                                              */
+/*   Created By: Benjamin Rosser                                           */
+/*                                                                         */
+/*   This code is covered by Creative Commons CC-BY-NC-SA license          */
+/*   (C) Copyright 2021 Benjamin Rosser                                    */
+/*                                                                         */
+/* ----------------------------------------------------------------------- */
+
+//Includes
+#include "QAD_TimerMgr.hpp"
+
+
+	//------------------------------------------
+	//------------------------------------------
+	//------------------------------------------
+
+

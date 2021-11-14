@@ -13114,6 +13114,205 @@ Discarded input sections
  .debug_frame   0x0000000000000000      0x15c ./QA_Drivers/QAD_EXTI.o
  .ARM.attributes
                 0x0000000000000000       0x32 ./QA_Drivers/QAD_EXTI.o
+ .group         0x0000000000000000        0x8 ./QA_Drivers/QAD_Encoder.o
+ .group         0x0000000000000000        0x8 ./QA_Drivers/QAD_Encoder.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Encoder.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Encoder.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Encoder.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Encoder.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Encoder.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Encoder.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Encoder.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Encoder.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Encoder.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Encoder.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Encoder.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Encoder.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Encoder.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Encoder.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Encoder.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Encoder.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Encoder.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Encoder.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Encoder.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Encoder.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Encoder.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Encoder.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Encoder.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Encoder.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Encoder.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Encoder.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Encoder.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Encoder.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Encoder.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Encoder.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Encoder.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Encoder.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Encoder.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Encoder.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Encoder.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Encoder.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Encoder.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Encoder.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Encoder.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Encoder.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Encoder.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Encoder.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Encoder.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Encoder.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Encoder.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Encoder.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Encoder.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Encoder.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Encoder.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Encoder.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Encoder.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Encoder.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Encoder.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Encoder.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Encoder.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Encoder.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Encoder.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Encoder.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Encoder.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Encoder.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Encoder.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Encoder.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Encoder.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Encoder.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Encoder.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Encoder.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Encoder.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Encoder.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Encoder.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Encoder.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Encoder.o
+ .text          0x0000000000000000        0x0 ./QA_Drivers/QAD_Encoder.o
+ .data          0x0000000000000000        0x0 ./QA_Drivers/QAD_Encoder.o
+ .bss           0x0000000000000000        0x0 ./QA_Drivers/QAD_Encoder.o
+ .rodata._ZL21QAD_Timer_PeriphCount
+                0x0000000000000000        0x1 ./QA_Drivers/QAD_Encoder.o
+ .bss._ZZN12QAD_TimerMgr3getEvE8instance
+                0x0000000000000000      0x118 ./QA_Drivers/QAD_Encoder.o
+ .bss._ZGVZN12QAD_TimerMgr3getEvE8instance
+                0x0000000000000000        0x4 ./QA_Drivers/QAD_Encoder.o
+ .text._ZN12QAD_TimerMgr3getEv
+                0x0000000000000000       0x50 ./QA_Drivers/QAD_Encoder.o
+ .text._ZN12QAD_TimerMgr8getStateE16QAD_Timer_Periph
+                0x0000000000000000       0x28 ./QA_Drivers/QAD_Encoder.o
+ .text._ZN12QAD_TimerMgr10getEncoderE16QAD_Timer_Periph
+                0x0000000000000000       0x28 ./QA_Drivers/QAD_Encoder.o
+ .text._ZN12QAD_TimerMgr11getInstanceE16QAD_Timer_Periph
+                0x0000000000000000       0x28 ./QA_Drivers/QAD_Encoder.o
+ .text._ZN12QAD_TimerMgr13registerTimerE16QAD_Timer_Periph15QAD_Timer_State
+                0x0000000000000000       0x28 ./QA_Drivers/QAD_Encoder.o
+ .text._ZN12QAD_TimerMgr15deregisterTimerE16QAD_Timer_Periph
+                0x0000000000000000       0x22 ./QA_Drivers/QAD_Encoder.o
+ .text._ZN12QAD_TimerMgr11enableClockE16QAD_Timer_Periph
+                0x0000000000000000       0x22 ./QA_Drivers/QAD_Encoder.o
+ .text._ZN12QAD_TimerMgr12disableClockE16QAD_Timer_Periph
+                0x0000000000000000       0x22 ./QA_Drivers/QAD_Encoder.o
+ .text._ZN11QAD_Encoder4initEv
+                0x0000000000000000       0x70 ./QA_Drivers/QAD_Encoder.o
+ .text._ZN11QAD_Encoder6deinitEv
+                0x0000000000000000       0x2e ./QA_Drivers/QAD_Encoder.o
+ .text._ZN11QAD_Encoder5startEv
+                0x0000000000000000       0x3e ./QA_Drivers/QAD_Encoder.o
+ .text._ZN11QAD_Encoder4stopEv
+                0x0000000000000000       0x38 ./QA_Drivers/QAD_Encoder.o
+ .text._ZN11QAD_Encoder6updateEm
+                0x0000000000000000       0xf6 ./QA_Drivers/QAD_Encoder.o
+ .text._ZN11QAD_Encoder8getStateEv
+                0x0000000000000000       0x1a ./QA_Drivers/QAD_Encoder.o
+ .text._ZN11QAD_Encoder8getValueEv
+                0x0000000000000000       0x72 ./QA_Drivers/QAD_Encoder.o
+ .text._ZN11QAD_Encoder8getAccelEv
+                0x0000000000000000       0x28 ./QA_Drivers/QAD_Encoder.o
+ .text._ZN11QAD_Encoder7setModeE15QAD_EncoderMode
+                0x0000000000000000       0x20 ./QA_Drivers/QAD_Encoder.o
+ .text._ZN11QAD_Encoder7getModeEv
+                0x0000000000000000       0x1a ./QA_Drivers/QAD_Encoder.o
+ .text._ZN11QAD_Encoder10periphInitEv
+                0x0000000000000000      0x116 ./QA_Drivers/QAD_Encoder.o
+ .text._ZN11QAD_Encoder12periphDeinitENS_10DeinitModeE
+                0x0000000000000000       0x5e ./QA_Drivers/QAD_Encoder.o
+ .text._ZN11QAD_Encoder9clearDataEv
+                0x0000000000000000       0x3c ./QA_Drivers/QAD_Encoder.o
+ .debug_info    0x0000000000000000     0x1a0b ./QA_Drivers/QAD_Encoder.o
+ .debug_abbrev  0x0000000000000000      0x41e ./QA_Drivers/QAD_Encoder.o
+ .debug_aranges
+                0x0000000000000000       0xc0 ./QA_Drivers/QAD_Encoder.o
+ .debug_ranges  0x0000000000000000       0xb0 ./QA_Drivers/QAD_Encoder.o
+ .debug_macro   0x0000000000000000      0x2cc ./QA_Drivers/QAD_Encoder.o
+ .debug_macro   0x0000000000000000      0xb98 ./QA_Drivers/QAD_Encoder.o
+ .debug_macro   0x0000000000000000       0x2e ./QA_Drivers/QAD_Encoder.o
+ .debug_macro   0x0000000000000000       0x3b ./QA_Drivers/QAD_Encoder.o
+ .debug_macro   0x0000000000000000       0x1c ./QA_Drivers/QAD_Encoder.o
+ .debug_macro   0x0000000000000000       0x22 ./QA_Drivers/QAD_Encoder.o
+ .debug_macro   0x0000000000000000       0x8e ./QA_Drivers/QAD_Encoder.o
+ .debug_macro   0x0000000000000000       0x51 ./QA_Drivers/QAD_Encoder.o
+ .debug_macro   0x0000000000000000      0x103 ./QA_Drivers/QAD_Encoder.o
+ .debug_macro   0x0000000000000000       0x6a ./QA_Drivers/QAD_Encoder.o
+ .debug_macro   0x0000000000000000      0x1df ./QA_Drivers/QAD_Encoder.o
+ .debug_macro   0x0000000000000000       0x1c ./QA_Drivers/QAD_Encoder.o
+ .debug_macro   0x0000000000000000       0x22 ./QA_Drivers/QAD_Encoder.o
+ .debug_macro   0x0000000000000000       0xdf ./QA_Drivers/QAD_Encoder.o
+ .debug_macro   0x0000000000000000     0x12cd ./QA_Drivers/QAD_Encoder.o
+ .debug_macro   0x0000000000000000      0x11f ./QA_Drivers/QAD_Encoder.o
+ .debug_macro   0x0000000000000000       0x19 ./QA_Drivers/QAD_Encoder.o
+ .debug_macro   0x0000000000000000    0x2047d ./QA_Drivers/QAD_Encoder.o
+ .debug_macro   0x0000000000000000       0x43 ./QA_Drivers/QAD_Encoder.o
+ .debug_macro   0x0000000000000000      0x2d5 ./QA_Drivers/QAD_Encoder.o
+ .debug_macro   0x0000000000000000     0x36c9 ./QA_Drivers/QAD_Encoder.o
+ .debug_macro   0x0000000000000000      0x17b ./QA_Drivers/QAD_Encoder.o
+ .debug_macro   0x0000000000000000       0x63 ./QA_Drivers/QAD_Encoder.o
+ .debug_macro   0x0000000000000000     0x1b3f ./QA_Drivers/QAD_Encoder.o
+ .debug_macro   0x0000000000000000      0x6c4 ./QA_Drivers/QAD_Encoder.o
+ .debug_macro   0x0000000000000000      0x18b ./QA_Drivers/QAD_Encoder.o
+ .debug_macro   0x0000000000000000      0x117 ./QA_Drivers/QAD_Encoder.o
+ .debug_macro   0x0000000000000000      0x276 ./QA_Drivers/QAD_Encoder.o
+ .debug_macro   0x0000000000000000       0x27 ./QA_Drivers/QAD_Encoder.o
+ .debug_macro   0x0000000000000000      0x24f ./QA_Drivers/QAD_Encoder.o
+ .debug_macro   0x0000000000000000       0x71 ./QA_Drivers/QAD_Encoder.o
+ .debug_macro   0x0000000000000000       0x58 ./QA_Drivers/QAD_Encoder.o
+ .debug_macro   0x0000000000000000      0x236 ./QA_Drivers/QAD_Encoder.o
+ .debug_macro   0x0000000000000000      0x416 ./QA_Drivers/QAD_Encoder.o
+ .debug_macro   0x0000000000000000      0x153 ./QA_Drivers/QAD_Encoder.o
+ .debug_macro   0x0000000000000000      0x107 ./QA_Drivers/QAD_Encoder.o
+ .debug_macro   0x0000000000000000      0x239 ./QA_Drivers/QAD_Encoder.o
+ .debug_macro   0x0000000000000000      0x14f ./QA_Drivers/QAD_Encoder.o
+ .debug_macro   0x0000000000000000      0x3dc ./QA_Drivers/QAD_Encoder.o
+ .debug_macro   0x0000000000000000       0x12 ./QA_Drivers/QAD_Encoder.o
+ .debug_macro   0x0000000000000000      0x514 ./QA_Drivers/QAD_Encoder.o
+ .debug_macro   0x0000000000000000      0x22c ./QA_Drivers/QAD_Encoder.o
+ .debug_macro   0x0000000000000000       0x61 ./QA_Drivers/QAD_Encoder.o
+ .debug_macro   0x0000000000000000       0xa5 ./QA_Drivers/QAD_Encoder.o
+ .debug_macro   0x0000000000000000      0x198 ./QA_Drivers/QAD_Encoder.o
+ .debug_macro   0x0000000000000000      0x6fc ./QA_Drivers/QAD_Encoder.o
+ .debug_macro   0x0000000000000000       0xd6 ./QA_Drivers/QAD_Encoder.o
+ .debug_macro   0x0000000000000000      0x12f ./QA_Drivers/QAD_Encoder.o
+ .debug_macro   0x0000000000000000      0x108 ./QA_Drivers/QAD_Encoder.o
+ .debug_macro   0x0000000000000000       0x35 ./QA_Drivers/QAD_Encoder.o
+ .debug_macro   0x0000000000000000      0x2d4 ./QA_Drivers/QAD_Encoder.o
+ .debug_macro   0x0000000000000000       0xa4 ./QA_Drivers/QAD_Encoder.o
+ .debug_macro   0x0000000000000000      0x313 ./QA_Drivers/QAD_Encoder.o
+ .debug_macro   0x0000000000000000      0x4ca ./QA_Drivers/QAD_Encoder.o
+ .debug_macro   0x0000000000000000       0xd6 ./QA_Drivers/QAD_Encoder.o
+ .debug_macro   0x0000000000000000      0x773 ./QA_Drivers/QAD_Encoder.o
+ .debug_macro   0x0000000000000000      0x1d5 ./QA_Drivers/QAD_Encoder.o
+ .debug_macro   0x0000000000000000      0x2fe ./QA_Drivers/QAD_Encoder.o
+ .debug_macro   0x0000000000000000      0xa6e ./QA_Drivers/QAD_Encoder.o
+ .debug_macro   0x0000000000000000       0xa9 ./QA_Drivers/QAD_Encoder.o
+ .debug_macro   0x0000000000000000      0x5a5 ./QA_Drivers/QAD_Encoder.o
+ .debug_macro   0x0000000000000000       0x44 ./QA_Drivers/QAD_Encoder.o
+ .debug_macro   0x0000000000000000      0x15c ./QA_Drivers/QAD_Encoder.o
+ .debug_macro   0x0000000000000000       0x83 ./QA_Drivers/QAD_Encoder.o
+ .debug_line    0x0000000000000000      0xc89 ./QA_Drivers/QAD_Encoder.o
+ .debug_str     0x0000000000000000   0x12dd0a ./QA_Drivers/QAD_Encoder.o
+ .comment       0x0000000000000000       0x54 ./QA_Drivers/QAD_Encoder.o
+ .debug_frame   0x0000000000000000      0x318 ./QA_Drivers/QAD_Encoder.o
+ .ARM.attributes
+                0x0000000000000000       0x32 ./QA_Drivers/QAD_Encoder.o
  .group         0x0000000000000000        0xc ./QA_Drivers/QAD_FMC.o
  .group         0x0000000000000000        0xc ./QA_Drivers/QAD_FMC.o
  .group         0x0000000000000000        0xc ./QA_Drivers/QAD_FMC.o
@@ -13551,6 +13750,396 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x83 ./QA_Drivers/QAD_LTDC.o
  .debug_macro   0x0000000000000000      0x170 ./QA_Drivers/QAD_LTDC.o
  .debug_macro   0x0000000000000000       0x1c ./QA_Drivers/QAD_LTDC.o
+ .group         0x0000000000000000        0x8 ./QA_Drivers/QAD_PWM.o
+ .group         0x0000000000000000        0x8 ./QA_Drivers/QAD_PWM.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PWM.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PWM.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PWM.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PWM.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PWM.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PWM.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PWM.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PWM.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PWM.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PWM.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PWM.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PWM.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PWM.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PWM.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PWM.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PWM.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PWM.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PWM.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PWM.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PWM.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PWM.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PWM.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PWM.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PWM.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PWM.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PWM.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PWM.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PWM.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PWM.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PWM.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PWM.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PWM.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PWM.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PWM.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PWM.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PWM.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PWM.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PWM.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PWM.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PWM.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PWM.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PWM.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PWM.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PWM.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PWM.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PWM.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PWM.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PWM.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PWM.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PWM.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PWM.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PWM.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PWM.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PWM.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PWM.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PWM.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PWM.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PWM.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PWM.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PWM.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PWM.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PWM.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PWM.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PWM.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PWM.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PWM.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PWM.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PWM.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PWM.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PWM.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PWM.o
+ .text          0x0000000000000000        0x0 ./QA_Drivers/QAD_PWM.o
+ .data          0x0000000000000000        0x0 ./QA_Drivers/QAD_PWM.o
+ .bss           0x0000000000000000        0x0 ./QA_Drivers/QAD_PWM.o
+ .rodata._ZL21QAD_Timer_PeriphCount
+                0x0000000000000000        0x1 ./QA_Drivers/QAD_PWM.o
+ .bss._ZZN12QAD_TimerMgr3getEvE8instance
+                0x0000000000000000      0x118 ./QA_Drivers/QAD_PWM.o
+ .bss._ZGVZN12QAD_TimerMgr3getEvE8instance
+                0x0000000000000000        0x4 ./QA_Drivers/QAD_PWM.o
+ .text._ZN12QAD_TimerMgr3getEv
+                0x0000000000000000       0x50 ./QA_Drivers/QAD_PWM.o
+ .text._ZN12QAD_TimerMgr8getStateE16QAD_Timer_Periph
+                0x0000000000000000       0x28 ./QA_Drivers/QAD_PWM.o
+ .text._ZN12QAD_TimerMgr11getChannelsE16QAD_Timer_Periph
+                0x0000000000000000       0x28 ./QA_Drivers/QAD_PWM.o
+ .text._ZN12QAD_TimerMgr11getInstanceE16QAD_Timer_Periph
+                0x0000000000000000       0x28 ./QA_Drivers/QAD_PWM.o
+ .text._ZN12QAD_TimerMgr13registerTimerE16QAD_Timer_Periph15QAD_Timer_State
+                0x0000000000000000       0x28 ./QA_Drivers/QAD_PWM.o
+ .text._ZN12QAD_TimerMgr15deregisterTimerE16QAD_Timer_Periph
+                0x0000000000000000       0x22 ./QA_Drivers/QAD_PWM.o
+ .text._ZN12QAD_TimerMgr11enableClockE16QAD_Timer_Periph
+                0x0000000000000000       0x22 ./QA_Drivers/QAD_PWM.o
+ .text._ZN12QAD_TimerMgr12disableClockE16QAD_Timer_Periph
+                0x0000000000000000       0x22 ./QA_Drivers/QAD_PWM.o
+ .text._ZN7QAD_PWM4initEv
+                0x0000000000000000       0x56 ./QA_Drivers/QAD_PWM.o
+ .text._ZN7QAD_PWM6deinitEv
+                0x0000000000000000       0x2c ./QA_Drivers/QAD_PWM.o
+ .text._ZN7QAD_PWM5startEv
+                0x0000000000000000       0x6a ./QA_Drivers/QAD_PWM.o
+ .text._ZN7QAD_PWM4stopEv
+                0x0000000000000000       0x6a ./QA_Drivers/QAD_PWM.o
+ .text._ZN7QAD_PWM9setPWMValE15QAD_PWM_Channelt
+                0x0000000000000000       0xb8 ./QA_Drivers/QAD_PWM.o
+ .text._ZN7QAD_PWM10periphInitEv
+                0x0000000000000000      0x1e2 ./QA_Drivers/QAD_PWM.o
+ .text._ZN7QAD_PWM12periphDeinitENS_10DeinitModeE
+                0x0000000000000000       0xa4 ./QA_Drivers/QAD_PWM.o
+ .debug_info    0x0000000000000000     0x1861 ./QA_Drivers/QAD_PWM.o
+ .debug_abbrev  0x0000000000000000      0x3db ./QA_Drivers/QAD_PWM.o
+ .debug_aranges
+                0x0000000000000000       0x90 ./QA_Drivers/QAD_PWM.o
+ .debug_ranges  0x0000000000000000       0x80 ./QA_Drivers/QAD_PWM.o
+ .debug_macro   0x0000000000000000      0x2d2 ./QA_Drivers/QAD_PWM.o
+ .debug_macro   0x0000000000000000      0xb98 ./QA_Drivers/QAD_PWM.o
+ .debug_macro   0x0000000000000000       0x2e ./QA_Drivers/QAD_PWM.o
+ .debug_macro   0x0000000000000000       0x3b ./QA_Drivers/QAD_PWM.o
+ .debug_macro   0x0000000000000000       0x1c ./QA_Drivers/QAD_PWM.o
+ .debug_macro   0x0000000000000000       0x22 ./QA_Drivers/QAD_PWM.o
+ .debug_macro   0x0000000000000000       0x8e ./QA_Drivers/QAD_PWM.o
+ .debug_macro   0x0000000000000000       0x51 ./QA_Drivers/QAD_PWM.o
+ .debug_macro   0x0000000000000000      0x103 ./QA_Drivers/QAD_PWM.o
+ .debug_macro   0x0000000000000000       0x6a ./QA_Drivers/QAD_PWM.o
+ .debug_macro   0x0000000000000000      0x1df ./QA_Drivers/QAD_PWM.o
+ .debug_macro   0x0000000000000000       0x1c ./QA_Drivers/QAD_PWM.o
+ .debug_macro   0x0000000000000000       0x22 ./QA_Drivers/QAD_PWM.o
+ .debug_macro   0x0000000000000000       0xdf ./QA_Drivers/QAD_PWM.o
+ .debug_macro   0x0000000000000000     0x12cd ./QA_Drivers/QAD_PWM.o
+ .debug_macro   0x0000000000000000      0x11f ./QA_Drivers/QAD_PWM.o
+ .debug_macro   0x0000000000000000       0x19 ./QA_Drivers/QAD_PWM.o
+ .debug_macro   0x0000000000000000    0x2047d ./QA_Drivers/QAD_PWM.o
+ .debug_macro   0x0000000000000000       0x43 ./QA_Drivers/QAD_PWM.o
+ .debug_macro   0x0000000000000000      0x2d5 ./QA_Drivers/QAD_PWM.o
+ .debug_macro   0x0000000000000000     0x36c9 ./QA_Drivers/QAD_PWM.o
+ .debug_macro   0x0000000000000000      0x17b ./QA_Drivers/QAD_PWM.o
+ .debug_macro   0x0000000000000000       0x63 ./QA_Drivers/QAD_PWM.o
+ .debug_macro   0x0000000000000000     0x1b3f ./QA_Drivers/QAD_PWM.o
+ .debug_macro   0x0000000000000000      0x6c4 ./QA_Drivers/QAD_PWM.o
+ .debug_macro   0x0000000000000000      0x18b ./QA_Drivers/QAD_PWM.o
+ .debug_macro   0x0000000000000000      0x117 ./QA_Drivers/QAD_PWM.o
+ .debug_macro   0x0000000000000000      0x276 ./QA_Drivers/QAD_PWM.o
+ .debug_macro   0x0000000000000000       0x27 ./QA_Drivers/QAD_PWM.o
+ .debug_macro   0x0000000000000000      0x24f ./QA_Drivers/QAD_PWM.o
+ .debug_macro   0x0000000000000000       0x71 ./QA_Drivers/QAD_PWM.o
+ .debug_macro   0x0000000000000000       0x58 ./QA_Drivers/QAD_PWM.o
+ .debug_macro   0x0000000000000000      0x236 ./QA_Drivers/QAD_PWM.o
+ .debug_macro   0x0000000000000000      0x416 ./QA_Drivers/QAD_PWM.o
+ .debug_macro   0x0000000000000000      0x153 ./QA_Drivers/QAD_PWM.o
+ .debug_macro   0x0000000000000000      0x107 ./QA_Drivers/QAD_PWM.o
+ .debug_macro   0x0000000000000000      0x239 ./QA_Drivers/QAD_PWM.o
+ .debug_macro   0x0000000000000000      0x14f ./QA_Drivers/QAD_PWM.o
+ .debug_macro   0x0000000000000000      0x3dc ./QA_Drivers/QAD_PWM.o
+ .debug_macro   0x0000000000000000       0x12 ./QA_Drivers/QAD_PWM.o
+ .debug_macro   0x0000000000000000      0x514 ./QA_Drivers/QAD_PWM.o
+ .debug_macro   0x0000000000000000      0x22c ./QA_Drivers/QAD_PWM.o
+ .debug_macro   0x0000000000000000       0x61 ./QA_Drivers/QAD_PWM.o
+ .debug_macro   0x0000000000000000       0xa5 ./QA_Drivers/QAD_PWM.o
+ .debug_macro   0x0000000000000000      0x198 ./QA_Drivers/QAD_PWM.o
+ .debug_macro   0x0000000000000000      0x6fc ./QA_Drivers/QAD_PWM.o
+ .debug_macro   0x0000000000000000       0xd6 ./QA_Drivers/QAD_PWM.o
+ .debug_macro   0x0000000000000000      0x12f ./QA_Drivers/QAD_PWM.o
+ .debug_macro   0x0000000000000000      0x108 ./QA_Drivers/QAD_PWM.o
+ .debug_macro   0x0000000000000000       0x35 ./QA_Drivers/QAD_PWM.o
+ .debug_macro   0x0000000000000000      0x2d4 ./QA_Drivers/QAD_PWM.o
+ .debug_macro   0x0000000000000000       0xa4 ./QA_Drivers/QAD_PWM.o
+ .debug_macro   0x0000000000000000      0x313 ./QA_Drivers/QAD_PWM.o
+ .debug_macro   0x0000000000000000      0x4ca ./QA_Drivers/QAD_PWM.o
+ .debug_macro   0x0000000000000000       0xd6 ./QA_Drivers/QAD_PWM.o
+ .debug_macro   0x0000000000000000      0x773 ./QA_Drivers/QAD_PWM.o
+ .debug_macro   0x0000000000000000      0x1d5 ./QA_Drivers/QAD_PWM.o
+ .debug_macro   0x0000000000000000      0x2fe ./QA_Drivers/QAD_PWM.o
+ .debug_macro   0x0000000000000000      0xa6e ./QA_Drivers/QAD_PWM.o
+ .debug_macro   0x0000000000000000       0xa9 ./QA_Drivers/QAD_PWM.o
+ .debug_macro   0x0000000000000000      0x5a5 ./QA_Drivers/QAD_PWM.o
+ .debug_macro   0x0000000000000000       0x44 ./QA_Drivers/QAD_PWM.o
+ .debug_macro   0x0000000000000000      0x15c ./QA_Drivers/QAD_PWM.o
+ .debug_macro   0x0000000000000000       0x83 ./QA_Drivers/QAD_PWM.o
+ .debug_line    0x0000000000000000      0xbe4 ./QA_Drivers/QAD_PWM.o
+ .debug_str     0x0000000000000000   0x12dbb6 ./QA_Drivers/QAD_PWM.o
+ .comment       0x0000000000000000       0x54 ./QA_Drivers/QAD_PWM.o
+ .debug_frame   0x0000000000000000      0x224 ./QA_Drivers/QAD_PWM.o
+ .ARM.attributes
+                0x0000000000000000       0x32 ./QA_Drivers/QAD_PWM.o
+ .group         0x0000000000000000        0x8 ./QA_Drivers/QAD_Timer.o
+ .group         0x0000000000000000        0x8 ./QA_Drivers/QAD_Timer.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Timer.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Timer.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Timer.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Timer.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Timer.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Timer.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Timer.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Timer.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Timer.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Timer.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Timer.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Timer.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Timer.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Timer.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Timer.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Timer.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Timer.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Timer.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Timer.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Timer.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Timer.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Timer.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Timer.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Timer.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Timer.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Timer.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Timer.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Timer.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Timer.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Timer.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Timer.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Timer.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Timer.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Timer.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Timer.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Timer.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Timer.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Timer.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Timer.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Timer.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Timer.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Timer.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Timer.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Timer.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Timer.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Timer.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Timer.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Timer.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Timer.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Timer.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Timer.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Timer.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Timer.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Timer.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Timer.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Timer.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Timer.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Timer.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Timer.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Timer.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Timer.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Timer.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Timer.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Timer.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Timer.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Timer.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Timer.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Timer.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Timer.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Timer.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_Timer.o
+ .text          0x0000000000000000        0x0 ./QA_Drivers/QAD_Timer.o
+ .data          0x0000000000000000        0x0 ./QA_Drivers/QAD_Timer.o
+ .bss           0x0000000000000000        0x0 ./QA_Drivers/QAD_Timer.o
+ .rodata._ZL21QAD_Timer_PeriphCount
+                0x0000000000000000        0x1 ./QA_Drivers/QAD_Timer.o
+ .bss._ZZN12QAD_TimerMgr3getEvE8instance
+                0x0000000000000000      0x118 ./QA_Drivers/QAD_Timer.o
+ .bss._ZGVZN12QAD_TimerMgr3getEvE8instance
+                0x0000000000000000        0x4 ./QA_Drivers/QAD_Timer.o
+ .text._ZN12QAD_TimerMgr3getEv
+                0x0000000000000000       0x50 ./QA_Drivers/QAD_Timer.o
+ .text._ZN12QAD_TimerMgr8getStateE16QAD_Timer_Periph
+                0x0000000000000000       0x28 ./QA_Drivers/QAD_Timer.o
+ .text._ZN12QAD_TimerMgr11getInstanceE16QAD_Timer_Periph
+                0x0000000000000000       0x28 ./QA_Drivers/QAD_Timer.o
+ .text._ZN12QAD_TimerMgr12getUpdateIRQE16QAD_Timer_Periph
+                0x0000000000000000       0x2a ./QA_Drivers/QAD_Timer.o
+ .text._ZN12QAD_TimerMgr13registerTimerE16QAD_Timer_Periph15QAD_Timer_State
+                0x0000000000000000       0x28 ./QA_Drivers/QAD_Timer.o
+ .text._ZN12QAD_TimerMgr15deregisterTimerE16QAD_Timer_Periph
+                0x0000000000000000       0x22 ./QA_Drivers/QAD_Timer.o
+ .text._ZN12QAD_TimerMgr11enableClockE16QAD_Timer_Periph
+                0x0000000000000000       0x22 ./QA_Drivers/QAD_Timer.o
+ .text._ZN12QAD_TimerMgr12disableClockE16QAD_Timer_Periph
+                0x0000000000000000       0x22 ./QA_Drivers/QAD_Timer.o
+ .text._ZN9QAD_Timer4initEv
+                0x0000000000000000       0x56 ./QA_Drivers/QAD_Timer.o
+ .text._ZN9QAD_Timer6deinitEv
+                0x0000000000000000       0x2e ./QA_Drivers/QAD_Timer.o
+ .text._ZN9QAD_Timer7handlerEv
+                0x0000000000000000       0xa8 ./QA_Drivers/QAD_Timer.o
+ .text._ZN9QAD_Timer18setHandlerFunctionEPFvPvE
+                0x0000000000000000       0x1c ./QA_Drivers/QAD_Timer.o
+ .text._ZN9QAD_Timer15setHandlerClassEP28QAD_IRQHandler_CallbackClass
+                0x0000000000000000       0x1c ./QA_Drivers/QAD_Timer.o
+ .text._ZN9QAD_Timer12setTimerModeE13QAD_TimerMode
+                0x0000000000000000       0x20 ./QA_Drivers/QAD_Timer.o
+ .text._ZN9QAD_Timer12getTimerModeEv
+                0x0000000000000000       0x1a ./QA_Drivers/QAD_Timer.o
+ .text._ZN9QAD_Timer19setIRQCounterTargetEt
+                0x0000000000000000       0x20 ./QA_Drivers/QAD_Timer.o
+ .text._ZN9QAD_Timer19getIRQCounterTargetEv
+                0x0000000000000000       0x1a ./QA_Drivers/QAD_Timer.o
+ .text._ZN9QAD_Timer18getIRQCounterValueEv
+                0x0000000000000000       0x1a ./QA_Drivers/QAD_Timer.o
+ .text._ZN9QAD_Timer20clearIRQCounterValueEv
+                0x0000000000000000       0x1c ./QA_Drivers/QAD_Timer.o
+ .text._ZN9QAD_Timer5startEv
+                0x0000000000000000       0x58 ./QA_Drivers/QAD_Timer.o
+ .text._ZN9QAD_Timer4stopEv
+                0x0000000000000000       0x84 ./QA_Drivers/QAD_Timer.o
+ .text._ZN9QAD_Timer10periphInitEv
+                0x0000000000000000       0xbe ./QA_Drivers/QAD_Timer.o
+ .text._ZN9QAD_Timer12periphDeinitENS_10DeinitModeE
+                0x0000000000000000       0x4a ./QA_Drivers/QAD_Timer.o
+ .debug_info    0x0000000000000000     0x1865 ./QA_Drivers/QAD_Timer.o
+ .debug_abbrev  0x0000000000000000      0x3cb ./QA_Drivers/QAD_Timer.o
+ .debug_aranges
+                0x0000000000000000       0xd0 ./QA_Drivers/QAD_Timer.o
+ .debug_ranges  0x0000000000000000       0xc0 ./QA_Drivers/QAD_Timer.o
+ .debug_macro   0x0000000000000000      0x2cc ./QA_Drivers/QAD_Timer.o
+ .debug_macro   0x0000000000000000      0xb98 ./QA_Drivers/QAD_Timer.o
+ .debug_macro   0x0000000000000000       0x2e ./QA_Drivers/QAD_Timer.o
+ .debug_macro   0x0000000000000000       0x3b ./QA_Drivers/QAD_Timer.o
+ .debug_macro   0x0000000000000000       0x1c ./QA_Drivers/QAD_Timer.o
+ .debug_macro   0x0000000000000000       0x22 ./QA_Drivers/QAD_Timer.o
+ .debug_macro   0x0000000000000000       0x8e ./QA_Drivers/QAD_Timer.o
+ .debug_macro   0x0000000000000000       0x51 ./QA_Drivers/QAD_Timer.o
+ .debug_macro   0x0000000000000000      0x103 ./QA_Drivers/QAD_Timer.o
+ .debug_macro   0x0000000000000000       0x6a ./QA_Drivers/QAD_Timer.o
+ .debug_macro   0x0000000000000000      0x1df ./QA_Drivers/QAD_Timer.o
+ .debug_macro   0x0000000000000000       0x1c ./QA_Drivers/QAD_Timer.o
+ .debug_macro   0x0000000000000000       0x22 ./QA_Drivers/QAD_Timer.o
+ .debug_macro   0x0000000000000000       0xdf ./QA_Drivers/QAD_Timer.o
+ .debug_macro   0x0000000000000000     0x12cd ./QA_Drivers/QAD_Timer.o
+ .debug_macro   0x0000000000000000      0x11f ./QA_Drivers/QAD_Timer.o
+ .debug_macro   0x0000000000000000       0x19 ./QA_Drivers/QAD_Timer.o
+ .debug_macro   0x0000000000000000    0x2047d ./QA_Drivers/QAD_Timer.o
+ .debug_macro   0x0000000000000000       0x43 ./QA_Drivers/QAD_Timer.o
+ .debug_macro   0x0000000000000000      0x2d5 ./QA_Drivers/QAD_Timer.o
+ .debug_macro   0x0000000000000000     0x36c9 ./QA_Drivers/QAD_Timer.o
+ .debug_macro   0x0000000000000000      0x17b ./QA_Drivers/QAD_Timer.o
+ .debug_macro   0x0000000000000000       0x63 ./QA_Drivers/QAD_Timer.o
+ .debug_macro   0x0000000000000000     0x1b3f ./QA_Drivers/QAD_Timer.o
+ .debug_macro   0x0000000000000000      0x6c4 ./QA_Drivers/QAD_Timer.o
+ .debug_macro   0x0000000000000000      0x18b ./QA_Drivers/QAD_Timer.o
+ .debug_macro   0x0000000000000000      0x117 ./QA_Drivers/QAD_Timer.o
+ .debug_macro   0x0000000000000000      0x276 ./QA_Drivers/QAD_Timer.o
+ .debug_macro   0x0000000000000000       0x27 ./QA_Drivers/QAD_Timer.o
+ .debug_macro   0x0000000000000000      0x24f ./QA_Drivers/QAD_Timer.o
+ .debug_macro   0x0000000000000000       0x71 ./QA_Drivers/QAD_Timer.o
+ .debug_macro   0x0000000000000000       0x58 ./QA_Drivers/QAD_Timer.o
+ .debug_macro   0x0000000000000000      0x236 ./QA_Drivers/QAD_Timer.o
+ .debug_macro   0x0000000000000000      0x416 ./QA_Drivers/QAD_Timer.o
+ .debug_macro   0x0000000000000000      0x153 ./QA_Drivers/QAD_Timer.o
+ .debug_macro   0x0000000000000000      0x107 ./QA_Drivers/QAD_Timer.o
+ .debug_macro   0x0000000000000000      0x239 ./QA_Drivers/QAD_Timer.o
+ .debug_macro   0x0000000000000000      0x14f ./QA_Drivers/QAD_Timer.o
+ .debug_macro   0x0000000000000000      0x3dc ./QA_Drivers/QAD_Timer.o
+ .debug_macro   0x0000000000000000       0x12 ./QA_Drivers/QAD_Timer.o
+ .debug_macro   0x0000000000000000      0x514 ./QA_Drivers/QAD_Timer.o
+ .debug_macro   0x0000000000000000      0x22c ./QA_Drivers/QAD_Timer.o
+ .debug_macro   0x0000000000000000       0x61 ./QA_Drivers/QAD_Timer.o
+ .debug_macro   0x0000000000000000       0xa5 ./QA_Drivers/QAD_Timer.o
+ .debug_macro   0x0000000000000000      0x198 ./QA_Drivers/QAD_Timer.o
+ .debug_macro   0x0000000000000000      0x6fc ./QA_Drivers/QAD_Timer.o
+ .debug_macro   0x0000000000000000       0xd6 ./QA_Drivers/QAD_Timer.o
+ .debug_macro   0x0000000000000000      0x12f ./QA_Drivers/QAD_Timer.o
+ .debug_macro   0x0000000000000000      0x108 ./QA_Drivers/QAD_Timer.o
+ .debug_macro   0x0000000000000000       0x35 ./QA_Drivers/QAD_Timer.o
+ .debug_macro   0x0000000000000000      0x2d4 ./QA_Drivers/QAD_Timer.o
+ .debug_macro   0x0000000000000000       0xa4 ./QA_Drivers/QAD_Timer.o
+ .debug_macro   0x0000000000000000      0x313 ./QA_Drivers/QAD_Timer.o
+ .debug_macro   0x0000000000000000      0x4ca ./QA_Drivers/QAD_Timer.o
+ .debug_macro   0x0000000000000000       0xd6 ./QA_Drivers/QAD_Timer.o
+ .debug_macro   0x0000000000000000      0x773 ./QA_Drivers/QAD_Timer.o
+ .debug_macro   0x0000000000000000      0x1d5 ./QA_Drivers/QAD_Timer.o
+ .debug_macro   0x0000000000000000      0x2fe ./QA_Drivers/QAD_Timer.o
+ .debug_macro   0x0000000000000000      0xa6e ./QA_Drivers/QAD_Timer.o
+ .debug_macro   0x0000000000000000       0xa9 ./QA_Drivers/QAD_Timer.o
+ .debug_macro   0x0000000000000000      0x5a5 ./QA_Drivers/QAD_Timer.o
+ .debug_macro   0x0000000000000000       0x44 ./QA_Drivers/QAD_Timer.o
+ .debug_macro   0x0000000000000000      0x15c ./QA_Drivers/QAD_Timer.o
+ .debug_macro   0x0000000000000000       0x83 ./QA_Drivers/QAD_Timer.o
+ .debug_line    0x0000000000000000      0xc03 ./QA_Drivers/QAD_Timer.o
+ .debug_str     0x0000000000000000   0x12dcb8 ./QA_Drivers/QAD_Timer.o
+ .comment       0x0000000000000000       0x54 ./QA_Drivers/QAD_Timer.o
+ .debug_frame   0x0000000000000000      0x36c ./QA_Drivers/QAD_Timer.o
+ .ARM.attributes
+                0x0000000000000000       0x32 ./QA_Drivers/QAD_Timer.o
  .group         0x0000000000000000        0x8 ./QA_Drivers/QAD_UART.o
  .group         0x0000000000000000        0x8 ./QA_Drivers/QAD_UART.o
  .group         0x0000000000000000        0xc ./QA_Drivers/QAD_UART.o
@@ -13698,6 +14287,169 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x44 ./QA_Drivers/QAD_UART.o
  .debug_macro   0x0000000000000000      0x15c ./QA_Drivers/QAD_UART.o
  .debug_macro   0x0000000000000000       0x83 ./QA_Drivers/QAD_UART.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .text          0x0000000000000000        0x0 ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .data          0x0000000000000000        0x0 ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .bss           0x0000000000000000        0x0 ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .rodata._ZL21QAD_Timer_PeriphCount
+                0x0000000000000000        0x1 ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .text._ZN12QAD_TimerMgrC2Ev
+                0x0000000000000000      0x3cc ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .text._ZN12QAD_TimerMgr17imp_registerTimerE16QAD_Timer_Periph15QAD_Timer_State
+                0x0000000000000000       0x56 ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .text._ZN12QAD_TimerMgr19imp_deregisterTimerE16QAD_Timer_Periph
+                0x0000000000000000       0x2c ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .text._ZN12QAD_TimerMgr13imp_findTimerE14QAD_Timer_Type
+                0x0000000000000000       0x6c ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .text._ZN12QAD_TimerMgr20imp_findTimerEncoderEv
+                0x0000000000000000       0x66 ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .text._ZN12QAD_TimerMgr16imp_findTimerADCEv
+                0x0000000000000000       0x66 ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .text._ZN12QAD_TimerMgr15imp_enableClockE16QAD_Timer_Periph
+                0x0000000000000000      0x32c ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .text._ZN12QAD_TimerMgr16imp_disableClockE16QAD_Timer_Periph
+                0x0000000000000000      0x130 ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .text._ZN12QAD_TimerMgr19imp_getTimersActiveEv
+                0x0000000000000000       0x48 ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .text._ZN12QAD_TimerMgr21imp_getTimersInactiveEv
+                0x0000000000000000       0x48 ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .debug_info    0x0000000000000000     0x11e1 ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .debug_abbrev  0x0000000000000000      0x39d ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .debug_aranges
+                0x0000000000000000       0x68 ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .debug_ranges  0x0000000000000000       0x58 ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .debug_macro   0x0000000000000000      0x2c2 ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .debug_macro   0x0000000000000000      0xb98 ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .debug_macro   0x0000000000000000       0x2e ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .debug_macro   0x0000000000000000       0x3b ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .debug_macro   0x0000000000000000       0x1c ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .debug_macro   0x0000000000000000       0x22 ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .debug_macro   0x0000000000000000       0x8e ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .debug_macro   0x0000000000000000       0x51 ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .debug_macro   0x0000000000000000      0x103 ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .debug_macro   0x0000000000000000       0x6a ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .debug_macro   0x0000000000000000      0x1df ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .debug_macro   0x0000000000000000       0x1c ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .debug_macro   0x0000000000000000       0x22 ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .debug_macro   0x0000000000000000       0xdf ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .debug_macro   0x0000000000000000     0x12cd ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .debug_macro   0x0000000000000000      0x11f ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .debug_macro   0x0000000000000000       0x19 ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .debug_macro   0x0000000000000000    0x2047d ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .debug_macro   0x0000000000000000       0x43 ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .debug_macro   0x0000000000000000      0x2d5 ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .debug_macro   0x0000000000000000     0x36c9 ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .debug_macro   0x0000000000000000      0x17b ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .debug_macro   0x0000000000000000       0x63 ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .debug_macro   0x0000000000000000     0x1b3f ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .debug_macro   0x0000000000000000      0x6c4 ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .debug_macro   0x0000000000000000      0x18b ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .debug_macro   0x0000000000000000      0x117 ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .debug_macro   0x0000000000000000      0x276 ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .debug_macro   0x0000000000000000       0x27 ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .debug_macro   0x0000000000000000      0x24f ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .debug_macro   0x0000000000000000       0x71 ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .debug_macro   0x0000000000000000       0x58 ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .debug_macro   0x0000000000000000      0x236 ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .debug_macro   0x0000000000000000      0x416 ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .debug_macro   0x0000000000000000      0x153 ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .debug_macro   0x0000000000000000      0x107 ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .debug_macro   0x0000000000000000      0x239 ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .debug_macro   0x0000000000000000      0x14f ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .debug_macro   0x0000000000000000      0x3dc ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .debug_macro   0x0000000000000000       0x12 ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .debug_macro   0x0000000000000000      0x514 ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .debug_macro   0x0000000000000000      0x22c ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .debug_macro   0x0000000000000000       0x61 ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .debug_macro   0x0000000000000000       0xa5 ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .debug_macro   0x0000000000000000      0x198 ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .debug_macro   0x0000000000000000      0x6fc ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .debug_macro   0x0000000000000000       0xd6 ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .debug_macro   0x0000000000000000      0x12f ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .debug_macro   0x0000000000000000      0x108 ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .debug_macro   0x0000000000000000       0x35 ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .debug_macro   0x0000000000000000      0x2d4 ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .debug_macro   0x0000000000000000       0xa4 ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .debug_macro   0x0000000000000000      0x313 ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .debug_macro   0x0000000000000000      0x4ca ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .debug_macro   0x0000000000000000       0xd6 ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .debug_macro   0x0000000000000000      0x773 ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .debug_macro   0x0000000000000000      0x1d5 ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .debug_macro   0x0000000000000000      0x2fe ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .debug_macro   0x0000000000000000      0xa6e ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .debug_macro   0x0000000000000000       0xa9 ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .debug_macro   0x0000000000000000      0x5a5 ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .debug_macro   0x0000000000000000       0x44 ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .debug_macro   0x0000000000000000      0x15c ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .debug_macro   0x0000000000000000       0x83 ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .debug_line    0x0000000000000000      0xc67 ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .debug_str     0x0000000000000000   0x12d244 ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .comment       0x0000000000000000       0x54 ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .debug_frame   0x0000000000000000      0x1a0 ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
+ .ARM.attributes
+                0x0000000000000000       0x32 ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
  .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_UARTMgr.o
  .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_UARTMgr.o
  .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_UARTMgr.o
@@ -15681,10 +16433,14 @@ LOAD ./Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_ll_usart.o
 LOAD ./Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_ll_usb.o
 LOAD ./Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_ll_utils.o
 LOAD ./QA_Drivers/QAD_EXTI.o
+LOAD ./QA_Drivers/QAD_Encoder.o
 LOAD ./QA_Drivers/QAD_FMC.o
 LOAD ./QA_Drivers/QAD_GPIO.o
 LOAD ./QA_Drivers/QAD_LTDC.o
+LOAD ./QA_Drivers/QAD_PWM.o
+LOAD ./QA_Drivers/QAD_Timer.o
 LOAD ./QA_Drivers/QAD_UART.o
+LOAD ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
 LOAD ./QA_Drivers/QAD_PeripheralManagers/QAD_UARTMgr.o
 LOAD ./QA_Systems/QAS_LCD/QAS_LCD.o
 LOAD ./QA_Systems/QAS_LCD/QAS_LCD_Fonts.o
