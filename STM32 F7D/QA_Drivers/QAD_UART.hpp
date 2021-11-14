@@ -80,8 +80,8 @@ private:
 	uint16_t           m_uRXPin;         //Pin number used by RX pin
 	uint8_t            m_uRXAF;          //Alternate function used by RX pin
 
-	IRQn_Type          m_eIRQ;           //The IRQ used by the UART periperal being used (a member of IRQn_Type defined in stm32f411xe.h)
-	UART_HandleTypeDef m_sHandle;        //Handle used by HAL functions to access UART peripheral (defined in stm32f4xx_hal_uart.h)
+	IRQn_Type          m_eIRQ;           //The IRQ used by the UART periperal being used (a member of IRQn_Type defined in stm32f769xx.h)
+	UART_HandleTypeDef m_sHandle;        //Handle used by HAL functions to access UART peripheral (defined in stm32f7xx_hal_uart.h)
 
 	QA_ActiveState     m_eTXState;       //Stores whether the transmit component of the peripheral is currently active. Member of QA_ActiveState enum defined in setup.hpp
 	QA_ActiveState     m_eRXState;       //Stores whether the receive component of the peripheral is currently active. Member of QA_ActiveState enum defined in setup.hpp

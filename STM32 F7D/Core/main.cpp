@@ -117,6 +117,11 @@ int main(void) {
     while (1) {}
   }
 
+  //If initialization succeeded then output a message via serial
+  UART_STLink->txCR();
+  UART_STLink->txStringCR("STM32F769I Discovery Booting...");
+
+
 
 	//----------------------------------
   //Initialize FMC / SDRAM driver using the QAD_FMC singleton driver class

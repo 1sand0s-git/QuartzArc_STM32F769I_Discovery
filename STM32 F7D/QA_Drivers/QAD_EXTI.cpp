@@ -32,8 +32,8 @@
 //QAD_EXTI Constructor
 //
 //This method will initialize the required GPIO pin with Pull Up and Pull Down resistors disabled, and EXTI mode disabled
-//pGPIO - The GPIO port for the required pin. A member of GPIO_TypeDef as defined in stm32f411xe.h
-//uPin  - The pin number for the required pin. A member of GPIO_pins_define as defined in stm32f4xx_hal_gpio.h
+//pGPIO - The GPIO port for the required pin. A member of GPIO_TypeDef as defined in stm32f769xx.h
+//uPin  - The pin number for the required pin. A member of GPIO_pins_define as defined in stm32f7xx_hal_gpio.h
 QAD_EXTI::QAD_EXTI(GPIO_TypeDef* pGPIO, uint16_t uPin) :
   QAD_GPIO_Input(pGPIO, uPin),            //Initialize the inherited QAD_GPIO_Input driver class
 	m_eEXTIState(QA_Inactive),              //Initialize the EXTI mode in disabled state
@@ -48,8 +48,8 @@ QAD_EXTI::QAD_EXTI(GPIO_TypeDef* pGPIO, uint16_t uPin) :
 //QAD_EXTI Constructor
 //
 //This method will initialize the required GPIO pin with Pull Up/Pull Down resistors and EXTI edge type in specified states
-//pGPIO     - The GPIO port for the required pin. A member of GPIO_TypeDef as defined in stm32f411xe.h
-//uPin      - The pin number for the required pin. A member of GPIO_pins_define as defined in stm32f4xx_hal_gpio.h
+//pGPIO     - The GPIO port for the required pin. A member of GPIO_TypeDef as defined in stm32f769xx.h
+//uPin      - The pin number for the required pin. A member of GPIO_pins_define as defined in stm32f7xx_hal_gpio.h
 //ePull     - Specifies if pull-up or pull-down resistors are to be used. A member of QAD_GPIO_PullMode as defined in QAD_GPIO.hpp
 //eEdgeType - Specifies which edges(s) the interrupt is to be triggered on. A member of QAD_EXTI_EdgeType as defined in QAD_EXTI.hpp
 QAD_EXTI::QAD_EXTI(GPIO_TypeDef* pGPIO, uint16_t uPin, QAD_GPIO_PullMode ePull, QAD_EXTI_EdgeType eEdgeType) :
