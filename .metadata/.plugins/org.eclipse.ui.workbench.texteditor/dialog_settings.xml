@@ -6,8 +6,9 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value=""/>
+		<item key="selection" value="RTC"/>
 		<list key="findhistory">
+			<item value="RNG"/>
 			<item value="stm32f4"/>
 			<item value=".pInstance"/>
 			<item value="_TestFont_"/>
@@ -18,6 +19,7 @@
 			<item value="Init.uart"/>
 		</list>
 		<list key="replacehistory">
+			<item value="RTC"/>
 			<item value=".bADC"/>
 			<item value="_ShowcardGothic18pt_"/>
 			<item value="TestFont"/>

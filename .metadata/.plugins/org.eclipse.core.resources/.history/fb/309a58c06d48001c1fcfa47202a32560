@@ -1,0 +1,137 @@
+/* ----------------------------------------------------------------------- */
+/*                                                                         */
+/*   Quartz Arc                                                            */
+/*                                                                         */
+/*   STM32 F769I Discovery                                                 */
+/*                                                                         */
+/*   System: Driver                                                        */
+/*   Role: RTC Driver                                                      */
+/*   Filename: QAD_RTC.cpp                                                 */
+/*   Date: 18th November 2021                                              */
+/*   Created By: Benjamin Rosser                                           */
+/*                                                                         */
+/*   This code is covered by Creative Commons CC-BY-NC-SA license          */
+/*   (C) Copyright 2021 Benjamin Rosser                                    */
+/*                                                                         */
+/* ----------------------------------------------------------------------- */
+
+//Includes
+#include "QAD_RTC.hpp"
+
+
+	//------------------------------------------
+	//------------------------------------------
+	//------------------------------------------
+
+
+	//------------------------------
+	//------------------------------
+	//QAD_RTC Initialization Methods
+
+//QAD_RTC::imp_init
+//QAD_RTC Initialization Method
+QA_Result QAD_RTC::imp_init(void) {
+
+}
+
+
+//QAD_RTC::imp_deinit
+//QAD_RTC Initialization Method
+void QAD_RTC::imp_deinit(void) {
+
+}
+
+
+  //-----------------------
+	//-----------------------
+	//QAD_RTC Control Methods
+
+//QAD_RTC::imp_setTime
+//QAD_RTC Control Method
+QA_Result QAD_RTC::imp_setTime(uint8_t uHour, uint8_t uMinute, uint8_t uSecond) {
+
+}
+
+
+//QAD_RTC::imp_setDate
+//QAD_RTC Control Method
+QA_Result QAD_RTC::imp_setDate(uint8_t uWeekDay, uint8_t uDay, uint8_t uMonth, uint8_t uYear) {
+
+}
+
+
+//QAD_RTC::imp_update
+//QAD_RTC Control Method
+QA_Result QAD_RTC::imp_update(void) {
+
+}
+
+
+  //--------------------
+	//--------------------
+	//QAD_RTC Data Methods
+
+//QAD_RTC::imp_getHour
+//QAD_RTC Data Method
+uint8_t QAD_RTC::imp_getHour(void) {
+
+}
+
+
+//QAD_RTC::imp_getMinute
+//QAD_RTC Data Method
+uint8_t QAD_RTC::imp_getMinute(void) {
+
+}
+
+
+//QAD_RTC::imp_getSecond
+//QAD_RTC Data Method
+uint8_t QAD_RTC::imp_getSecond(void) {
+
+}
+
+
+//QAD_RTC::imp_getWeekDay
+//QAD_RTC Data Method
+uint8_t QAD_RTC::imp_getWeekDay(void) {
+
+}
+
+
+//QAD_RTC::imp_getWeekdayDayStr
+//QAD_RTC Data Method
+void QAD_RTC::imp_getWeekDayStr(char* strWeekday) {
+
+}
+
+
+//QAD_RTC::imp_getDay
+//QAD_RTC Data Method
+uint8_t QAD_RTC::imp_getDay(void) {
+
+}
+
+
+//QAD_RTC::imp_getMonth
+//QAD_RTC Data Method
+uint8_t QAD_RTC::imp_getMonth(void) {
+
+}
+
+
+//QAD_RTC::imp_getMonthStr
+//QAD_RTC Data Method
+void QAD_RTC::imp_getMonthStr(char* strMonth) {
+
+}
+
+
+//QAD_RTC::imp_getYear
+//QAD_RTC Data Method
+uint8_t QAD_RTC::imp_getYear(void) {
+
+}
+
+
+

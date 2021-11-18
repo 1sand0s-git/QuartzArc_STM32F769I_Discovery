@@ -5,7 +5,13 @@ QAD_FMC.hpp:174:20:static QA_Result QAD_FMC::test()	8	static
 QAD_RNG.hpp:44:2:QAD_RNG::QAD_RNG()	16	static
 QAD_RNG.hpp:56:19:static QAD_RNG& QAD_RNG::get()	8	static
 QAD_RNG.hpp:64:20:static QA_Result QAD_RNG::init()	8	static
-QAD_RNG.hpp:79:19:static uint32_t QAD_RNG::getValue()	8	static
+QAD_RTC.hpp:47:2:QAD_RTC::QAD_RTC()	16	static
+QAD_RTC.hpp:59:18:static QAD_RTC& QAD_RTC::get()	8	static
+QAD_RTC.hpp:68:19:static QA_Result QAD_RTC::init()	8	static
+QAD_RTC.hpp:88:19:static QA_Result QAD_RTC::update()	8	static
+QAD_RTC.hpp:96:17:static uint8_t QAD_RTC::getHour()	8	static
+QAD_RTC.hpp:100:17:static uint8_t QAD_RTC::getMinute()	8	static
+QAD_RTC.hpp:104:17:static uint8_t QAD_RTC::getSecond()	8	static
 gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
 QAT_FIFO.hpp:67:2:QAT_FIFOBuffer::QAT_FIFOBuffer(uint16_t)	16	static
 QAS_Serial_Dev_Base.hpp:81:2:QAS_Serial_Dev_Base::QAS_Serial_Dev_Base(uint16_t, uint16_t, QAS_Serial_Dev_Base::DeviceType)	24	static
@@ -33,7 +39,7 @@ QAS_LCD.hpp:178:15:static void QAS_LCD::drawRectFill(QAT_Vector2_16, QAT_Vector2
 QAS_LCD.hpp:189:15:static void QAS_LCD::setFontByName(const char*)	16	static
 QAS_LCD.hpp:195:15:static void QAS_LCD::setFontByIndex(uint8_t)	16	static
 QAS_LCD.hpp:219:15:static void QAS_LCD::drawStrC(QAT_Vector2_16, const char*)	32	static
-main.cpp:70:5:int main()	360	static
+main.cpp:73:5:int main()	376	static
 unique_ptr.h:862:5:typename std::_MakeUniq<_Tp>::__array std::make_unique(std::size_t) [with _Tp = unsigned char []]	24	static
 unique_ptr.h:856:5:) [with _Tp = QAT_FIFOBuffer; _Args = {short unsigned int&}]	24	static
 unique_ptr.h:856:5:) [with _Tp = QAD_UART; _Args = {QAD_UART_InitStruct&}]	24	static

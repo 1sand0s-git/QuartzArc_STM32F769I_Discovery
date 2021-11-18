@@ -1,0 +1,105 @@
+/* ----------------------------------------------------------------------- */
+/*                                                                         */
+/*   Quartz Arc                                                            */
+/*                                                                         */
+/*   STM32 F769I Discovery                                                 */
+/*                                                                         */
+/*   System: Driver                                                        */
+/*   Role: RTC Driver                                                      */
+/*   Filename: QAD_RTC.hpp                                                 */
+/*   Date: 18th November 2021                                              */
+/*   Created By: Benjamin Rosser                                           */
+/*                                                                         */
+/*   This code is covered by Creative Commons CC-BY-NC-SA license          */
+/*   (C) Copyright 2021 Benjamin Rosser                                    */
+/*                                                                         */
+/* ----------------------------------------------------------------------- */
+
+//Prevent Recursive Inclusion
+#ifndef __QAD_RTC_HPP_
+#define __QAD_RTC_HPP_
+
+
+//Includes
+#include "setup.hpp"
+
+
+	//------------------------------------------
+	//------------------------------------------
+	//------------------------------------------
+
+
+//-------
+//QAD_RTC
+class QAD_RTC {
+private:
+
+	QA_InitState       m_eInitState;
+
+	RTC_HandleTypeDef  m_sHandle;
+
+	RTC_TimeTypeDef    m_sTime;
+	RTC_DateTypeDef    m_sDate;
+
+
+	//------------
+	//Constructors
+	QAD_RTC() :
+		m_eInitState(QA_NotInitialized),
+		m_sHandle({0}) {}
+
+public:
+
+	//Delete copy constructor and assignment operator
+	QAD_RTC(const QAD_RTC& other) = delete;
+	QAD_RTC& operator=(const QAD_RTC& other) = delete;
+
+	//-----------------
+	//Singleton Methods
+	static QAD_RTC& get(void) {
+		static QAD_RTC instance;
+		return instance;
+	}
+
+
+	//----------------------
+	//Initialization Methods
+
+	static QA_Result init(void) {
+		return get().imp_init();
+	}
+
+	static void deinit(void) {
+		get().imp_deinit();
+	}
+
+
+	//---------------
+	//Control Methods
+
+	static QA_Result setTime(uint8_t uHour, uint8_t uMinute, uint8_t uSecond) {
+		return get().imp_setTime(uHoue, uMinute, uSecond);
+	}
+
+	static QA_Result setDate(uint8_t uWeekDay, uint8_t uDay, uint8_t uMonth, uint8_t uYear) {
+		return get().imp_setDate(uWeekDay, uDay, uMonth, uYear);
+	}
+
+};
+
+
+//Prevent Recursive Inclusion
+#endif /* __QAD_RTC_HPP_ */
+
+
+
+
+
+
+
+
+
+
+
+
+

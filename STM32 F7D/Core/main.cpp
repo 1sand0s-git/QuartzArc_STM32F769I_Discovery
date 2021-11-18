@@ -23,6 +23,7 @@
 #include "QAD_GPIO.hpp"
 #include "QAD_FMC.hpp"
 #include "QAD_RNG.hpp"
+#include "QAD_RTC.hpp"
 
 #include "QAS_Serial_Dev_UART.hpp"
 #include "QAS_LCD.hpp"
@@ -53,6 +54,8 @@ QAS_Serial_Dev_UART* UART_STLink;
 //
 
 const uint32_t QA_FT_RNGUpdateTickThreshold = 1000;
+
+const uint32_t QA_FT_RTCUpdateTickThreshold = 1000;
 
 const uint32_t QA_FT_HeartbeatTickThreshold = 500;   //Time in milliseconds between heartbeat LED updates
                                                      //The rate of flashing of the heartbeat LED will be double the value defined here
@@ -210,6 +213,17 @@ int main(void) {
   }
   UART_STLink->txString("RNG: Initialized");
 
+
+  //---------------
+  //Init RTC Driver
+  if (QAD_RTC::init()) {
+  	UART_STLink->txStringCR("RTC: Initialization Failed");
+  	GPIO_UserLED_Red->on();
+  	while(1) {}
+  }
+  UART_STLink->txString("RTC: Initialized");
+
+
 	//----------------------------------
 	//----------------------------------
   //Processing Loop
@@ -222,6 +236,7 @@ int main(void) {
 
   //Create task timing variables
   uint32_t uRNGUpdateTicks = 0;
+  uint32_t uRTCUpdateTicks = 0;
   uint32_t uHeartbeatTicks = 0;
 
   //Temp String
@@ -260,6 +275,30 @@ int main(void) {
 
     	uRNGUpdateTicks -= QA_FT_RNGUpdateTickThreshold;
     }
+
+
+    //Update and output RTC
+    uRTCUpdateTicks += uTicks;
+    if (uRTCUpdateTicks >= QA_FT_RTCUpdateTickThreshold) {
+      QAD_RTC::update();
+
+    	sprintf(strOut, "Time: %2u : %2u : %2u", QAD_RTC::getHour(), QAD_RTC::getMinute(), QAD_RTC::getSecond());
+    	UART_STLink->txStringCR(strOut);
+
+      QAS_LCD::setDrawBuffer(QAD_LTDC_Layer1);
+      QAS_LCD::setDrawColor(0x0000);
+      QAS_LCD::clearBuffer();
+
+      QAS_LCD::setDrawColor(0xFBBF);
+      //QAS_LCD::setFontByName("SegoeUI20ptSB");
+      QAS_LCD::setFontByIndex(1);
+      QAS_LCD::drawStrC(QAT_Vector2_16(400, 250), strOut);
+
+      QAS_LCD::flipLayer1();
+
+      uRTCUpdateTicks -= QA_FT_RTCUpdateTickThreshold;
+    }
+
 
   	//----------------------------------
     //Update Heartbeat LED
