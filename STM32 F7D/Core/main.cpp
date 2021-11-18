@@ -22,6 +22,7 @@
 
 #include "QAD_GPIO.hpp"
 #include "QAD_FMC.hpp"
+#include "QAD_RNG.hpp"
 
 #include "QAS_Serial_Dev_UART.hpp"
 #include "QAS_LCD.hpp"
@@ -50,6 +51,9 @@ QAS_Serial_Dev_UART* UART_STLink;
 //These constants are used to determine the update rate (in milliseconds) of each of the
 //tasks that are run in the processing loop within the main() function.
 //
+
+const uint32_t QA_FT_RNGUpdateTickThreshold = 1000;
+
 const uint32_t QA_FT_HeartbeatTickThreshold = 500;   //Time in milliseconds between heartbeat LED updates
                                                      //The rate of flashing of the heartbeat LED will be double the value defined here
 
@@ -197,6 +201,15 @@ int main(void) {
   QAS_LCD::flipLayer1();
 
 
+  //---------------
+  //Init RNG Driver
+  if (QAD_RNG::init()) {
+  	UART_STLink->txStringCR("RNG: Initialization Failed");
+  	GPIO_UserLED_Red->on();
+  	while(1) {}
+  }
+  UART_STLink->txString("RNG: Initialized");
+
 	//----------------------------------
 	//----------------------------------
   //Processing Loop
@@ -208,7 +221,11 @@ int main(void) {
   uint32_t uOldTick = uNewTick;
 
   //Create task timing variables
+  uint32_t uRNGUpdateTicks = 0;
   uint32_t uHeartbeatTicks = 0;
+
+  //Temp String
+  char strOut[256];
 
 
   //-----------------------------------
@@ -233,6 +250,16 @@ int main(void) {
     	uTicks = 0;
     }
 
+
+    //Update and output Random Number
+    uRNGUpdateTicks += uTicks;
+    if (uRNGUpdateTicks >= QA_FT_RNGUpdateTickThreshold) {
+
+//    	sprintf(strOut, "RNG Value: %lu", QAD_RNG::getValue());
+//    	UART_STLink->txStringCR(strOut);
+
+    	uRNGUpdateTicks -= QA_FT_RNGUpdateTickThreshold;
+    }
 
   	//----------------------------------
     //Update Heartbeat LED

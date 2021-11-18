@@ -198,7 +198,7 @@ QA_Result QAD_FMC::imp_test(void) {
 //Used to send commands to SDRAM module
 //pCmd - FMC_SDRAM_CommandTypeDef containing details of command to be sent to SDRAM module
 void QAD_FMC::cmd(FMC_SDRAM_CommandTypeDef& pCmd) {
-	HAL_SDRAM_SendCommand(&m_sHandle, &pCmd, 0);
+	HAL_SDRAM_SendCommand(&m_sHandle, &pCmd, m_uTimeout);
 }
 
 

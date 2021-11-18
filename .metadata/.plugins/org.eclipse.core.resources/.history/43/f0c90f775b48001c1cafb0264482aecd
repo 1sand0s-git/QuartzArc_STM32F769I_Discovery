@@ -1,0 +1,52 @@
+/* ----------------------------------------------------------------------- */
+/*                                                                         */
+/*   Quartz Arc                                                            */
+/*                                                                         */
+/*   STM32 F769I Discovery                                                 */
+/*                                                                         */
+/*   System: Driver                                                        */
+/*   Role: RNG Driver                                                      */
+/*   Filename: QAD_RNG.cpp                                                 */
+/*   Date: 18th November 2021                                              */
+/*   Created By: Benjamin Rosser                                           */
+/*                                                                         */
+/*   This code is covered by Creative Commons CC-BY-NC-SA license          */
+/*   (C) Copyright 2021 Benjamin Rosser                                    */
+/*                                                                         */
+/* ----------------------------------------------------------------------- */
+
+//Includes
+#include "QAD_RNG.hpp"
+
+
+	//------------------------------------------
+	//------------------------------------------
+	//------------------------------------------
+
+
+  //------------------------------
+  //------------------------------
+  //QAD_RNG Initialization Methods
+
+//QAD_RNG::imp_init
+//QAD_RNG Initialization Method
+QA_Result QAD_RNG::imp_init(void) {
+
+}
+
+
+//QAD_RNG::imp_deinit
+//QAD_RNG Initialization Method
+void QAD_RNG::imp_deinit(void) {
+
+}
+
+
+  //------------
+  //Data Methods
+
+//QAD_RNG::imp_getValue
+//QAD_RNG Data Method
+uint32_t QAD_RNG::imp_getValue(void) {
+
+}

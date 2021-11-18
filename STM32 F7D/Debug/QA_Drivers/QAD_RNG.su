@@ -1,0 +1,3 @@
+QAD_RNG.cpp:33:11:QA_Result QAD_RNG::imp_init()	24	static
+QAD_RNG.cpp:59:6:void QAD_RNG::imp_deinit()	16	static
+QAD_RNG.cpp:76:10:uint32_t QAD_RNG::imp_getValue()	24	static

@@ -11,6 +11,7 @@ CPP_SRCS += \
 ../QA_Drivers/QAD_GPIO.cpp \
 ../QA_Drivers/QAD_LTDC.cpp \
 ../QA_Drivers/QAD_PWM.cpp \
+../QA_Drivers/QAD_RNG.cpp \
 ../QA_Drivers/QAD_Timer.cpp \
 ../QA_Drivers/QAD_UART.cpp 
 
@@ -21,6 +22,7 @@ OBJS += \
 ./QA_Drivers/QAD_GPIO.o \
 ./QA_Drivers/QAD_LTDC.o \
 ./QA_Drivers/QAD_PWM.o \
+./QA_Drivers/QAD_RNG.o \
 ./QA_Drivers/QAD_Timer.o \
 ./QA_Drivers/QAD_UART.o 
 
@@ -31,6 +33,7 @@ CPP_DEPS += \
 ./QA_Drivers/QAD_GPIO.d \
 ./QA_Drivers/QAD_LTDC.d \
 ./QA_Drivers/QAD_PWM.d \
+./QA_Drivers/QAD_RNG.d \
 ./QA_Drivers/QAD_Timer.d \
 ./QA_Drivers/QAD_UART.d 
 

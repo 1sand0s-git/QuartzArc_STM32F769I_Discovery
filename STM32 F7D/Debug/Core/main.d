@@ -47,6 +47,7 @@ Core/main.o: ../Core/main.cpp ../Core/main.hpp ../Core/setup.hpp \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart_ex.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dsi.h ../Core/boot.hpp \
  ../QA_Drivers/QAD_GPIO.hpp ../Core/setup.hpp ../QA_Drivers/QAD_FMC.hpp \
+ ../QA_Drivers/QAD_RNG.hpp \
  ../QA_Systems/QAS_Serial/QAS_Serial_Dev_UART.hpp \
  ../QA_Tools/QAT_FIFO.hpp \
  ../QA_Systems/QAS_Serial/QAS_Serial_Dev_Base.hpp \
@@ -161,6 +162,8 @@ Core/main.o: ../Core/main.cpp ../Core/main.hpp ../Core/setup.hpp \
 ../Core/setup.hpp:
 
 ../QA_Drivers/QAD_FMC.hpp:
+
+../QA_Drivers/QAD_RNG.hpp:
 
 ../QA_Systems/QAS_Serial/QAS_Serial_Dev_UART.hpp:
 

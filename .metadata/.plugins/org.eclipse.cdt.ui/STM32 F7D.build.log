@@ -1,10 +1,10 @@
-00:27:26 **** Incremental Build of configuration Debug for project STM32 F7D ****
+20:49:59 **** Incremental Build of configuration Debug for project STM32 F7D ****
 make -j8 all 
 arm-none-eabi-size   STM32\ F7D.elf 
    text	   data	    bss	    dec	    hex	filename
-  49452	    128	   2352	  51932	   cadc	STM32 F7D.elf
+  52336	    128	   2376	  54840	   d638	STM32 F7D.elf
 Finished building: default.size.stdout
  
 
-00:27:27 Build Finished. 0 errors, 0 warnings. (took 569ms)
+20:50:01 Build Finished. 0 errors, 0 warnings. (took 1s.694ms)
 

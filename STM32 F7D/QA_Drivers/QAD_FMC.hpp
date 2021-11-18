@@ -96,7 +96,7 @@ private:
 	const uint32_t m_uModeReg_WriteBurst_Single = 0x00000200;   //Used to select data writes as using a burst length of 1 32bit word
 
 
-	//const uint32_t m_uTimeout  = 0xFFFF;
+	const uint32_t m_uTimeout  = 0xFFFF;
 
 	//m_uRefresh determines the required refresh rate for the SDRAM in order to maintain data integrity
 	const uint32_t m_uRefresh  = 0x0603;
