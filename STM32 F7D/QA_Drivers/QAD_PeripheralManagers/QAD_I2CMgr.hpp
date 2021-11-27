@@ -31,6 +31,8 @@
 
 //--------------
 //QAD_I2C_Periph
+//
+//Used to select which I2C peripheral is to be used, and index into peripheral array in I2C manager
 enum QAD_I2C_Periph : uint8_t {
 	QAD_I2C1 = 0,
 	QAD_I2C2,
@@ -40,12 +42,17 @@ enum QAD_I2C_Periph : uint8_t {
 };
 
 
+//-------------------
+//QAD_I2C_PeriphCount
+//
 //I2C Peripheral Count
 const uint8_t QAD_I2C_PeriphCount = QAD_I2CNone;
 
 
 //-------------
 //QAD_I2C_State
+//
+//Used to store whether a particular I2C peripheral is in use, or not currently being used
 enum QAD_I2C_State : uint8_t {
 	QAD_I2C_Unused = 0,
 	QAD_I2C_InUse_Master,
@@ -61,16 +68,18 @@ enum QAD_I2C_State : uint8_t {
 
 //------------
 //QAD_I2C_Data
+//
+//Structure used in array within QAD_I2CMgr class to hold information for I2C peripherals
 typedef struct {
 
-	QAD_I2C_Periph    eI2C;
+	QAD_I2C_Periph    eI2C;        //Used to store which I2C peripheral is represented by the structure, used for manager menthods that find unused I2Cs
 
-	QAD_I2C_State     eState;
+	QAD_I2C_State     eState;      //Stores whether the I2C peripheral is currently being used or not
 
-	I2C_TypeDef*      pInstance;
+	I2C_TypeDef*      pInstance;   //Stores the I2C_TypeDef for the I2C peripheral (defined in stm32f769xx.h)
 
-	IRQn_Type         eIRQ_Event;
-	IRQn_Type         eIRQ_Error;
+	IRQn_Type         eIRQ_Event;  //Stores the Event IRQ Handler enum for the I2C peripheral (defined in stm32f769xx.h)
+	IRQn_Type         eIRQ_Error;  //Stores the Error IRQ Handler enum for the I2C peripheral (defined in stm32f769xx.h)
 
 } QAD_I2C_Data;
 
@@ -82,6 +91,10 @@ typedef struct {
 
 //----------
 //QAD_I2CMgr
+//
+//Singleton class
+//Used to allow management of I2C peripherals in order to make sure that a driver is prevented from accessing any
+//I2C peripherals that are already being used by another driver
 class QAD_I2CMgr {
 private:
 
@@ -91,7 +104,6 @@ private:
 
 	//------------
 	//Constructors
-
 	QAD_I2CMgr();
 
 public:
@@ -104,6 +116,8 @@ public:
 
 	//-----------------
 	//Singleton Methods
+	//
+	//Used to retrieve a reference to the singleton class
 	static QAD_I2CMgr& get(void) {
 		static QAD_I2CMgr instance;
 		return instance;
@@ -113,6 +127,9 @@ public:
 	//------------
 	//Data Methods
 
+	//Used to retrieve the current state (QAD_I2C_PeriphState enum) of a I2C peripheral
+	//eI2C - The I2C peripheral to retrieve the state for. Member of QAD_I2C_Periph
+	//Returns a member of QAD_I2C_State enum (QAD_I2C_Unused, etc)
 	static QAD_I2C_State getState(QAD_I2C_Periph eI2C) {
 		if (eI2C >= QAD_I2CNone)
 			return QAD_I2C_InvalidDevice;
@@ -120,6 +137,10 @@ public:
 		return get().m_sI2Cs[eI2C].eState;
 	}
 
+
+	//Used to retrieve an instance for an I2C peripheral
+	//eI2C - The I2C peripheral to retrieve the instance for. Member of QAD_I2C_Periph
+	//Returns I2C_TypeDef, as defined in stm32f769xx.h
 	static I2C_TypeDef* getInstance(QAD_I2C_Periph eI2C) {
 		if (eI2C >= QAD_I2CNone)
 			return NULL;
@@ -128,6 +149,9 @@ public:
 	}
 
 
+	//Used to retrieve an Event IRQ Enum for an I2C peripheral
+	//eI2C - The I2C peripheral to retrieve the IRQ enum for. Member of QAD_I2C_Periph
+	//Returns member of IRQn_Type enum, as defined in stm32f769xx.h
 	static IRQn_Type getIRQEvent(QAD_I2C_Periph eI2C) {
 		if (eI2C >= QAD_I2CNone)
 			return UsageFault_IRQn;
@@ -135,6 +159,10 @@ public:
 		return get().m_sI2Cs[eI2C].eIRQ_Event;
 	}
 
+
+	//Used to retrieve an Error IRQ Enum for an I2C peripheral
+	//eI2C - The I2C peripheral to retrieve the IRQ enum for. Member of QAD_I2C_Periph
+	//Returns member of IRQn_Type enum, as defined in stm32f769xx.h
 	static IRQn_Type getIRQError(QAD_I2C_Periph eI2C) {
 		if (eI2C >= QAD_I2CNone)
 			return UsageFault_IRQn;
@@ -146,10 +174,16 @@ public:
 	//------------------
 	//Management Methods
 
+	//Used to register an I2C peripheral as being used by a driver
+	//eI2C - the I2C peripheral to be registered
+	//Returns QA_OK if successful, or returns QA_Error_PeriphBusy if the selected I2C is already in use
 	static QA_Result registerI2C(QAD_I2C_Periph eI2C, QAD_I2C_State eMode) {
 		return get().imp_registerI2C(eI2C, eMode);
 	}
 
+
+	//Used to deregister an I2C to mark it as no longer being used by a driver
+	//eI2C - the I2C Peripheral to be deregistered
 	static void deregisterI2C(QAD_I2C_Periph eI2C) {
 		get().imp_deregisterI2C(eI2C);
 	}
@@ -158,10 +192,14 @@ public:
 	//-------------
 	//Clock Methods
 
+	//Used to enable the clock for a specific I2C peripheral
+	//eI2C - the I2C peripheral to enable the clock for
 	static void enableClock(QAD_I2C_Periph eI2C) {
 		get().imp_enableClock(eI2C);
 	}
 
+	//Used to disable the clock for a specific I2C peripheral
+	//eI2C - the I2C peripheral to disable the clock for
 	static void disableClock(QAD_I2C_Periph eI2C) {
 		get().imp_disableClock(eI2C);
 	}
@@ -170,15 +208,19 @@ public:
 	//--------------
 	//Status Methods
 
+	//Returns the number of I2C peripherals that are currently in-use (registered/active)
 	static uint8_t getI2CsActive(void) {
 		return get().imp_getI2CsActive();
 	}
 
+	//Returns the number of I2C peripherals that are currently not being used (deregistered/inactive)
 	static uint8_t getI2CsInactive(void) {
 		return get().imp_getI2CsInactive();
 	}
 
 private:
+
+  //NOTE: See QAD_I2CMgr.cpp for details of the following methods
 
 	//------------------
 	//Management Methods

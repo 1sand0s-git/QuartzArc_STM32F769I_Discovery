@@ -1,6 +1,7 @@
-13:11:33 **** Incremental Build of configuration Debug for project STM32 F7D ****
+08:15:54 **** Incremental Build of configuration Debug for project STM32 F7D ****
 make -j8 all 
-arm-none-eabi-g++ "../QA_Drivers/QAD_RNG.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F769xx -c -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Drivers/Componenets/Common -I../Drivers/Components/otm8009a -I../Core -I../QA_Drivers -I../QA_Drivers/QAD_PeripheralManagers -I../QA_Tools -I../QA_Systems -I../QA_Systems/QAS_Serial -I../QA_Systems/QAS_LCD -I../QA_Systems/QAS_LCD/QAS_LCD_Fonts -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"QA_Drivers/QAD_RNG.d" -MT"QA_Drivers/QAD_RNG.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "QA_Drivers/QAD_RNG.o"
+arm-none-eabi-g++ "../QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F769xx -c -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Drivers/Componenets/Common -I../Drivers/Components/otm8009a -I../Core -I../QA_Drivers -I../QA_Drivers/QAD_PeripheralManagers -I../QA_Tools -I../QA_Systems -I../QA_Systems/QAS_Serial -I../QA_Systems/QAS_LCD -I../QA_Systems/QAS_LCD/QAS_LCD_Fonts -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.d" -MT"QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o"
+arm-none-eabi-g++ "../QA_Drivers/QAD_I2C.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F769xx -c -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Drivers/Componenets/Common -I../Drivers/Components/otm8009a -I../Core -I../QA_Drivers -I../QA_Drivers/QAD_PeripheralManagers -I../QA_Tools -I../QA_Systems -I../QA_Systems/QAS_Serial -I../QA_Systems/QAS_LCD -I../QA_Systems/QAS_LCD/QAS_LCD_Fonts -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"QA_Drivers/QAD_I2C.d" -MT"QA_Drivers/QAD_I2C.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "QA_Drivers/QAD_I2C.o"
 arm-none-eabi-g++ -o "STM32 F7D.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\binar\Desktop\Quartz Arc\QA Codebase Repos\QA_STM32F769IDISCO\QuartzArc_STM32F769I_Discovery\STM32 F7D\STM32F769NIHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32 F7D.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
 Finished building target: STM32 F7D.elf
  
@@ -8,7 +9,7 @@ arm-none-eabi-size   STM32\ F7D.elf
 arm-none-eabi-objdump -h -S  STM32\ F7D.elf  > "STM32 F7D.list"
 arm-none-eabi-objcopy  -O binary  STM32\ F7D.elf  "STM32 F7D.bin"
    text	   data	    bss	    dec	    hex	filename
-  53812	    128	   2448	  56388	   dc44	STM32 F7D.elf
+  53816	    128	   2448	  56392	   dc48	STM32 F7D.elf
 Finished building: default.size.stdout
  
 Finished building: STM32 F7D.bin
@@ -16,5 +17,5 @@ Finished building: STM32 F7D.bin
 Finished building: STM32 F7D.list
  
 
-13:11:35 Build Finished. 0 errors, 0 warnings. (took 1s.565ms)
+08:15:55 Build Finished. 0 errors, 0 warnings. (took 1s.596ms)
 

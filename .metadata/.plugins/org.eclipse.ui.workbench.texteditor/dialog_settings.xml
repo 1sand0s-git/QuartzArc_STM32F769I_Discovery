@@ -6,10 +6,10 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="RTC"/>
+		<item key="selection" value=""/>
 		<list key="findhistory">
-			<item value="RNG"/>
 			<item value="stm32f4"/>
+			<item value="RNG"/>
 			<item value=".pInstance"/>
 			<item value="_TestFont_"/>
 			<item value="SegoeUI20ptSB"/>

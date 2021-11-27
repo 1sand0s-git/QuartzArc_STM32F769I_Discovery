@@ -2,16 +2,16 @@ QAD_FMC.hpp:115:2:QAD_FMC::QAD_FMC()	16	static
 QAD_FMC.hpp:130:19:static QAD_FMC& QAD_FMC::get()	8	static
 QAD_FMC.hpp:143:20:static QA_Result QAD_FMC::init()	8	static
 QAD_FMC.hpp:174:20:static QA_Result QAD_FMC::test()	8	static
-QAD_RNG.hpp:44:2:QAD_RNG::QAD_RNG()	16	static
-QAD_RNG.hpp:56:19:static QAD_RNG& QAD_RNG::get()	8	static
-QAD_RNG.hpp:64:20:static QA_Result QAD_RNG::init()	8	static
-QAD_RTC.hpp:47:2:QAD_RTC::QAD_RTC()	16	static
-QAD_RTC.hpp:59:18:static QAD_RTC& QAD_RTC::get()	8	static
-QAD_RTC.hpp:68:19:static QA_Result QAD_RTC::init()	8	static
-QAD_RTC.hpp:88:19:static QA_Result QAD_RTC::update()	8	static
-QAD_RTC.hpp:96:17:static uint8_t QAD_RTC::getHour()	8	static
-QAD_RTC.hpp:100:17:static uint8_t QAD_RTC::getMinute()	8	static
-QAD_RTC.hpp:104:17:static uint8_t QAD_RTC::getSecond()	8	static
+QAD_RNG.hpp:54:2:QAD_RNG::QAD_RNG()	16	static
+QAD_RNG.hpp:69:19:static QAD_RNG& QAD_RNG::get()	8	static
+QAD_RNG.hpp:80:20:static QA_Result QAD_RNG::init()	8	static
+QAD_RTC.hpp:60:2:QAD_RTC::QAD_RTC()	16	static
+QAD_RTC.hpp:76:18:static QAD_RTC& QAD_RTC::get()	8	static
+QAD_RTC.hpp:87:19:static QA_Result QAD_RTC::init()	8	static
+QAD_RTC.hpp:124:19:static QA_Result QAD_RTC::update()	8	static
+QAD_RTC.hpp:137:17:static uint8_t QAD_RTC::getHour()	8	static
+QAD_RTC.hpp:144:17:static uint8_t QAD_RTC::getMinute()	8	static
+QAD_RTC.hpp:151:17:static uint8_t QAD_RTC::getSecond()	8	static
 gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
 QAT_FIFO.hpp:67:2:QAT_FIFOBuffer::QAT_FIFOBuffer(uint16_t)	16	static
 QAS_Serial_Dev_Base.hpp:81:2:QAS_Serial_Dev_Base::QAS_Serial_Dev_Base(uint16_t, uint16_t, QAS_Serial_Dev_Base::DeviceType)	24	static
