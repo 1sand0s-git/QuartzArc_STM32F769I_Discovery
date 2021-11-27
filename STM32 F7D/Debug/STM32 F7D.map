@@ -13590,6 +13590,216 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x44 ./QA_Drivers/QAD_GPIO.o
  .debug_macro   0x0000000000000000      0x15c ./QA_Drivers/QAD_GPIO.o
  .debug_macro   0x0000000000000000       0x83 ./QA_Drivers/QAD_GPIO.o
+ .group         0x0000000000000000        0x8 ./QA_Drivers/QAD_I2C.o
+ .group         0x0000000000000000        0x8 ./QA_Drivers/QAD_I2C.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_I2C.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_I2C.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_I2C.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_I2C.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_I2C.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_I2C.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_I2C.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_I2C.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_I2C.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_I2C.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_I2C.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_I2C.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_I2C.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_I2C.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_I2C.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_I2C.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_I2C.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_I2C.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_I2C.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_I2C.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_I2C.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_I2C.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_I2C.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_I2C.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_I2C.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_I2C.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_I2C.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_I2C.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_I2C.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_I2C.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_I2C.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_I2C.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_I2C.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_I2C.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_I2C.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_I2C.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_I2C.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_I2C.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_I2C.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_I2C.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_I2C.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_I2C.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_I2C.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_I2C.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_I2C.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_I2C.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_I2C.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_I2C.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_I2C.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_I2C.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_I2C.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_I2C.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_I2C.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_I2C.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_I2C.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_I2C.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_I2C.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_I2C.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_I2C.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_I2C.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_I2C.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_I2C.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_I2C.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_I2C.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_I2C.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_I2C.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_I2C.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_I2C.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_I2C.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_I2C.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_I2C.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_I2C.o
+ .text          0x0000000000000000        0x0 ./QA_Drivers/QAD_I2C.o
+ .data          0x0000000000000000        0x0 ./QA_Drivers/QAD_I2C.o
+ .bss           0x0000000000000000        0x0 ./QA_Drivers/QAD_I2C.o
+ .rodata._ZL19QAD_I2C_PeriphCount
+                0x0000000000000000        0x1 ./QA_Drivers/QAD_I2C.o
+ .bss._ZZN10QAD_I2CMgr3getEvE8instance
+                0x0000000000000000       0x30 ./QA_Drivers/QAD_I2C.o
+ .bss._ZGVZN10QAD_I2CMgr3getEvE8instance
+                0x0000000000000000        0x4 ./QA_Drivers/QAD_I2C.o
+ .text._ZN10QAD_I2CMgr3getEv
+                0x0000000000000000       0x50 ./QA_Drivers/QAD_I2C.o
+ .text._ZN10QAD_I2CMgr8getStateE14QAD_I2C_Periph
+                0x0000000000000000       0x32 ./QA_Drivers/QAD_I2C.o
+ .text._ZN10QAD_I2CMgr11getInstanceE14QAD_I2C_Periph
+                0x0000000000000000       0x32 ./QA_Drivers/QAD_I2C.o
+ .text._ZN10QAD_I2CMgr11getIRQEventE14QAD_I2C_Periph
+                0x0000000000000000       0x36 ./QA_Drivers/QAD_I2C.o
+ .text._ZN10QAD_I2CMgr11getIRQErrorE14QAD_I2C_Periph
+                0x0000000000000000       0x36 ./QA_Drivers/QAD_I2C.o
+ .text._ZN10QAD_I2CMgr11registerI2CE14QAD_I2C_Periph13QAD_I2C_State
+                0x0000000000000000       0x28 ./QA_Drivers/QAD_I2C.o
+ .text._ZN10QAD_I2CMgr13deregisterI2CE14QAD_I2C_Periph
+                0x0000000000000000       0x22 ./QA_Drivers/QAD_I2C.o
+ .text._ZN10QAD_I2CMgr11enableClockE14QAD_I2C_Periph
+                0x0000000000000000       0x22 ./QA_Drivers/QAD_I2C.o
+ .text._ZN10QAD_I2CMgr12disableClockE14QAD_I2C_Periph
+                0x0000000000000000       0x22 ./QA_Drivers/QAD_I2C.o
+ .text._ZN7QAD_I2C4initEv
+                0x0000000000000000       0x56 ./QA_Drivers/QAD_I2C.o
+ .text._ZN7QAD_I2C6deinitEv
+                0x0000000000000000       0x2c ./QA_Drivers/QAD_I2C.o
+ .text._ZN7QAD_I2C12getInitStateEv
+                0x0000000000000000       0x18 ./QA_Drivers/QAD_I2C.o
+ .text._ZN7QAD_I2C9getHandleEv
+                0x0000000000000000       0x18 ./QA_Drivers/QAD_I2C.o
+ .text._ZN7QAD_I2C5startEv
+                0x0000000000000000       0x2a ./QA_Drivers/QAD_I2C.o
+ .text._ZN7QAD_I2C4stopEv
+                0x0000000000000000       0x2a ./QA_Drivers/QAD_I2C.o
+ .text._ZN7QAD_I2C8getStateEv
+                0x0000000000000000       0x18 ./QA_Drivers/QAD_I2C.o
+ .text._ZN7QAD_I2C9write8BitEthh
+                0x0000000000000000       0x40 ./QA_Drivers/QAD_I2C.o
+ .text._ZN7QAD_I2C10write16BitEttt
+                0x0000000000000000       0x56 ./QA_Drivers/QAD_I2C.o
+ .text._ZN7QAD_I2C17writeMultiple8BitEthPht
+                0x0000000000000000       0x38 ./QA_Drivers/QAD_I2C.o
+ .text._ZN7QAD_I2C8read8BitEthPh
+                0x0000000000000000       0x38 ./QA_Drivers/QAD_I2C.o
+ .text._ZN7QAD_I2C9read16BitEttPt
+                0x0000000000000000       0x64 ./QA_Drivers/QAD_I2C.o
+ .text._ZN7QAD_I2C16readMultiple8BitEthPht
+                0x0000000000000000       0x38 ./QA_Drivers/QAD_I2C.o
+ .text._ZN7QAD_I2C10periphInitEv
+                0x0000000000000000      0x156 ./QA_Drivers/QAD_I2C.o
+ .text._ZN7QAD_I2C12periphDeinitENS_10DeinitModeE
+                0x0000000000000000       0x84 ./QA_Drivers/QAD_I2C.o
+ .text._ZN7QAD_I2C5writeEtttPht
+                0x0000000000000000       0x58 ./QA_Drivers/QAD_I2C.o
+ .text._ZN7QAD_I2C4readEtttPht
+                0x0000000000000000       0x58 ./QA_Drivers/QAD_I2C.o
+ .debug_info    0x0000000000000000     0x1b45 ./QA_Drivers/QAD_I2C.o
+ .debug_abbrev  0x0000000000000000      0x36c ./QA_Drivers/QAD_I2C.o
+ .debug_aranges
+                0x0000000000000000       0xe8 ./QA_Drivers/QAD_I2C.o
+ .debug_ranges  0x0000000000000000       0xd8 ./QA_Drivers/QAD_I2C.o
+ .debug_macro   0x0000000000000000      0x2cc ./QA_Drivers/QAD_I2C.o
+ .debug_macro   0x0000000000000000      0xb98 ./QA_Drivers/QAD_I2C.o
+ .debug_macro   0x0000000000000000       0x2e ./QA_Drivers/QAD_I2C.o
+ .debug_macro   0x0000000000000000       0x3b ./QA_Drivers/QAD_I2C.o
+ .debug_macro   0x0000000000000000       0x1c ./QA_Drivers/QAD_I2C.o
+ .debug_macro   0x0000000000000000       0x22 ./QA_Drivers/QAD_I2C.o
+ .debug_macro   0x0000000000000000       0x8e ./QA_Drivers/QAD_I2C.o
+ .debug_macro   0x0000000000000000       0x51 ./QA_Drivers/QAD_I2C.o
+ .debug_macro   0x0000000000000000      0x103 ./QA_Drivers/QAD_I2C.o
+ .debug_macro   0x0000000000000000       0x6a ./QA_Drivers/QAD_I2C.o
+ .debug_macro   0x0000000000000000      0x1df ./QA_Drivers/QAD_I2C.o
+ .debug_macro   0x0000000000000000       0x1c ./QA_Drivers/QAD_I2C.o
+ .debug_macro   0x0000000000000000       0x22 ./QA_Drivers/QAD_I2C.o
+ .debug_macro   0x0000000000000000       0xdf ./QA_Drivers/QAD_I2C.o
+ .debug_macro   0x0000000000000000     0x12cd ./QA_Drivers/QAD_I2C.o
+ .debug_macro   0x0000000000000000      0x11f ./QA_Drivers/QAD_I2C.o
+ .debug_macro   0x0000000000000000       0x19 ./QA_Drivers/QAD_I2C.o
+ .debug_macro   0x0000000000000000    0x2047d ./QA_Drivers/QAD_I2C.o
+ .debug_macro   0x0000000000000000       0x43 ./QA_Drivers/QAD_I2C.o
+ .debug_macro   0x0000000000000000      0x2d5 ./QA_Drivers/QAD_I2C.o
+ .debug_macro   0x0000000000000000     0x36c9 ./QA_Drivers/QAD_I2C.o
+ .debug_macro   0x0000000000000000      0x17b ./QA_Drivers/QAD_I2C.o
+ .debug_macro   0x0000000000000000       0x63 ./QA_Drivers/QAD_I2C.o
+ .debug_macro   0x0000000000000000     0x1b3f ./QA_Drivers/QAD_I2C.o
+ .debug_macro   0x0000000000000000      0x6c4 ./QA_Drivers/QAD_I2C.o
+ .debug_macro   0x0000000000000000      0x18b ./QA_Drivers/QAD_I2C.o
+ .debug_macro   0x0000000000000000      0x117 ./QA_Drivers/QAD_I2C.o
+ .debug_macro   0x0000000000000000      0x276 ./QA_Drivers/QAD_I2C.o
+ .debug_macro   0x0000000000000000       0x27 ./QA_Drivers/QAD_I2C.o
+ .debug_macro   0x0000000000000000      0x24f ./QA_Drivers/QAD_I2C.o
+ .debug_macro   0x0000000000000000       0x71 ./QA_Drivers/QAD_I2C.o
+ .debug_macro   0x0000000000000000       0x58 ./QA_Drivers/QAD_I2C.o
+ .debug_macro   0x0000000000000000      0x236 ./QA_Drivers/QAD_I2C.o
+ .debug_macro   0x0000000000000000      0x416 ./QA_Drivers/QAD_I2C.o
+ .debug_macro   0x0000000000000000      0x153 ./QA_Drivers/QAD_I2C.o
+ .debug_macro   0x0000000000000000      0x107 ./QA_Drivers/QAD_I2C.o
+ .debug_macro   0x0000000000000000      0x239 ./QA_Drivers/QAD_I2C.o
+ .debug_macro   0x0000000000000000      0x14f ./QA_Drivers/QAD_I2C.o
+ .debug_macro   0x0000000000000000      0x3dc ./QA_Drivers/QAD_I2C.o
+ .debug_macro   0x0000000000000000       0x12 ./QA_Drivers/QAD_I2C.o
+ .debug_macro   0x0000000000000000      0x514 ./QA_Drivers/QAD_I2C.o
+ .debug_macro   0x0000000000000000      0x22c ./QA_Drivers/QAD_I2C.o
+ .debug_macro   0x0000000000000000       0x61 ./QA_Drivers/QAD_I2C.o
+ .debug_macro   0x0000000000000000       0xa5 ./QA_Drivers/QAD_I2C.o
+ .debug_macro   0x0000000000000000      0x198 ./QA_Drivers/QAD_I2C.o
+ .debug_macro   0x0000000000000000      0x6fc ./QA_Drivers/QAD_I2C.o
+ .debug_macro   0x0000000000000000       0xd6 ./QA_Drivers/QAD_I2C.o
+ .debug_macro   0x0000000000000000      0x12f ./QA_Drivers/QAD_I2C.o
+ .debug_macro   0x0000000000000000      0x108 ./QA_Drivers/QAD_I2C.o
+ .debug_macro   0x0000000000000000       0x35 ./QA_Drivers/QAD_I2C.o
+ .debug_macro   0x0000000000000000      0x2d4 ./QA_Drivers/QAD_I2C.o
+ .debug_macro   0x0000000000000000       0xa4 ./QA_Drivers/QAD_I2C.o
+ .debug_macro   0x0000000000000000      0x313 ./QA_Drivers/QAD_I2C.o
+ .debug_macro   0x0000000000000000      0x4ca ./QA_Drivers/QAD_I2C.o
+ .debug_macro   0x0000000000000000       0xd6 ./QA_Drivers/QAD_I2C.o
+ .debug_macro   0x0000000000000000      0x773 ./QA_Drivers/QAD_I2C.o
+ .debug_macro   0x0000000000000000      0x1d5 ./QA_Drivers/QAD_I2C.o
+ .debug_macro   0x0000000000000000      0x2fe ./QA_Drivers/QAD_I2C.o
+ .debug_macro   0x0000000000000000      0xa6e ./QA_Drivers/QAD_I2C.o
+ .debug_macro   0x0000000000000000       0xa9 ./QA_Drivers/QAD_I2C.o
+ .debug_macro   0x0000000000000000      0x5a5 ./QA_Drivers/QAD_I2C.o
+ .debug_macro   0x0000000000000000       0x44 ./QA_Drivers/QAD_I2C.o
+ .debug_macro   0x0000000000000000      0x15c ./QA_Drivers/QAD_I2C.o
+ .debug_macro   0x0000000000000000       0x83 ./QA_Drivers/QAD_I2C.o
+ .debug_line    0x0000000000000000      0xcbc ./QA_Drivers/QAD_I2C.o
+ .debug_str     0x0000000000000000   0x12daab ./QA_Drivers/QAD_I2C.o
+ .comment       0x0000000000000000       0x54 ./QA_Drivers/QAD_I2C.o
+ .debug_frame   0x0000000000000000      0x3cc ./QA_Drivers/QAD_I2C.o
+ .ARM.attributes
+                0x0000000000000000       0x32 ./QA_Drivers/QAD_I2C.o
  .group         0x0000000000000000        0x8 ./QA_Drivers/QAD_LTDC.o
  .group         0x0000000000000000        0x8 ./QA_Drivers/QAD_LTDC.o
  .group         0x0000000000000000        0x8 ./QA_Drivers/QAD_LTDC.o
@@ -14587,6 +14797,163 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x44 ./QA_Drivers/QAD_UART.o
  .debug_macro   0x0000000000000000      0x15c ./QA_Drivers/QAD_UART.o
  .debug_macro   0x0000000000000000       0x83 ./QA_Drivers/QAD_UART.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .text          0x0000000000000000        0x0 ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .data          0x0000000000000000        0x0 ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .bss           0x0000000000000000        0x0 ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .rodata._ZL19QAD_I2C_PeriphCount
+                0x0000000000000000        0x1 ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .text._ZN10QAD_I2CMgrC2Ev
+                0x0000000000000000       0xb8 ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .text._ZN10QAD_I2CMgr15imp_registerI2CE14QAD_I2C_Periph13QAD_I2C_State
+                0x0000000000000000       0x56 ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .text._ZN10QAD_I2CMgr17imp_deregisterI2CE14QAD_I2C_Periph
+                0x0000000000000000       0x34 ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .text._ZN10QAD_I2CMgr15imp_enableClockE14QAD_I2C_Periph
+                0x0000000000000000      0x108 ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .text._ZN10QAD_I2CMgr16imp_disableClockE14QAD_I2C_Periph
+                0x0000000000000000       0x78 ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .text._ZN10QAD_I2CMgr17imp_getI2CsActiveEv
+                0x0000000000000000       0x48 ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .text._ZN10QAD_I2CMgr19imp_getI2CsInactiveEv
+                0x0000000000000000       0x48 ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .debug_info    0x0000000000000000      0xd61 ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .debug_abbrev  0x0000000000000000      0x309 ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .debug_aranges
+                0x0000000000000000       0x50 ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .debug_ranges  0x0000000000000000       0x40 ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .debug_macro   0x0000000000000000      0x2c2 ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .debug_macro   0x0000000000000000      0xb98 ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .debug_macro   0x0000000000000000       0x2e ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .debug_macro   0x0000000000000000       0x3b ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .debug_macro   0x0000000000000000       0x1c ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .debug_macro   0x0000000000000000       0x22 ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .debug_macro   0x0000000000000000       0x8e ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .debug_macro   0x0000000000000000       0x51 ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .debug_macro   0x0000000000000000      0x103 ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .debug_macro   0x0000000000000000       0x6a ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .debug_macro   0x0000000000000000      0x1df ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .debug_macro   0x0000000000000000       0x1c ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .debug_macro   0x0000000000000000       0x22 ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .debug_macro   0x0000000000000000       0xdf ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .debug_macro   0x0000000000000000     0x12cd ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .debug_macro   0x0000000000000000      0x11f ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .debug_macro   0x0000000000000000       0x19 ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .debug_macro   0x0000000000000000    0x2047d ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .debug_macro   0x0000000000000000       0x43 ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .debug_macro   0x0000000000000000      0x2d5 ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .debug_macro   0x0000000000000000     0x36c9 ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .debug_macro   0x0000000000000000      0x17b ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .debug_macro   0x0000000000000000       0x63 ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .debug_macro   0x0000000000000000     0x1b3f ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .debug_macro   0x0000000000000000      0x6c4 ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .debug_macro   0x0000000000000000      0x18b ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .debug_macro   0x0000000000000000      0x117 ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .debug_macro   0x0000000000000000      0x276 ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .debug_macro   0x0000000000000000       0x27 ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .debug_macro   0x0000000000000000      0x24f ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .debug_macro   0x0000000000000000       0x71 ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .debug_macro   0x0000000000000000       0x58 ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .debug_macro   0x0000000000000000      0x236 ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .debug_macro   0x0000000000000000      0x416 ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .debug_macro   0x0000000000000000      0x153 ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .debug_macro   0x0000000000000000      0x107 ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .debug_macro   0x0000000000000000      0x239 ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .debug_macro   0x0000000000000000      0x14f ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .debug_macro   0x0000000000000000      0x3dc ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .debug_macro   0x0000000000000000       0x12 ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .debug_macro   0x0000000000000000      0x514 ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .debug_macro   0x0000000000000000      0x22c ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .debug_macro   0x0000000000000000       0x61 ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .debug_macro   0x0000000000000000       0xa5 ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .debug_macro   0x0000000000000000      0x198 ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .debug_macro   0x0000000000000000      0x6fc ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .debug_macro   0x0000000000000000       0xd6 ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .debug_macro   0x0000000000000000      0x12f ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .debug_macro   0x0000000000000000      0x108 ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .debug_macro   0x0000000000000000       0x35 ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .debug_macro   0x0000000000000000      0x2d4 ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .debug_macro   0x0000000000000000       0xa4 ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .debug_macro   0x0000000000000000      0x313 ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .debug_macro   0x0000000000000000      0x4ca ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .debug_macro   0x0000000000000000       0xd6 ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .debug_macro   0x0000000000000000      0x773 ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .debug_macro   0x0000000000000000      0x1d5 ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .debug_macro   0x0000000000000000      0x2fe ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .debug_macro   0x0000000000000000      0xa6e ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .debug_macro   0x0000000000000000       0xa9 ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .debug_macro   0x0000000000000000      0x5a5 ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .debug_macro   0x0000000000000000       0x44 ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .debug_macro   0x0000000000000000      0x15c ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .debug_macro   0x0000000000000000       0x83 ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .debug_line    0x0000000000000000      0x9e6 ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .debug_str     0x0000000000000000   0x12cea2 ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .comment       0x0000000000000000       0x54 ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .debug_frame   0x0000000000000000      0x128 ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
+ .ARM.attributes
+                0x0000000000000000       0x32 ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
  .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
  .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
  .group         0x0000000000000000        0xc ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
@@ -16754,12 +17121,14 @@ LOAD ./QA_Drivers/QAD_EXTI.o
 LOAD ./QA_Drivers/QAD_Encoder.o
 LOAD ./QA_Drivers/QAD_FMC.o
 LOAD ./QA_Drivers/QAD_GPIO.o
+LOAD ./QA_Drivers/QAD_I2C.o
 LOAD ./QA_Drivers/QAD_LTDC.o
 LOAD ./QA_Drivers/QAD_PWM.o
 LOAD ./QA_Drivers/QAD_RNG.o
 LOAD ./QA_Drivers/QAD_RTC.o
 LOAD ./QA_Drivers/QAD_Timer.o
 LOAD ./QA_Drivers/QAD_UART.o
+LOAD ./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o
 LOAD ./QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o
 LOAD ./QA_Drivers/QAD_PeripheralManagers/QAD_UARTMgr.o
 LOAD ./QA_Systems/QAS_LCD/QAS_LCD.o

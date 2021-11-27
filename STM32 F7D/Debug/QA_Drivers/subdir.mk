@@ -9,6 +9,7 @@ CPP_SRCS += \
 ../QA_Drivers/QAD_Encoder.cpp \
 ../QA_Drivers/QAD_FMC.cpp \
 ../QA_Drivers/QAD_GPIO.cpp \
+../QA_Drivers/QAD_I2C.cpp \
 ../QA_Drivers/QAD_LTDC.cpp \
 ../QA_Drivers/QAD_PWM.cpp \
 ../QA_Drivers/QAD_RNG.cpp \
@@ -21,6 +22,7 @@ OBJS += \
 ./QA_Drivers/QAD_Encoder.o \
 ./QA_Drivers/QAD_FMC.o \
 ./QA_Drivers/QAD_GPIO.o \
+./QA_Drivers/QAD_I2C.o \
 ./QA_Drivers/QAD_LTDC.o \
 ./QA_Drivers/QAD_PWM.o \
 ./QA_Drivers/QAD_RNG.o \
@@ -33,6 +35,7 @@ CPP_DEPS += \
 ./QA_Drivers/QAD_Encoder.d \
 ./QA_Drivers/QAD_FMC.d \
 ./QA_Drivers/QAD_GPIO.d \
+./QA_Drivers/QAD_I2C.d \
 ./QA_Drivers/QAD_LTDC.d \
 ./QA_Drivers/QAD_PWM.d \
 ./QA_Drivers/QAD_RNG.d \

@@ -31,6 +31,10 @@
 
 //QAD_RTC::imp_init
 //QAD_RTC Initialization Method
+//
+//To be called by static method init()
+//Used to initialize the RTC peripheral
+//Returns QA_OK if the initialization is successful, or QA_Fail if initialization fails
 QA_Result QAD_RTC::imp_init(void) {
 	if (m_eInitState)
 		return QA_OK;
@@ -53,6 +57,9 @@ QA_Result QAD_RTC::imp_init(void) {
 		return QA_Fail;
 	}
 
+	//Update m_sTime and m_sDate with values currently stored in RTC
+	imp_update();
+
 	//Return
 	return QA_OK;
 }
@@ -60,6 +67,9 @@ QA_Result QAD_RTC::imp_init(void) {
 
 //QAD_RTC::imp_deinit
 //QAD_RTC Initialization Method
+//
+//To be called by static deinit() method
+//Used to deinitialize the RTC peripheral
 void QAD_RTC::imp_deinit(void) {
   if (!m_eInitState) {
   	return;
@@ -81,14 +91,25 @@ void QAD_RTC::imp_deinit(void) {
 
 //QAD_RTC::imp_setTime
 //QAD_RTC Control Method
+//
+//To be called by static setTime() method
+//Used to set the current time
+//uHour   - The current hour. A value between 0-23
+//uMinute - The current minute. A value between 0-59
+//uSecond - The current second. A value between 0-59
+//Returns QA_OK if successful, or QA_Fail if setting of time fails
 QA_Result QAD_RTC::imp_setTime(uint8_t uHour, uint8_t uMinute, uint8_t uSecond) {
 
+	//Fill out current time details into m_sTime structure
 	m_sTime.Hours              = uHour;
 	m_sTime.Minutes            = uMinute;
 	m_sTime.Seconds            = uSecond;
-	m_sTime.SecondFraction     = 0;
-	m_sTime.DayLightSaving     = RTC_DAYLIGHTSAVING_NONE;
-	m_sTime.StoreOperation     = RTC_STOREOPERATION_RESET;
+	m_sTime.SecondFraction     = 0;                        //Not used in this implementation, so is set to 0
+	m_sTime.DayLightSaving     = RTC_DAYLIGHTSAVING_NONE;  //Daylight savings mode not being used
+	m_sTime.StoreOperation     = RTC_STOREOPERATION_RESET; //
+
+	//Sets the current time using details stored in m_sTime, with data being stored as binary values
+	//Return QA_Fail if not successful
 	if (HAL_RTC_SetTime(&m_sHandle, &m_sTime, RTC_FORMAT_BIN) != HAL_OK) {
 		return QA_Fail;
 	}
@@ -100,12 +121,23 @@ QA_Result QAD_RTC::imp_setTime(uint8_t uHour, uint8_t uMinute, uint8_t uSecond) 
 
 //QAD_RTC::imp_setDate
 //QAD_RTC Control Method
+//
+//To be called by static setDate() method
+//uWeekDay - The current day of the week. A value between 1-7
+//uDay     - The current day of the month. A value between 1-31
+//uMonth   - The current month. A value between 1-12
+//uYear    - The last two digits of the current year. A value between 00-99
+//Returns QA_OK if successful, or QA_Fail if setting of the date fails
 QA_Result QAD_RTC::imp_setDate(uint8_t uWeekDay, uint8_t uDay, uint8_t uMonth, uint8_t uYear) {
 
+	//Fill out current date details into m_sDate structure
 	m_sDate.WeekDay    = uWeekDay;
 	m_sDate.Date       = uDay;
 	m_sDate.Month      = uMonth;
 	m_sDate.Year       = uYear;
+
+	//Sets the current date using details stored in m_sDate, with data being stored as binary values
+	//Return QA_Fail if not successful
 	if (HAL_RTC_SetDate(&m_sHandle, &m_sDate, RTC_FORMAT_BIN) != HAL_OK) {
 		return QA_Fail;
 	}
@@ -117,11 +149,21 @@ QA_Result QAD_RTC::imp_setDate(uint8_t uWeekDay, uint8_t uDay, uint8_t uMonth, u
 
 //QAD_RTC::imp_update
 //QAD_RTC Control Method
+//
+//To be called from static update() method
+//Captures the current time and date and stores in m_sTime and m_sDate, so that values can
+//be retrieved by the below data methods
+//Returns QA_OK if successful, or QA_Fail if unable to get the current time/date
 QA_Result QAD_RTC::imp_update(void) {
 
+	//Retrieve current time values from RTC and store in m_sTime structure in binary format
+	//Return QA_Fail if not successful
 	if (HAL_RTC_GetTime(&m_sHandle, &m_sTime, RTC_FORMAT_BIN) != HAL_OK) {
 		return QA_Fail;
 	}
+
+	//Retrieve current date values from RTC and store in m_sDate structure in binary format
+	//Return QA_Fail if not successful
 	if (HAL_RTC_GetDate(&m_sHandle, &m_sDate, RTC_FORMAT_BIN) != HAL_OK) {
 		return QA_Fail;
 	}
@@ -137,6 +179,10 @@ QA_Result QAD_RTC::imp_update(void) {
 
 //QAD_RTC::imp_getHour
 //QAD_RTC Data Method
+//
+//To be called by static getHour() method
+//Used to retrieve the hour value from m_sTime
+//Returns a value between 0-23
 uint8_t QAD_RTC::imp_getHour(void) {
   return m_sTime.Hours;
 }
@@ -144,6 +190,10 @@ uint8_t QAD_RTC::imp_getHour(void) {
 
 //QAD_RTC::imp_getMinute
 //QAD_RTC Data Method
+//
+//To be called by static getMinute() method
+//Used to retrieve the minute value from m_sTime
+//Returns a value between 0-59
 uint8_t QAD_RTC::imp_getMinute(void) {
   return m_sTime.Minutes;
 }
@@ -151,6 +201,10 @@ uint8_t QAD_RTC::imp_getMinute(void) {
 
 //QAD_RTC::imp_getSecond
 //QAD_RTC Data Method
+//
+//To be called by static getSecond() method
+//Used to retrieve the second value from m_sTime
+//Returns a value between 0-59
 uint8_t QAD_RTC::imp_getSecond(void) {
   return m_sTime.Seconds;
 }
@@ -158,6 +212,10 @@ uint8_t QAD_RTC::imp_getSecond(void) {
 
 //QAD_RTC::imp_getWeekDay
 //QAD_RTC Data Method
+//
+//To be called by static getWeekday() method
+//Used to retrieve the current day-of-the-week value from m_sDate
+//Returns a value between 1-7
 uint8_t QAD_RTC::imp_getWeekday(void) {
   return m_sDate.WeekDay;
 }
@@ -165,7 +223,18 @@ uint8_t QAD_RTC::imp_getWeekday(void) {
 
 //QAD_RTC::imp_getWeekdayDayStr
 //QAD_RTC Data Method
+//
+//To be called by the static getWeekdatStr() method
+//strWeekday - a c-style string to copy the name of the day into. Must be able to fit at
+//             least 10 characters
 void QAD_RTC::imp_getWeekdayStr(char* strWeekday) {
+
+	//Return if strWeekday points to NULL
+	if (!strWeekday) {
+		return;
+	}
+
+	//Copy the current name of the day-of-the-week, depending on current value in m_sDate
 	switch (m_sDate.WeekDay) {
 		case (1):
 			strcpy(strWeekday, "Monday");
@@ -194,6 +263,10 @@ void QAD_RTC::imp_getWeekdayStr(char* strWeekday) {
 
 //QAD_RTC::imp_getDay
 //QAD_RTC Data Method
+//
+//To be called by static getDay() method
+//Used to retrieve the current day-of-the-month value from m_sDate
+//Returns a value between 1-31
 uint8_t QAD_RTC::imp_getDay(void) {
   return m_sDate.Date;
 }
@@ -201,6 +274,11 @@ uint8_t QAD_RTC::imp_getDay(void) {
 
 //QAD_RTC::imp_getMonth
 //QAD_RTC Data Method
+//
+//To be called by static getMonth() method
+//Used to retrieve the current month value from m_sDate, as a string containing
+//the name of the month.
+//Returns a value between 1-12
 uint8_t QAD_RTC::imp_getMonth(void) {
   return m_sDate.Month;
 }
@@ -208,7 +286,20 @@ uint8_t QAD_RTC::imp_getMonth(void) {
 
 //QAD_RTC::imp_getMonthStr
 //QAD_RTC Data Method
+//
+//To be called by static getMonthStr() method
+//Used to retrieve the current month value from m_sDate, as a string containing
+//the name of the month.
+//strMonth - a c-style string to copy the name of the current month into. Must be able to
+//           fit at least 10 characters
 void QAD_RTC::imp_getMonthStr(char* strMonth) {
+
+	//Return if strMonth points to NULL
+	if (!strMonth) {
+		return;
+	}
+
+	//Copy the current name of the month depending on the value in m_sDate
   switch (m_sDate.Month) {
 		case (1):
 			strcpy(strMonth, "January");
@@ -252,7 +343,15 @@ void QAD_RTC::imp_getMonthStr(char* strMonth) {
 
 //QAD_RTC::imp_getYear
 //QAD_RTC Data Method
+//
+//To be called by static getYear() method
+//Used to retrieve the current year value from m_sYear
+//Returns a value between 2000-2099
 uint16_t QAD_RTC::imp_getYear(void) {
+
+	//Add 2000 to current two-digit value year value stored in m_sDate,
+	//in order to return the full four-digit year value
+	//NOTE: Not Y3K compliant :)
   return (m_sDate.Year + 2000);
 }
 
