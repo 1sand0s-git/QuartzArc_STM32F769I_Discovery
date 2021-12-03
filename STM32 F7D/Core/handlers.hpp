@@ -28,6 +28,8 @@
 	//------------------------------------------
 	//------------------------------------------
 
+
+//Define exception and interrupt handler functions as C code to make sure linker is able to correctly link the functions
 extern "C" {
 
 

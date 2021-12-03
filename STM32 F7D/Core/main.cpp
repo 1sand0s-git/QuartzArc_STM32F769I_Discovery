@@ -24,6 +24,8 @@
 #include "QAD_FMC.hpp"
 #include "QAD_RNG.hpp"
 #include "QAD_RTC.hpp"
+#include "QAD_I2C.hpp"
+#include "QAD_FT6206.hpp"
 
 #include "QAS_Serial_Dev_UART.hpp"
 #include "QAS_LCD.hpp"
@@ -46,6 +48,9 @@ QAD_GPIO_Input* GPIO_UserButton;
 //STLink UART system class (system defined in QAD_Serial_Dev_UART.hpp)
 QAS_Serial_Dev_UART* UART_STLink;
 
+//I2C driver class (used for touch controller and audio codec)
+QAD_I2C* I2C_System;
+
 
 //Task Timing
 //
@@ -53,9 +58,7 @@ QAS_Serial_Dev_UART* UART_STLink;
 //tasks that are run in the processing loop within the main() function.
 //
 
-const uint32_t QA_FT_RNGUpdateTickThreshold = 1000;
-
-const uint32_t QA_FT_RTCUpdateTickThreshold = 1000;
+const uint32_t QA_FT_TouchUpdateTickThreshold = 100;
 
 const uint32_t QA_FT_HeartbeatTickThreshold = 500;   //Time in milliseconds between heartbeat LED updates
                                                      //The rate of flashing of the heartbeat LED will be double the value defined here
@@ -224,6 +227,47 @@ int main(void) {
   UART_STLink->txString("RTC: Initialized");
 
 
+
+  //---------------------
+  //Initialize System I2C
+  QAD_I2C_InitStruct I2C_Init;
+  I2C_Init.eI2C                = QAD_I2C4;
+  I2C_Init.uIRQPriority_Event  = 0xE;
+  I2C_Init.uIRQPriority_Error  = 0xE;
+  I2C_Init.uTiming             = 40912732;
+  I2C_Init.eAddressingMode     = QAD_I2C_AddressingMode_7Bit;
+  I2C_Init.eDualAddressingMode = QAD_I2C_DualAddressingMode_Disable;
+  I2C_Init.eGeneralCallMode    = QAD_I2C_GeneralCallMode_Disable;
+  I2C_Init.eNoStretchMode      = QAD_I2C_NoStretchMode_Disable;
+  I2C_Init.uOwnAddress1        = 0x0;
+  I2C_Init.uOwnAddress2        = 0x0;
+  I2C_Init.pSCL_GPIO           = GPIOD;
+  I2C_Init.uSCL_Pin            = GPIO_PIN_12;
+  I2C_Init.uSCL_AF             = GPIO_AF4_I2C4;
+  I2C_Init.pSDA_GPIO           = GPIOB;
+  I2C_Init.uSDA_Pin            = GPIO_PIN_7;
+  I2C_Init.uSDA_AF             = GPIO_AF11_I2C4;
+  I2C_System = new QAD_I2C(I2C_Init);
+
+  if (I2C_System->init()) {
+  	UART_STLink->txStringCR("System I2C: Initialization Failed");
+  	GPIO_UserLED_Red->on();
+  	while(1) {}
+  }
+  I2C_System->start();
+  UART_STLink->txStringCR("System I2C: Initialized and Started");
+
+
+  //----------------------------------
+  //Initialize FT6206 Touch Controller
+  if (QAD_FT6206::init(I2C_System)) {
+  	UART_STLink->txStringCR("FT6206: Initialization Failed");
+  	GPIO_UserLED_Red->on();
+  	while(1) {}
+  }
+  UART_STLink->txStringCR("FT6206: Initialized");
+
+
 	//----------------------------------
 	//----------------------------------
   //Processing Loop
@@ -235,8 +279,7 @@ int main(void) {
   uint32_t uOldTick = uNewTick;
 
   //Create task timing variables
-  uint32_t uRNGUpdateTicks = 0;
-  uint32_t uRTCUpdateTicks = 0;
+  uint32_t uTouchUpdateTicks = 0;
   uint32_t uHeartbeatTicks = 0;
 
   //Temp String
@@ -266,37 +309,65 @@ int main(void) {
     }
 
 
-    //Update and output Random Number
-    uRNGUpdateTicks += uTicks;
-    if (uRNGUpdateTicks >= QA_FT_RNGUpdateTickThreshold) {
+  	//----------------------------------
+    //Update Touch Data
+    uTouchUpdateTicks += uTicks;
+    if (uTouchUpdateTicks >= QA_FT_TouchUpdateTickThreshold) {
+      QAD_FT6206::poll(uTouchUpdateTicks);
 
-//    	sprintf(strOut, "RNG Value: %lu", QAD_RNG::getValue());
-//    	UART_STLink->txStringCR(strOut);
+    	uint16_t uX = QAD_FT6206::getCurX();
+    	uint16_t uY = QAD_FT6206::getCurY();
+    	int16_t iX = QAD_FT6206::getMoveX();
+    	int16_t iY = QAD_FT6206::getMoveY();
 
-    	uRNGUpdateTicks -= QA_FT_RNGUpdateTickThreshold;
-    }
 
+      if (uX < 80)
+      	uX = 80; else
+      if (uX > 719)
+      	uX = 719;
 
-    //Update and output RTC
-    uRTCUpdateTicks += uTicks;
-    if (uRTCUpdateTicks >= QA_FT_RTCUpdateTickThreshold) {
-      QAD_RTC::update();
+      if (uY < 80)
+      	uY = 80; else
+      if (uY > 399)
+      	uY = 399;
 
-    	sprintf(strOut, "Time: %2u : %2u : %2u", QAD_RTC::getHour(), QAD_RTC::getMinute(), QAD_RTC::getSecond());
-    	UART_STLink->txStringCR(strOut);
+      QAS_LCD::setDrawBuffer(QAD_LTDC_Layer0);
+      QAS_LCD::setDrawColor(0xF000);
+      QAS_LCD::clearBuffer();
 
       QAS_LCD::setDrawBuffer(QAD_LTDC_Layer1);
       QAS_LCD::setDrawColor(0x0000);
       QAS_LCD::clearBuffer();
 
-      QAS_LCD::setDrawColor(0xFBBF);
-      //QAS_LCD::setFontByName("SegoeUI20ptSB");
-      QAS_LCD::setFontByIndex(1);
-      QAS_LCD::drawStrC(QAT_Vector2_16(400, 250), strOut);
+      if (QAD_FT6206::getDown() || QAD_FT6206::getEnd()) {
+				QAS_LCD::setDrawColor(0xFFFF);
+				QAS_LCD::drawRect(QAT_Vector2_16(uX-80, uY-80), QAT_Vector2_16(uX+80, uY+80));
+      }
 
+      QAS_LCD::flipLayer0();
       QAS_LCD::flipLayer1();
 
-      uRTCUpdateTicks -= QA_FT_RTCUpdateTickThreshold;
+  		if (QAD_FT6206::getNew()) {
+    		sprintf(strOut, "FT6206: Touch Start (X: %u, Y: %u", uX, uY);
+    		UART_STLink->txStringCR(strOut);
+
+  		} else if (QAD_FT6206::getEnd()) {
+    		sprintf(strOut, "FT6206: Touch End (X: %u, Y: %u, MX: %i, MY: %i", uX, uY, iX, iY);
+    		UART_STLink->txStringCR(strOut);
+
+  		}	else if (QAD_FT6206::getLong()) {
+    		sprintf(strOut, "FT6206: Long Touch (X: %u, Y: %u, MX: %i, MY: %i", uX, uY, iX, iY);
+    		UART_STLink->txStringCR(strOut);
+
+      } else if (QAD_FT6206::getDown()) {
+    		sprintf(strOut, "FT6206: Touch (X: %u, Y: %u, MX: %i, MY: %i", uX, uY, iX, iY);
+    		UART_STLink->txStringCR(strOut);
+
+    	} else {
+    		UART_STLink->txStringCR("FT6206: No Touch");
+    	}
+
+    	uTouchUpdateTicks -= QA_FT_TouchUpdateTickThreshold;
     }
 
 

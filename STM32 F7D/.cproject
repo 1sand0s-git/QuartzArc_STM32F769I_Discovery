@@ -70,6 +70,7 @@
 									<listOptionValue builtIn="false" value="../Core"/>
 									<listOptionValue builtIn="false" value="../QA_Drivers"/>
 									<listOptionValue builtIn="false" value="../QA_Drivers/QAD_PeripheralManagers"/>
+									<listOptionValue builtIn="false" value="../QA_Drivers/QAD_Devices"/>
 									<listOptionValue builtIn="false" value="../QA_Tools"/>
 									<listOptionValue builtIn="false" value="../QA_Systems"/>
 									<listOptionValue builtIn="false" value="../QA_Systems/QAS_Serial"/>
@@ -171,6 +172,7 @@
 									<listOptionValue builtIn="false" value="../Core"/>
 									<listOptionValue builtIn="false" value="../QA_Drivers"/>
 									<listOptionValue builtIn="false" value="../QA_Drivers/QAD_PeripheralManagers"/>
+									<listOptionValue builtIn="false" value="../QA_Drivers/QAD_Devices"/>
 									<listOptionValue builtIn="false" value="../QA_Tools"/>
 									<listOptionValue builtIn="false" value="../QA_Systems"/>
 									<listOptionValue builtIn="false" value="../QA_Systems/QAS_Serial"/>

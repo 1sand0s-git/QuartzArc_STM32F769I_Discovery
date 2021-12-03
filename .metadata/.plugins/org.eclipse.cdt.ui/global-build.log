@@ -1891,3 +1891,246 @@ Finished building: STM32 F7D.bin
  
 Finished building: STM32 F7D.list
  
+21:09:56 **** Build of configuration Debug for project STM32 F7D ****
+make -j8 all 
+arm-none-eabi-g++ "../QA_Tools/QAT_FIFO.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F769xx -c -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Drivers/Componenets/Common -I../Drivers/Components/otm8009a -I../Core -I../QA_Drivers -I../QA_Drivers/QAD_PeripheralManagers -I../QA_Drivers/QAD_Devices -I../QA_Tools -I../QA_Systems -I../QA_Systems/QAS_Serial -I../QA_Systems/QAS_LCD -I../QA_Systems/QAS_LCD/QAS_LCD_Fonts -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"QA_Tools/QAT_FIFO.d" -MT"QA_Tools/QAT_FIFO.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "QA_Tools/QAT_FIFO.o"
+arm-none-eabi-g++ "../QA_Systems/QAS_Serial/QAS_Serial_Dev_Base.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F769xx -c -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Drivers/Componenets/Common -I../Drivers/Components/otm8009a -I../Core -I../QA_Drivers -I../QA_Drivers/QAD_PeripheralManagers -I../QA_Drivers/QAD_Devices -I../QA_Tools -I../QA_Systems -I../QA_Systems/QAS_Serial -I../QA_Systems/QAS_LCD -I../QA_Systems/QAS_LCD/QAS_LCD_Fonts -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"QA_Systems/QAS_Serial/QAS_Serial_Dev_Base.d" -MT"QA_Systems/QAS_Serial/QAS_Serial_Dev_Base.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "QA_Systems/QAS_Serial/QAS_Serial_Dev_Base.o"
+arm-none-eabi-g++ "../QA_Systems/QAS_Serial/QAS_Serial_Dev_UART.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F769xx -c -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Drivers/Componenets/Common -I../Drivers/Components/otm8009a -I../Core -I../QA_Drivers -I../QA_Drivers/QAD_PeripheralManagers -I../QA_Drivers/QAD_Devices -I../QA_Tools -I../QA_Systems -I../QA_Systems/QAS_Serial -I../QA_Systems/QAS_LCD -I../QA_Systems/QAS_LCD/QAS_LCD_Fonts -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"QA_Systems/QAS_Serial/QAS_Serial_Dev_UART.d" -MT"QA_Systems/QAS_Serial/QAS_Serial_Dev_UART.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "QA_Systems/QAS_Serial/QAS_Serial_Dev_UART.o"
+arm-none-eabi-g++ "../QA_Systems/QAS_LCD/QAS_LCD.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F769xx -c -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Drivers/Componenets/Common -I../Drivers/Components/otm8009a -I../Core -I../QA_Drivers -I../QA_Drivers/QAD_PeripheralManagers -I../QA_Drivers/QAD_Devices -I../QA_Tools -I../QA_Systems -I../QA_Systems/QAS_Serial -I../QA_Systems/QAS_LCD -I../QA_Systems/QAS_LCD/QAS_LCD_Fonts -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"QA_Systems/QAS_LCD/QAS_LCD.d" -MT"QA_Systems/QAS_LCD/QAS_LCD.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "QA_Systems/QAS_LCD/QAS_LCD.o"
+arm-none-eabi-g++ "../QA_Systems/QAS_LCD/QAS_LCD_Fonts.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F769xx -c -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Drivers/Componenets/Common -I../Drivers/Components/otm8009a -I../Core -I../QA_Drivers -I../QA_Drivers/QAD_PeripheralManagers -I../QA_Drivers/QAD_Devices -I../QA_Tools -I../QA_Systems -I../QA_Systems/QAS_Serial -I../QA_Systems/QAS_LCD -I../QA_Systems/QAS_LCD/QAS_LCD_Fonts -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"QA_Systems/QAS_LCD/QAS_LCD_Fonts.d" -MT"QA_Systems/QAS_LCD/QAS_LCD_Fonts.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "QA_Systems/QAS_LCD/QAS_LCD_Fonts.o"
+arm-none-eabi-g++ "../QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F769xx -c -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Drivers/Componenets/Common -I../Drivers/Components/otm8009a -I../Core -I../QA_Drivers -I../QA_Drivers/QAD_PeripheralManagers -I../QA_Drivers/QAD_Devices -I../QA_Tools -I../QA_Systems -I../QA_Systems/QAS_Serial -I../QA_Systems/QAS_LCD -I../QA_Systems/QAS_LCD/QAS_LCD_Fonts -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.d" -MT"QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o"
+arm-none-eabi-g++ "../QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F769xx -c -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Drivers/Componenets/Common -I../Drivers/Components/otm8009a -I../Core -I../QA_Drivers -I../QA_Drivers/QAD_PeripheralManagers -I../QA_Drivers/QAD_Devices -I../QA_Tools -I../QA_Systems -I../QA_Systems/QAS_Serial -I../QA_Systems/QAS_LCD -I../QA_Systems/QAS_LCD/QAS_LCD_Fonts -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.d" -MT"QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "QA_Drivers/QAD_PeripheralManagers/QAD_TimerMgr.o"
+arm-none-eabi-g++ "../QA_Drivers/QAD_PeripheralManagers/QAD_UARTMgr.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F769xx -c -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Drivers/Componenets/Common -I../Drivers/Components/otm8009a -I../Core -I../QA_Drivers -I../QA_Drivers/QAD_PeripheralManagers -I../QA_Drivers/QAD_Devices -I../QA_Tools -I../QA_Systems -I../QA_Systems/QAS_Serial -I../QA_Systems/QAS_LCD -I../QA_Systems/QAS_LCD/QAS_LCD_Fonts -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"QA_Drivers/QAD_PeripheralManagers/QAD_UARTMgr.d" -MT"QA_Drivers/QAD_PeripheralManagers/QAD_UARTMgr.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "QA_Drivers/QAD_PeripheralManagers/QAD_UARTMgr.o"
+arm-none-eabi-g++ "../QA_Drivers/QAD_Devices/QAD_FT6206.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F769xx -c -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Drivers/Componenets/Common -I../Drivers/Components/otm8009a -I../Core -I../QA_Drivers -I../QA_Drivers/QAD_PeripheralManagers -I../QA_Drivers/QAD_Devices -I../QA_Tools -I../QA_Systems -I../QA_Systems/QAS_Serial -I../QA_Systems/QAS_LCD -I../QA_Systems/QAS_LCD/QAS_LCD_Fonts -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"QA_Drivers/QAD_Devices/QAD_FT6206.d" -MT"QA_Drivers/QAD_Devices/QAD_FT6206.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "QA_Drivers/QAD_Devices/QAD_FT6206.o"
+arm-none-eabi-g++ "../QA_Drivers/QAD_EXTI.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F769xx -c -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Drivers/Componenets/Common -I../Drivers/Components/otm8009a -I../Core -I../QA_Drivers -I../QA_Drivers/QAD_PeripheralManagers -I../QA_Drivers/QAD_Devices -I../QA_Tools -I../QA_Systems -I../QA_Systems/QAS_Serial -I../QA_Systems/QAS_LCD -I../QA_Systems/QAS_LCD/QAS_LCD_Fonts -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"QA_Drivers/QAD_EXTI.d" -MT"QA_Drivers/QAD_EXTI.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "QA_Drivers/QAD_EXTI.o"
+arm-none-eabi-g++ "../QA_Drivers/QAD_Encoder.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F769xx -c -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Drivers/Componenets/Common -I../Drivers/Components/otm8009a -I../Core -I../QA_Drivers -I../QA_Drivers/QAD_PeripheralManagers -I../QA_Drivers/QAD_Devices -I../QA_Tools -I../QA_Systems -I../QA_Systems/QAS_Serial -I../QA_Systems/QAS_LCD -I../QA_Systems/QAS_LCD/QAS_LCD_Fonts -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"QA_Drivers/QAD_Encoder.d" -MT"QA_Drivers/QAD_Encoder.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "QA_Drivers/QAD_Encoder.o"
+arm-none-eabi-g++ "../QA_Drivers/QAD_FMC.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F769xx -c -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Drivers/Componenets/Common -I../Drivers/Components/otm8009a -I../Core -I../QA_Drivers -I../QA_Drivers/QAD_PeripheralManagers -I../QA_Drivers/QAD_Devices -I../QA_Tools -I../QA_Systems -I../QA_Systems/QAS_Serial -I../QA_Systems/QAS_LCD -I../QA_Systems/QAS_LCD/QAS_LCD_Fonts -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"QA_Drivers/QAD_FMC.d" -MT"QA_Drivers/QAD_FMC.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "QA_Drivers/QAD_FMC.o"
+In file included from ../QA_Drivers/QAD_Devices/QAD_FT6206.cpp:19:
+../QA_Drivers/QAD_Devices/QAD_FT6206.hpp:101:19: error: 'QAD_6206' does not name a type; did you mean 'QAD_FT6206'?
+  101 |  QAD_FT6206(const QAD_6206& other) = delete;
+      |                   ^~~~~~~~
+      |                   QAD_FT6206
+../QA_Drivers/QAD_Devices/QAD_FT6206.hpp: In static member function 'static QAD_FT6206& QAD_FT6206::get()':
+../QA_Drivers/QAD_Devices/QAD_FT6206.hpp:110:3: error: return-statement with no value, in function returning 'QAD_FT6206&' [-fpermissive]
+  110 |   return;
+      |   ^~~~~~
+../QA_Drivers/QAD_Devices/QAD_FT6206.cpp: At global scope:
+../QA_Drivers/QAD_Devices/QAD_FT6206.cpp:168:9: error: no declaration matches 'uint8_t QAD_FT6206::imp_getTouchWithin(QAT_Vector2_16&, QAT_Vector2_16&)'
+  168 | uint8_t QAD_FT6206::imp_getTouchWithin(QAT_Vector2_16& cStart, QAT_Vector2_16& cEnd) {
+      |         ^~~~~~~~~~
+In file included from ../QA_Drivers/QAD_Devices/QAD_FT6206.cpp:19:
+../QA_Drivers/QAD_Devices/QAD_FT6206.hpp:202:7: note: candidate is: 'bool QAD_FT6206::imp_getTouchWithin(QAT_Vector2_16&, QAT_Vector2_16&)'
+  202 |  bool imp_getTouchWithin(QAT_Vector2_16& cStart, QAT_Vector2_16& cEnd);
+      |       ^~~~~~~~~~~~~~~~~~
+../QA_Drivers/QAD_Devices/QAD_FT6206.hpp:38:7: note: 'class QAD_FT6206' defined here
+   38 | class QAD_FT6206 {
+      |       ^~~~~~~~~~
+make: *** [QA_Drivers/QAD_Devices/subdir.mk:19: QA_Drivers/QAD_Devices/QAD_FT6206.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+21:12:05 **** Incremental Build of configuration Debug for project STM32 F7D ****
+make -j8 all 
+arm-none-eabi-g++ "../QA_Drivers/QAD_Devices/QAD_FT6206.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F769xx -c -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Drivers/Componenets/Common -I../Drivers/Components/otm8009a -I../Core -I../QA_Drivers -I../QA_Drivers/QAD_PeripheralManagers -I../QA_Drivers/QAD_Devices -I../QA_Tools -I../QA_Systems -I../QA_Systems/QAS_Serial -I../QA_Systems/QAS_LCD -I../QA_Systems/QAS_LCD/QAS_LCD_Fonts -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"QA_Drivers/QAD_Devices/QAD_FT6206.d" -MT"QA_Drivers/QAD_Devices/QAD_FT6206.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "QA_Drivers/QAD_Devices/QAD_FT6206.o"
+arm-none-eabi-g++ "../QA_Drivers/QAD_GPIO.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F769xx -c -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Drivers/Componenets/Common -I../Drivers/Components/otm8009a -I../Core -I../QA_Drivers -I../QA_Drivers/QAD_PeripheralManagers -I../QA_Drivers/QAD_Devices -I../QA_Tools -I../QA_Systems -I../QA_Systems/QAS_Serial -I../QA_Systems/QAS_LCD -I../QA_Systems/QAS_LCD/QAS_LCD_Fonts -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"QA_Drivers/QAD_GPIO.d" -MT"QA_Drivers/QAD_GPIO.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "QA_Drivers/QAD_GPIO.o"
+arm-none-eabi-g++ "../QA_Drivers/QAD_I2C.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F769xx -c -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Drivers/Componenets/Common -I../Drivers/Components/otm8009a -I../Core -I../QA_Drivers -I../QA_Drivers/QAD_PeripheralManagers -I../QA_Drivers/QAD_Devices -I../QA_Tools -I../QA_Systems -I../QA_Systems/QAS_Serial -I../QA_Systems/QAS_LCD -I../QA_Systems/QAS_LCD/QAS_LCD_Fonts -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"QA_Drivers/QAD_I2C.d" -MT"QA_Drivers/QAD_I2C.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "QA_Drivers/QAD_I2C.o"
+arm-none-eabi-g++ "../QA_Drivers/QAD_LTDC.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F769xx -c -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Drivers/Componenets/Common -I../Drivers/Components/otm8009a -I../Core -I../QA_Drivers -I../QA_Drivers/QAD_PeripheralManagers -I../QA_Drivers/QAD_Devices -I../QA_Tools -I../QA_Systems -I../QA_Systems/QAS_Serial -I../QA_Systems/QAS_LCD -I../QA_Systems/QAS_LCD/QAS_LCD_Fonts -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"QA_Drivers/QAD_LTDC.d" -MT"QA_Drivers/QAD_LTDC.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "QA_Drivers/QAD_LTDC.o"
+arm-none-eabi-g++ "../QA_Drivers/QAD_PWM.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F769xx -c -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Drivers/Componenets/Common -I../Drivers/Components/otm8009a -I../Core -I../QA_Drivers -I../QA_Drivers/QAD_PeripheralManagers -I../QA_Drivers/QAD_Devices -I../QA_Tools -I../QA_Systems -I../QA_Systems/QAS_Serial -I../QA_Systems/QAS_LCD -I../QA_Systems/QAS_LCD/QAS_LCD_Fonts -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"QA_Drivers/QAD_PWM.d" -MT"QA_Drivers/QAD_PWM.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "QA_Drivers/QAD_PWM.o"
+arm-none-eabi-g++ "../QA_Drivers/QAD_RNG.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F769xx -c -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Drivers/Componenets/Common -I../Drivers/Components/otm8009a -I../Core -I../QA_Drivers -I../QA_Drivers/QAD_PeripheralManagers -I../QA_Drivers/QAD_Devices -I../QA_Tools -I../QA_Systems -I../QA_Systems/QAS_Serial -I../QA_Systems/QAS_LCD -I../QA_Systems/QAS_LCD/QAS_LCD_Fonts -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"QA_Drivers/QAD_RNG.d" -MT"QA_Drivers/QAD_RNG.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "QA_Drivers/QAD_RNG.o"
+arm-none-eabi-g++ "../QA_Drivers/QAD_RTC.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F769xx -c -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Drivers/Componenets/Common -I../Drivers/Components/otm8009a -I../Core -I../QA_Drivers -I../QA_Drivers/QAD_PeripheralManagers -I../QA_Drivers/QAD_Devices -I../QA_Tools -I../QA_Systems -I../QA_Systems/QAS_Serial -I../QA_Systems/QAS_LCD -I../QA_Systems/QAS_LCD/QAS_LCD_Fonts -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"QA_Drivers/QAD_RTC.d" -MT"QA_Drivers/QAD_RTC.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "QA_Drivers/QAD_RTC.o"
+arm-none-eabi-g++ "../QA_Drivers/QAD_Timer.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F769xx -c -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Drivers/Componenets/Common -I../Drivers/Components/otm8009a -I../Core -I../QA_Drivers -I../QA_Drivers/QAD_PeripheralManagers -I../QA_Drivers/QAD_Devices -I../QA_Tools -I../QA_Systems -I../QA_Systems/QAS_Serial -I../QA_Systems/QAS_LCD -I../QA_Systems/QAS_LCD/QAS_LCD_Fonts -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"QA_Drivers/QAD_Timer.d" -MT"QA_Drivers/QAD_Timer.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "QA_Drivers/QAD_Timer.o"
+In file included from ../QA_Drivers/QAD_Devices/QAD_FT6206.cpp:19:
+../QA_Drivers/QAD_Devices/QAD_FT6206.hpp:101:19: error: 'QAD_6206' does not name a type; did you mean 'QAD_FT6206'?
+  101 |  QAD_FT6206(const QAD_6206& other) = delete;
+      |                   ^~~~~~~~
+      |                   QAD_FT6206
+make: *** [QA_Drivers/QAD_Devices/subdir.mk:19: QA_Drivers/QAD_Devices/QAD_FT6206.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+21:12:39 **** Incremental Build of configuration Debug for project STM32 F7D ****
+make -j8 all 
+arm-none-eabi-g++ "../QA_Drivers/QAD_Devices/QAD_FT6206.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F769xx -c -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Drivers/Componenets/Common -I../Drivers/Components/otm8009a -I../Core -I../QA_Drivers -I../QA_Drivers/QAD_PeripheralManagers -I../QA_Drivers/QAD_Devices -I../QA_Tools -I../QA_Systems -I../QA_Systems/QAS_Serial -I../QA_Systems/QAS_LCD -I../QA_Systems/QAS_LCD/QAS_LCD_Fonts -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"QA_Drivers/QAD_Devices/QAD_FT6206.d" -MT"QA_Drivers/QAD_Devices/QAD_FT6206.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "QA_Drivers/QAD_Devices/QAD_FT6206.o"
+arm-none-eabi-g++ "../QA_Drivers/QAD_UART.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F769xx -c -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Drivers/Componenets/Common -I../Drivers/Components/otm8009a -I../Core -I../QA_Drivers -I../QA_Drivers/QAD_PeripheralManagers -I../QA_Drivers/QAD_Devices -I../QA_Tools -I../QA_Systems -I../QA_Systems/QAS_Serial -I../QA_Systems/QAS_LCD -I../QA_Systems/QAS_LCD/QAS_LCD_Fonts -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"QA_Drivers/QAD_UART.d" -MT"QA_Drivers/QAD_UART.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "QA_Drivers/QAD_UART.o"
+arm-none-eabi-g++ "../Core/boot.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F769xx -c -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Drivers/Componenets/Common -I../Drivers/Components/otm8009a -I../Core -I../QA_Drivers -I../QA_Drivers/QAD_PeripheralManagers -I../QA_Drivers/QAD_Devices -I../QA_Tools -I../QA_Systems -I../QA_Systems/QAS_Serial -I../QA_Systems/QAS_LCD -I../QA_Systems/QAS_LCD/QAS_LCD_Fonts -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/boot.d" -MT"Core/boot.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/boot.o"
+arm-none-eabi-g++ "../Core/handlers.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F769xx -c -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Drivers/Componenets/Common -I../Drivers/Components/otm8009a -I../Core -I../QA_Drivers -I../QA_Drivers/QAD_PeripheralManagers -I../QA_Drivers/QAD_Devices -I../QA_Tools -I../QA_Systems -I../QA_Systems/QAS_Serial -I../QA_Systems/QAS_LCD -I../QA_Systems/QAS_LCD/QAS_LCD_Fonts -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/handlers.d" -MT"Core/handlers.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/handlers.o"
+arm-none-eabi-g++ "../Core/main.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F769xx -c -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Drivers/Componenets/Common -I../Drivers/Components/otm8009a -I../Core -I../QA_Drivers -I../QA_Drivers/QAD_PeripheralManagers -I../QA_Drivers/QAD_Devices -I../QA_Tools -I../QA_Systems -I../QA_Systems/QAS_Serial -I../QA_Systems/QAS_LCD -I../QA_Systems/QAS_LCD/QAS_LCD_Fonts -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/main.d" -MT"Core/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/main.o"
+arm-none-eabi-gcc "../Core/syscalls.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F769xx -c -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Drivers/Components/otm8009a -I../Drivers/Components/Common -I../Core -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/syscalls.d" -MT"Core/syscalls.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/syscalls.o"
+arm-none-eabi-gcc "../Core/sysmem.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F769xx -c -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Drivers/Components/otm8009a -I../Drivers/Components/Common -I../Core -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/sysmem.d" -MT"Core/sysmem.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/sysmem.o"
+arm-none-eabi-gcc "../Core/system_stm32f7xx.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F769xx -c -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Drivers/Components/otm8009a -I../Drivers/Components/Common -I../Core -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/system_stm32f7xx.d" -MT"Core/system_stm32f7xx.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/system_stm32f7xx.o"
+arm-none-eabi-g++ -o "STM32 F7D.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\binar\Desktop\Quartz Arc\QA Codebase Repos\QA_STM32F769IDISCO\QuartzArc_STM32F769I_Discovery\STM32 F7D\STM32F769NIHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32 F7D.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: STM32 F7D.elf
+ 
+arm-none-eabi-size   STM32\ F7D.elf 
+arm-none-eabi-objdump -h -S  STM32\ F7D.elf  > "STM32 F7D.list"
+arm-none-eabi-objcopy  -O binary  STM32\ F7D.elf  "STM32 F7D.bin"
+   text	   data	    bss	    dec	    hex	filename
+  53812	    128	   2448	  56388	   dc44	STM32 F7D.elf
+Finished building: default.size.stdout
+ 
+Finished building: STM32 F7D.bin
+ 
+Finished building: STM32 F7D.list
+ 
+21:20:20 **** Incremental Build of configuration Debug for project STM32 F7D ****
+make -j8 all 
+arm-none-eabi-g++ "../Core/main.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F769xx -c -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Drivers/Componenets/Common -I../Drivers/Components/otm8009a -I../Core -I../QA_Drivers -I../QA_Drivers/QAD_PeripheralManagers -I../QA_Drivers/QAD_Devices -I../QA_Tools -I../QA_Systems -I../QA_Systems/QAS_Serial -I../QA_Systems/QAS_LCD -I../QA_Systems/QAS_LCD/QAS_LCD_Fonts -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/main.d" -MT"Core/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/main.o"
+../Core/main.cpp:52:1: error: 'QAS_I2C' does not name a type; did you mean 'QAD_I2C'?
+   52 | QAS_I2C* I2C_System;
+      | ^~~~~~~
+      | QAD_I2C
+../Core/main.cpp: In function 'int main()':
+../Core/main.cpp:250:3: error: 'I2C_System' was not declared in this scope
+  250 |   I2C_System = new QAD_I2C(I2C_Init);
+      |   ^~~~~~~~~~
+make: *** [Core/subdir.mk:38: Core/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+21:20:55 **** Incremental Build of configuration Debug for project STM32 F7D ****
+make -j8 all 
+arm-none-eabi-g++ "../Core/main.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F769xx -c -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Drivers/Componenets/Common -I../Drivers/Components/otm8009a -I../Core -I../QA_Drivers -I../QA_Drivers/QAD_PeripheralManagers -I../QA_Drivers/QAD_Devices -I../QA_Tools -I../QA_Systems -I../QA_Systems/QAS_Serial -I../QA_Systems/QAS_LCD -I../QA_Systems/QAS_LCD/QAS_LCD_Fonts -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/main.d" -MT"Core/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/main.o"
+arm-none-eabi-g++ -o "STM32 F7D.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\binar\Desktop\Quartz Arc\QA Codebase Repos\QA_STM32F769IDISCO\QuartzArc_STM32F769I_Discovery\STM32 F7D\STM32F769NIHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32 F7D.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: STM32 F7D.elf
+ 
+arm-none-eabi-size   STM32\ F7D.elf 
+arm-none-eabi-objdump -h -S  STM32\ F7D.elf  > "STM32 F7D.list"
+arm-none-eabi-objcopy  -O binary  STM32\ F7D.elf  "STM32 F7D.bin"
+   text	   data	    bss	    dec	    hex	filename
+  59916	    128	   2560	  62604	   f48c	STM32 F7D.elf
+Finished building: default.size.stdout
+ 
+Finished building: STM32 F7D.bin
+ 
+Finished building: STM32 F7D.list
+ 
+21:21:10 **** Incremental Build of configuration Debug for project STM32 F7D ****
+make -j8 all 
+arm-none-eabi-size   STM32\ F7D.elf 
+   text	   data	    bss	    dec	    hex	filename
+  59916	    128	   2560	  62604	   f48c	STM32 F7D.elf
+Finished building: default.size.stdout
+ 
+21:30:19 **** Incremental Build of configuration Debug for project STM32 F7D ****
+make -j8 all 
+arm-none-eabi-g++ "../Core/main.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F769xx -c -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Drivers/Componenets/Common -I../Drivers/Components/otm8009a -I../Core -I../QA_Drivers -I../QA_Drivers/QAD_PeripheralManagers -I../QA_Drivers/QAD_Devices -I../QA_Tools -I../QA_Systems -I../QA_Systems/QAS_Serial -I../QA_Systems/QAS_LCD -I../QA_Systems/QAS_LCD/QAS_LCD_Fonts -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/main.d" -MT"Core/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/main.o"
+../Core/main.cpp: In function 'int main()':
+../Core/main.cpp:318:32: error: invalid conversion from 'uint16_t (*)()' {aka 'short unsigned int (*)()'} to 'uint16_t' {aka 'short unsigned int'} [-fpermissive]
+  318 |      uint16_t uX = QAD_FT6206::getStartX;
+      |                    ~~~~~~~~~~~~^~~~~~~~~
+      |                                |
+      |                                uint16_t (*)() {aka short unsigned int (*)()}
+../Core/main.cpp:319:32: error: invalid conversion from 'uint16_t (*)()' {aka 'short unsigned int (*)()'} to 'uint16_t' {aka 'short unsigned int'} [-fpermissive]
+  319 |      uint16_t uY = QAD_FT6206::getStartY;
+      |                    ~~~~~~~~~~~~^~~~~~~~~
+      |                                |
+      |                                uint16_t (*)() {aka short unsigned int (*)()}
+../Core/main.cpp:320:14: warning: unused variable 'iX' [-Wunused-variable]
+  320 |      int16_t iX = QAD_FT6206::getMoveX();
+      |              ^~
+../Core/main.cpp:321:14: warning: unused variable 'iY' [-Wunused-variable]
+  321 |      int16_t iY = QAD_FT6206::getMoveY();
+      |              ^~
+../Core/main.cpp:286:8: warning: unused variable 'strOut' [-Wunused-variable]
+  286 |   char strOut[256];
+      |        ^~~~~~
+make: *** [Core/subdir.mk:38: Core/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+21:31:18 **** Incremental Build of configuration Debug for project STM32 F7D ****
+make -j8 all 
+arm-none-eabi-g++ "../Core/main.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F769xx -c -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Drivers/Componenets/Common -I../Drivers/Components/otm8009a -I../Core -I../QA_Drivers -I../QA_Drivers/QAD_PeripheralManagers -I../QA_Drivers/QAD_Devices -I../QA_Tools -I../QA_Systems -I../QA_Systems/QAS_Serial -I../QA_Systems/QAS_LCD -I../QA_Systems/QAS_LCD/QAS_LCD_Fonts -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/main.d" -MT"Core/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/main.o"
+../Core/main.cpp: In function 'int main()':
+../Core/main.cpp:320:14: warning: unused variable 'iX' [-Wunused-variable]
+  320 |      int16_t iX = QAD_FT6206::getMoveX();
+      |              ^~
+../Core/main.cpp:321:14: warning: unused variable 'iY' [-Wunused-variable]
+  321 |      int16_t iY = QAD_FT6206::getMoveY();
+      |              ^~
+../Core/main.cpp:286:8: warning: unused variable 'strOut' [-Wunused-variable]
+  286 |   char strOut[256];
+      |        ^~~~~~
+arm-none-eabi-g++ -o "STM32 F7D.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\binar\Desktop\Quartz Arc\QA Codebase Repos\QA_STM32F769IDISCO\QuartzArc_STM32F769I_Discovery\STM32 F7D\STM32F769NIHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32 F7D.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: STM32 F7D.elf
+ 
+arm-none-eabi-size   STM32\ F7D.elf 
+arm-none-eabi-objdump -h -S  STM32\ F7D.elf  > "STM32 F7D.list"
+arm-none-eabi-objcopy  -O binary  STM32\ F7D.elf  "STM32 F7D.bin"
+   text	   data	    bss	    dec	    hex	filename
+  57668	    128	   2560	  60356	   ebc4	STM32 F7D.elf
+Finished building: default.size.stdout
+ 
+Finished building: STM32 F7D.bin
+ 
+Finished building: STM32 F7D.list
+ 
+21:31:44 **** Incremental Build of configuration Debug for project STM32 F7D ****
+make -j8 all 
+arm-none-eabi-size   STM32\ F7D.elf 
+   text	   data	    bss	    dec	    hex	filename
+  57668	    128	   2560	  60356	   ebc4	STM32 F7D.elf
+Finished building: default.size.stdout
+ 
+21:33:20 **** Incremental Build of configuration Debug for project STM32 F7D ****
+make -j8 all 
+arm-none-eabi-g++ "../Core/main.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F769xx -c -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Drivers/Componenets/Common -I../Drivers/Components/otm8009a -I../Core -I../QA_Drivers -I../QA_Drivers/QAD_PeripheralManagers -I../QA_Drivers/QAD_Devices -I../QA_Tools -I../QA_Systems -I../QA_Systems/QAS_Serial -I../QA_Systems/QAS_LCD -I../QA_Systems/QAS_LCD/QAS_LCD_Fonts -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/main.d" -MT"Core/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/main.o"
+arm-none-eabi-g++ -o "STM32 F7D.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\binar\Desktop\Quartz Arc\QA Codebase Repos\QA_STM32F769IDISCO\QuartzArc_STM32F769I_Discovery\STM32 F7D\STM32F769NIHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32 F7D.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: STM32 F7D.elf
+ 
+arm-none-eabi-size   STM32\ F7D.elf 
+arm-none-eabi-objdump -h -S  STM32\ F7D.elf  > "STM32 F7D.list"
+arm-none-eabi-objcopy  -O binary  STM32\ F7D.elf  "STM32 F7D.bin"
+   text	   data	    bss	    dec	    hex	filename
+  60032	    128	   2560	  62720	   f500	STM32 F7D.elf
+Finished building: default.size.stdout
+ 
+Finished building: STM32 F7D.bin
+ 
+Finished building: STM32 F7D.list
+ 
+21:34:16 **** Incremental Build of configuration Debug for project STM32 F7D ****
+make -j8 all 
+arm-none-eabi-g++ "../Core/main.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F769xx -c -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Drivers/Componenets/Common -I../Drivers/Components/otm8009a -I../Core -I../QA_Drivers -I../QA_Drivers/QAD_PeripheralManagers -I../QA_Drivers/QAD_Devices -I../QA_Tools -I../QA_Systems -I../QA_Systems/QAS_Serial -I../QA_Systems/QAS_LCD -I../QA_Systems/QAS_LCD/QAS_LCD_Fonts -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/main.d" -MT"Core/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/main.o"
+arm-none-eabi-g++ -o "STM32 F7D.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\binar\Desktop\Quartz Arc\QA Codebase Repos\QA_STM32F769IDISCO\QuartzArc_STM32F769I_Discovery\STM32 F7D\STM32F769NIHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32 F7D.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: STM32 F7D.elf
+ 
+arm-none-eabi-size   STM32\ F7D.elf 
+arm-none-eabi-objdump -h -S  STM32\ F7D.elf  > "STM32 F7D.list"
+arm-none-eabi-objcopy  -O binary  STM32\ F7D.elf  "STM32 F7D.bin"
+   text	   data	    bss	    dec	    hex	filename
+  60032	    128	   2560	  62720	   f500	STM32 F7D.elf
+Finished building: default.size.stdout
+ 
+Finished building: STM32 F7D.bin
+ 
+Finished building: STM32 F7D.list
+ 
+21:35:42 **** Incremental Build of configuration Debug for project STM32 F7D ****
+make -j8 all 
+arm-none-eabi-g++ "../Core/main.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F769xx -c -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Drivers/Componenets/Common -I../Drivers/Components/otm8009a -I../Core -I../QA_Drivers -I../QA_Drivers/QAD_PeripheralManagers -I../QA_Drivers/QAD_Devices -I../QA_Tools -I../QA_Systems -I../QA_Systems/QAS_Serial -I../QA_Systems/QAS_LCD -I../QA_Systems/QAS_LCD/QAS_LCD_Fonts -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/main.d" -MT"Core/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/main.o"
+arm-none-eabi-g++ -o "STM32 F7D.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\binar\Desktop\Quartz Arc\QA Codebase Repos\QA_STM32F769IDISCO\QuartzArc_STM32F769I_Discovery\STM32 F7D\STM32F769NIHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32 F7D.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: STM32 F7D.elf
+ 
+arm-none-eabi-size   STM32\ F7D.elf 
+arm-none-eabi-objdump -h -S  STM32\ F7D.elf  > "STM32 F7D.list"
+arm-none-eabi-objcopy  -O binary  STM32\ F7D.elf  "STM32 F7D.bin"
+   text	   data	    bss	    dec	    hex	filename
+  60032	    128	   2560	  62720	   f500	STM32 F7D.elf
+Finished building: default.size.stdout
+ 
+Finished building: STM32 F7D.bin
+ 
+Finished building: STM32 F7D.list
+ 
+21:36:32 **** Incremental Build of configuration Debug for project STM32 F7D ****
+make -j8 all 
+arm-none-eabi-g++ "../Core/main.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F769xx -c -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Drivers/Componenets/Common -I../Drivers/Components/otm8009a -I../Core -I../QA_Drivers -I../QA_Drivers/QAD_PeripheralManagers -I../QA_Drivers/QAD_Devices -I../QA_Tools -I../QA_Systems -I../QA_Systems/QAS_Serial -I../QA_Systems/QAS_LCD -I../QA_Systems/QAS_LCD/QAS_LCD_Fonts -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/main.d" -MT"Core/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/main.o"
+arm-none-eabi-g++ -o "STM32 F7D.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\binar\Desktop\Quartz Arc\QA Codebase Repos\QA_STM32F769IDISCO\QuartzArc_STM32F769I_Discovery\STM32 F7D\STM32F769NIHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32 F7D.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: STM32 F7D.elf
+ 
+arm-none-eabi-size   STM32\ F7D.elf 
+arm-none-eabi-objdump -h -S  STM32\ F7D.elf  > "STM32 F7D.list"
+arm-none-eabi-objcopy  -O binary  STM32\ F7D.elf  "STM32 F7D.bin"
+   text	   data	    bss	    dec	    hex	filename
+  60032	    128	   2560	  62720	   f500	STM32 F7D.elf
+Finished building: default.size.stdout
+ 
+Finished building: STM32 F7D.bin
+ 
+Finished building: STM32 F7D.list
+ 

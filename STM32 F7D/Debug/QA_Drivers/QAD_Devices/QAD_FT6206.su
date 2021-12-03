@@ -1,0 +1,6 @@
+QAD_FT6206.cpp:35:11:QA_Result QAD_FT6206::imp_init(QAD_I2C*)	16	static
+QAD_FT6206.cpp:60:6:void QAD_FT6206::imp_deinit()	16	static
+QAD_FT6206.cpp:75:6:void QAD_FT6206::imp_poll(uint32_t&)	56	static
+QAD_FT6206.cpp:168:6:bool QAD_FT6206::imp_getTouchWithin(QAT_Vector2_16&, QAT_Vector2_16&)	24	static
+QAD_FT6206.cpp:180:11:QA_Result QAD_FT6206::imp_confirmAddress()	24	static
+QAD_FT6206.cpp:200:6:void QAD_FT6206::imp_clearData()	16	static

@@ -35,6 +35,7 @@ Core \
 Drivers/Components/otm8009a \
 Drivers/STM32F7xx_HAL_Driver/Src/Legacy \
 Drivers/STM32F7xx_HAL_Driver/Src \
+QA_Drivers/QAD_Devices \
 QA_Drivers \
 QA_Drivers/QAD_PeripheralManagers \
 QA_Systems/QAS_LCD \

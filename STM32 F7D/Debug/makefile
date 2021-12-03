@@ -13,6 +13,7 @@ RM := rm -rf
 -include QA_Systems/QAS_Serial/subdir.mk
 -include QA_Systems/QAS_LCD/subdir.mk
 -include QA_Drivers/QAD_PeripheralManagers/subdir.mk
+-include QA_Drivers/QAD_Devices/subdir.mk
 -include QA_Drivers/subdir.mk
 -include Drivers/STM32F7xx_HAL_Driver/Src/Legacy/subdir.mk
 -include Drivers/STM32F7xx_HAL_Driver/Src/subdir.mk

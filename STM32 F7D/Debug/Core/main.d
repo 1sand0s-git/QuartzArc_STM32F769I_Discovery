@@ -48,6 +48,9 @@ Core/main.o: ../Core/main.cpp ../Core/main.hpp ../Core/setup.hpp \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dsi.h ../Core/boot.hpp \
  ../QA_Drivers/QAD_GPIO.hpp ../Core/setup.hpp ../QA_Drivers/QAD_FMC.hpp \
  ../QA_Drivers/QAD_RNG.hpp ../QA_Drivers/QAD_RTC.hpp \
+ ../QA_Drivers/QAD_I2C.hpp \
+ ../QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.hpp \
+ ../QA_Drivers/QAD_Devices/QAD_FT6206.hpp ../QA_Tools/QAT_Vector.hpp \
  ../QA_Systems/QAS_Serial/QAS_Serial_Dev_UART.hpp \
  ../QA_Tools/QAT_FIFO.hpp \
  ../QA_Systems/QAS_Serial/QAS_Serial_Dev_Base.hpp \
@@ -55,7 +58,7 @@ Core/main.o: ../Core/main.cpp ../Core/main.hpp ../Core/setup.hpp \
  ../QA_Drivers/QAD_PeripheralManagers/QAD_UARTMgr.hpp \
  ../QA_Systems/QAS_LCD/QAS_LCD.hpp ../QA_Drivers/QAD_LTDC.hpp \
  ../Drivers/Components/otm8009a/otm8009a.h ../QA_Tools/QAT_Pixel.hpp \
- ../QA_Tools/QAT_Vector.hpp ../QA_Systems/QAS_LCD/QAS_LCD_Fonts.hpp
+ ../QA_Systems/QAS_LCD/QAS_LCD_Fonts.hpp
 
 ../Core/main.hpp:
 
@@ -167,6 +170,14 @@ Core/main.o: ../Core/main.cpp ../Core/main.hpp ../Core/setup.hpp \
 
 ../QA_Drivers/QAD_RTC.hpp:
 
+../QA_Drivers/QAD_I2C.hpp:
+
+../QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.hpp:
+
+../QA_Drivers/QAD_Devices/QAD_FT6206.hpp:
+
+../QA_Tools/QAT_Vector.hpp:
+
 ../QA_Systems/QAS_Serial/QAS_Serial_Dev_UART.hpp:
 
 ../QA_Tools/QAT_FIFO.hpp:
@@ -184,7 +195,5 @@ Core/main.o: ../Core/main.cpp ../Core/main.hpp ../Core/setup.hpp \
 ../Drivers/Components/otm8009a/otm8009a.h:
 
 ../QA_Tools/QAT_Pixel.hpp:
-
-../QA_Tools/QAT_Vector.hpp:
 
 ../QA_Systems/QAS_LCD/QAS_LCD_Fonts.hpp:
