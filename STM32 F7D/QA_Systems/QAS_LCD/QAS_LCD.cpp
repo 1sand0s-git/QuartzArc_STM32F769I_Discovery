@@ -363,12 +363,12 @@ void QAS_LCD::imp_drawALine(QAT_Vector2_16& cStart, QAT_Vector2_16& cEnd) {
 void QAS_LCD::imp_drawRect(QAT_Vector2_16& cStart, QAT_Vector2_16& cEnd) {
   uint32_t xs;
   uint32_t xe;
-  if (cStart.x < cEnd.y) {
+  if (cStart.x < cEnd.x) {
     xs = cStart.x;
     xe = cEnd.x;
   } else {
-    xs = cEnd.y;
-    xe = cStart.y;
+    xs = cEnd.x;
+    xe = cStart.x;
   }
 
   uint32_t ys;
