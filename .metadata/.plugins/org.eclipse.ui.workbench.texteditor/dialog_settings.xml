@@ -6,8 +6,9 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value=""/>
+		<item key="selection" value="uWriteData"/>
 		<list key="findhistory">
+			<item value="uReadData"/>
 			<item value="stm32f4"/>
 			<item value="RNG"/>
 			<item value=".pInstance"/>
@@ -19,6 +20,7 @@
 			<item value="Init.uart"/>
 		</list>
 		<list key="replacehistory">
+			<item value="uWriteData"/>
 			<item value="RTC"/>
 			<item value=".bADC"/>
 			<item value="_ShowcardGothic18pt_"/>
@@ -33,7 +35,7 @@
 		<item key="DIALOG_X_ORIGIN" value="662"/>
 		<item key="DIALOG_Y_ORIGIN" value="220"/>
 		<item key="DIALOG_WIDTH" value="336"/>
-		<item key="DIALOG_HEIGHT" value="455"/>
-		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|5|0|Segoe UI"/>
+		<item key="DIALOG_HEIGHT" value="454"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
 	</section>
 </section>

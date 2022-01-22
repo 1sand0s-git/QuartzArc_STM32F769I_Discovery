@@ -26,6 +26,7 @@
 #include "QAD_RTC.hpp"
 #include "QAD_I2C.hpp"
 #include "QAD_FT6206.hpp"
+#include "QAD_QuadSPI.hpp"
 
 #include "QAS_Serial_Dev_UART.hpp"
 #include "QAS_LCD.hpp"
@@ -198,14 +199,13 @@ int main(void) {
   QAS_LCD::setFontByIndex(1);
   QAS_LCD::drawStrC(QAT_Vector2_16(400, 250), "Welcome to 1s and 0s");
 
-  QAS_LCD::setDrawColor(0xFFBB);
+  /*QAS_LCD::setDrawColor(0xFFBB);
   //QAS_LCD::setFontByName("ShowcardGothic18pt");
   QAS_LCD::setFontByIndex(2);
-  QAS_LCD::drawStrC(QAT_Vector2_16(400, 350), "Test Font");
+  QAS_LCD::drawStrC(QAT_Vector2_16(400, 350), "Test Font");*/
 
   QAS_LCD::flipLayer0();
   QAS_LCD::flipLayer1();
-
 
   //---------------
   //Init RNG Driver
@@ -214,7 +214,7 @@ int main(void) {
   	GPIO_UserLED_Red->on();
   	while(1) {}
   }
-  UART_STLink->txString("RNG: Initialized");
+  UART_STLink->txStringCR("RNG: Initialized");
 
 
   //---------------
@@ -224,7 +224,7 @@ int main(void) {
   	GPIO_UserLED_Red->on();
   	while(1) {}
   }
-  UART_STLink->txString("RTC: Initialized");
+  UART_STLink->txStringCR("RTC: Initialized");
 
 
 
@@ -268,6 +268,65 @@ int main(void) {
   UART_STLink->txStringCR("FT6206: Initialized");
 
 
+  //-----------------------------------
+  //Initialize QuadSPI / MX25L512 Flash
+  if (QAD_QuadSPI::init()) {
+  	UART_STLink->txStringCR("QuadSPI: Initialization Failed");
+  	GPIO_UserLED_Red->on();
+  	while(1) {}
+  }
+  UART_STLink->txStringCR("QuadSPI: Initialized");
+
+
+    //Test Flash Memory
+  uint8_t uWriteData[4096];
+  uint8_t uReadData[4096];
+
+  for (uint32_t i=0; i<4096; i++) {
+  	uWriteData[i] = (uint8_t)(i & 0xFF);
+  	uReadData[i] = 0;
+  }
+
+  QAD_QuadSPI::eraseAndWriteSubsector(0, uWriteData);
+  QAD_QuadSPI::readSubsector(0, uReadData);
+
+  char tempStr[256];
+  uint32_t uIdx;
+
+  UART_STLink->txStringCR("Write Data Buffer:");
+  for (uint32_t i=0; i<8; i++) {
+  	uIdx = i * 8;
+  	sprintf(tempStr, "%02X %02X %02X %02X - %02X %02X %02X %02X",
+  			uWriteData[uIdx + 0], uWriteData[uIdx + 1], uWriteData[uIdx + 2], uWriteData[uIdx + 3],
+				uWriteData[uIdx + 4], uWriteData[uIdx + 5], uWriteData[uIdx + 6], uWriteData[uIdx + 7]);
+  	UART_STLink->txStringCR(tempStr);
+  	HAL_Delay(10);
+  }
+
+  UART_STLink->txCR();
+  UART_STLink->txStringCR("Read Data Buffer:");
+  for (uint32_t i=0; i<8; i++) {
+  	uIdx = i * 8;
+  	sprintf(tempStr, "%02X %02X %02X %02X - %02X %02X %02X %02X",
+  			uReadData[uIdx + 0], uReadData[uIdx + 1], uReadData[uIdx + 2], uReadData[uIdx + 3],
+				uReadData[uIdx + 4], uReadData[uIdx + 5], uReadData[uIdx + 6], uReadData[uIdx + 7]);
+  	UART_STLink->txStringCR(tempStr);
+  	HAL_Delay(10);
+  }
+
+  bool bPassed = true;
+  for (uint32_t i=0; i<4096; i++) {
+  	if (uWriteData[i] != uReadData[i])
+  		bPassed = false;
+  }
+
+  if (!bPassed) {
+  	UART_STLink->txStringCR("Flash: Test Failed");
+  	GPIO_UserLED_Red->on();
+  	while(1) {}
+  }
+  UART_STLink->txStringCR("Flash: Test Passed");
+
 	//----------------------------------
 	//----------------------------------
   //Processing Loop
@@ -279,11 +338,7 @@ int main(void) {
   uint32_t uOldTick = uNewTick;
 
   //Create task timing variables
-  uint32_t uTouchUpdateTicks = 0;
   uint32_t uHeartbeatTicks = 0;
-
-  //Temp String
-  char strOut[256];
 
 
   //-----------------------------------
@@ -306,68 +361,6 @@ int main(void) {
 
     } else {
     	uTicks = 0;
-    }
-
-
-  	//----------------------------------
-    //Update Touch Data
-    uTouchUpdateTicks += uTicks;
-    if (uTouchUpdateTicks >= QA_FT_TouchUpdateTickThreshold) {
-      QAD_FT6206::poll(uTouchUpdateTicks);
-
-    	uint16_t uX = QAD_FT6206::getCurX();
-    	uint16_t uY = QAD_FT6206::getCurY();
-    	int16_t iX = QAD_FT6206::getMoveX();
-    	int16_t iY = QAD_FT6206::getMoveY();
-
-
-      if (uX < 80)
-      	uX = 80; else
-      if (uX > 719)
-      	uX = 719;
-
-      if (uY < 80)
-      	uY = 80; else
-      if (uY > 399)
-      	uY = 399;
-
-      QAS_LCD::setDrawBuffer(QAD_LTDC_Layer0);
-      QAS_LCD::setDrawColor(0xF000);
-      QAS_LCD::clearBuffer();
-
-      QAS_LCD::setDrawBuffer(QAD_LTDC_Layer1);
-      QAS_LCD::setDrawColor(0x0000);
-      QAS_LCD::clearBuffer();
-
-      if (QAD_FT6206::getDown() || QAD_FT6206::getEnd()) {
-				QAS_LCD::setDrawColor(0xFFFF);
-				QAS_LCD::drawRect(QAT_Vector2_16(uX-80, uY-80), QAT_Vector2_16(uX+80, uY+80));
-      }
-
-      QAS_LCD::flipLayer0();
-      QAS_LCD::flipLayer1();
-
-  		if (QAD_FT6206::getNew()) {
-    		sprintf(strOut, "FT6206: Touch Start (X: %u, Y: %u", uX, uY);
-    		UART_STLink->txStringCR(strOut);
-
-  		} else if (QAD_FT6206::getEnd()) {
-    		sprintf(strOut, "FT6206: Touch End (X: %u, Y: %u, MX: %i, MY: %i", uX, uY, iX, iY);
-    		UART_STLink->txStringCR(strOut);
-
-  		}	else if (QAD_FT6206::getLong()) {
-    		sprintf(strOut, "FT6206: Long Touch (X: %u, Y: %u, MX: %i, MY: %i", uX, uY, iX, iY);
-    		UART_STLink->txStringCR(strOut);
-
-      } else if (QAD_FT6206::getDown()) {
-    		sprintf(strOut, "FT6206: Touch (X: %u, Y: %u, MX: %i, MY: %i", uX, uY, iX, iY);
-    		UART_STLink->txStringCR(strOut);
-
-    	} else {
-    		UART_STLink->txStringCR("FT6206: No Touch");
-    	}
-
-    	uTouchUpdateTicks -= QA_FT_TouchUpdateTickThreshold;
     }
 
 

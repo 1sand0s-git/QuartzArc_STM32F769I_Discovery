@@ -1,0 +1,26 @@
+QAD_QuadSPI.cpp:103:11:QA_Result QAD_QuadSPI::imp_init()	16	static
+QAD_QuadSPI.cpp:122:6:void QAD_QuadSPI::imp_deinit()	16	static
+QAD_QuadSPI.cpp:141:11:QA_Result QAD_QuadSPI::imp_periphInit()	48	static,ignoring_inline_asm
+QAD_QuadSPI.cpp:247:6:void QAD_QuadSPI::imp_periphDeinit(QAD_QuadSPI::DeinitMode)	16	static
+QAD_QuadSPI.cpp:280:11:QA_Result QAD_QuadSPI::imp_enterMemoryMapped()	80	static
+QAD_QuadSPI.cpp:310:11:QA_Result QAD_QuadSPI::imp_exitMemoryMapped()	16	static
+QAD_QuadSPI.cpp:332:11:QA_Result QAD_QuadSPI::imp_read(uint32_t, uint8_t*, uint32_t)	80	static
+QAD_QuadSPI.cpp:364:11:QA_Result QAD_QuadSPI::imp_readSubsector(uint32_t, uint8_t*)	24	static
+QAD_QuadSPI.cpp:371:11:QA_Result QAD_QuadSPI::imp_readSector(uint32_t, uint8_t*)	24	static
+QAD_QuadSPI.cpp:381:11:QA_Result QAD_QuadSPI::imp_write(uint32_t, uint8_t*, uint32_t)	96	static
+QAD_QuadSPI.cpp:430:11:QA_Result QAD_QuadSPI::imp_eraseAndWriteSubsector(uint32_t, uint8_t*)	32	static
+QAD_QuadSPI.cpp:447:11:QA_Result QAD_QuadSPI::imp_eraseAndWriteSector(uint32_t, uint8_t*)	32	static
+QAD_QuadSPI.cpp:467:11:QA_Result QAD_QuadSPI::imp_eraseSubsectorAddr(uint32_t)	72	static
+QAD_QuadSPI.cpp:496:11:QA_Result QAD_QuadSPI::imp_eraseSectorAddr(uint32_t)	72	static
+QAD_QuadSPI.cpp:525:11:QA_Result QAD_QuadSPI::imp_eraseSubsector(uint32_t)	16	static
+QAD_QuadSPI.cpp:532:11:QA_Result QAD_QuadSPI::imp_eraseSector(uint32_t)	16	static
+QAD_QuadSPI.cpp:539:11:QA_Result QAD_QuadSPI::imp_eraseChip()	72	static
+QAD_QuadSPI.cpp:569:20:QAD_QuadSPI_Status QAD_QuadSPI::imp_getStatus()	80	static
+QAD_QuadSPI.cpp:606:11:QA_Result QAD_QuadSPI::imp_resetMemory()	104	static
+QAD_QuadSPI.cpp:732:11:QA_Result QAD_QuadSPI::imp_enterFourByteAddress()	72	static
+QAD_QuadSPI.cpp:758:11:QA_Result QAD_QuadSPI::imp_dummyCyclesCfg()	88	static,ignoring_inline_asm
+QAD_QuadSPI.cpp:833:11:QA_Result QAD_QuadSPI::imp_enterMemoryQPI()	96	static
+QAD_QuadSPI.cpp:871:11:QA_Result QAD_QuadSPI::imp_exitMemoryQPI()	72	static
+QAD_QuadSPI.cpp:893:11:QA_Result QAD_QuadSPI::imp_outputDriveStrengthCfg()	88	static,ignoring_inline_asm
+QAD_QuadSPI.cpp:961:11:QA_Result QAD_QuadSPI::imp_writeEnable()	96	static
+QAD_QuadSPI.cpp:1000:11:QA_Result QAD_QuadSPI::imp_autoPollingMemReady(uint32_t)	96	static

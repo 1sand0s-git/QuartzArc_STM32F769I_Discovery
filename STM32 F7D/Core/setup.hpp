@@ -117,6 +117,34 @@ public:
 #define QAD_LTDC_RESET_PIN                GPIO_PIN_15          //J15
 
 
+	//-------------------
+	//QuadSPI Definitions
+
+#define QAD_QUADSPI_CS_PORT               GPIOB
+#define QAD_QUADSPI_CS_PIN                GPIO_PIN_6          //B6
+#define QAD_QUADSPI_CS_AF                 GPIO_AF10_QUADSPI
+
+#define QAD_QUADSPI_CLK_PORT              GPIOB
+#define QAD_QUADSPI_CLK_PIN               GPIO_PIN_2          //B2
+#define QAD_QUADSPI_CLK_AF                GPIO_AF9_QUADSPI
+
+#define QAD_QUADSPI_DATA0_PORT            GPIOC
+#define QAD_QUADSPI_DATA0_PIN             GPIO_PIN_9          //C9
+#define QAD_QUADSPI_DATA0_AF              GPIO_AF9_QUADSPI
+
+#define QAD_QUADSPI_DATA1_PORT            GPIOC
+#define QAD_QUADSPI_DATA1_PIN             GPIO_PIN_10         //C10
+#define QAD_QUADSPI_DATA1_AF              GPIO_AF9_QUADSPI
+
+#define QAD_QUADSPI_DATA2_PORT            GPIOE
+#define QAD_QUADSPI_DATA2_PIN             GPIO_PIN_2          //E2
+#define QAD_QUADSPI_DATA2_AF              GPIO_AF9_QUADSPI
+
+#define QAD_QUADSPI_DATA3_PORT            GPIOD
+#define QAD_QUADSPI_DATA3_PIN             GPIO_PIN_13         //D13
+#define QAD_QUADSPI_DATA3_AF              GPIO_AF9_QUADSPI
+
+
 	//------------------------------------------
 	//------------------------------------------
 	//------------------------------------------
@@ -128,6 +156,8 @@ public:
                                                   //which is used for serial via STLink on the STM32F769I Discovery board.
 
 #define QAD_IRQPRIORITY_EXTI     ((uint8_t) 0x0A) //Priority to be used by external interrupt handlers. Shared by all external interrupts
+
+#define QAD_IRQPRIORITY_FLASH    ((uint8_t) 0x0E)
 
 
 

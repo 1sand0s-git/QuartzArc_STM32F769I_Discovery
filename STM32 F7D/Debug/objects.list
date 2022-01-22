@@ -102,6 +102,7 @@
 "./QA_Drivers/QAD_I2C.o"
 "./QA_Drivers/QAD_LTDC.o"
 "./QA_Drivers/QAD_PWM.o"
+"./QA_Drivers/QAD_QuadSPI.o"
 "./QA_Drivers/QAD_RNG.o"
 "./QA_Drivers/QAD_RTC.o"
 "./QA_Drivers/QAD_Timer.o"
