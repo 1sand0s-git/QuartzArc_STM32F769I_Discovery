@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;STM32 F7D/QA_Drivers/QA_SDMMC.hpp&apos; to &apos;QAD_SDMMC.hpp&apos;" description="Rename resource &apos;QA_SDMMC.hpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="QA_Drivers/QA_SDMMC.hpp" name="QAD_SDMMC.hpp" stamp="1644493679364" updateReferences="true"/>
+</session>

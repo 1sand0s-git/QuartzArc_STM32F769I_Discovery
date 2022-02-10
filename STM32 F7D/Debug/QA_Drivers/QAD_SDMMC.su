@@ -1,0 +1,12 @@
+QAD_SDMMC.cpp:33:11:QA_Result QAD_SDMMC::imp_init()	16	static
+QAD_SDMMC.cpp:52:6:void QAD_SDMMC::imp_deinit()	16	static
+QAD_SDMMC.cpp:72:11:QA_Result QAD_SDMMC::imp_periphInit()	40	static
+QAD_SDMMC.cpp:130:6:void QAD_SDMMC::imp_periphDeinit(QAD_SDMMC::DeinitMode)	24	static
+QAD_SDMMC.cpp:161:11:QA_Result QAD_SDMMC::imp_process()	16	static
+QAD_SDMMC.cpp:192:24:QAD_SDMMC_CardPresence QAD_SDMMC::imp_getCardPresent()	16	static
+QAD_SDMMC.cpp:204:11:QA_Result QAD_SDMMC::imp_getCardInfo()	64	static
+QAD_SDMMC.cpp:244:11:QA_Result QAD_SDMMC::imp_mount()	16	static
+QAD_SDMMC.cpp:281:6:void QAD_SDMMC::imp_unmount()	16	static
+QAD_SDMMC.cpp:307:11:QA_Result QAD_SDMMC::imp_readBlocks(uint8_t*, uint32_t, uint32_t)	32	static
+QAD_SDMMC.cpp:322:11:QA_Result QAD_SDMMC::imp_writeBlocks(uint8_t*, uint32_t, uint32_t)	32	static
+QAD_SDMMC.cpp:337:11:QA_Result QAD_SDMMC::imp_erase(uint32_t, uint32_t)	24	static

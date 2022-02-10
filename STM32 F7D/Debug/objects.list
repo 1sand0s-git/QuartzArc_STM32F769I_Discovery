@@ -105,6 +105,7 @@
 "./QA_Drivers/QAD_QuadSPI.o"
 "./QA_Drivers/QAD_RNG.o"
 "./QA_Drivers/QAD_RTC.o"
+"./QA_Drivers/QAD_SDMMC.o"
 "./QA_Drivers/QAD_Timer.o"
 "./QA_Drivers/QAD_UART.o"
 "./QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.o"

@@ -17,8 +17,18 @@ QAD_FT6206.hpp:117:19:static QA_Result QAD_FT6206::init(QAD_I2C*)	16	static
 QAD_QuadSPI.hpp:89:2:QAD_QuadSPI::QAD_QuadSPI()	16	static
 QAD_QuadSPI.hpp:103:22:static QAD_QuadSPI& QAD_QuadSPI::get()	8	static
 QAD_QuadSPI.hpp:112:19:static QA_Result QAD_QuadSPI::init()	8	static
-QAD_QuadSPI.hpp:174:19:static QA_Result QAD_QuadSPI::readSubsector(uint32_t, uint8_t*)	16	static
-QAD_QuadSPI.hpp:188:19:static QA_Result QAD_QuadSPI::eraseAndWriteSubsector(uint32_t, uint8_t*)	16	static
+QAD_SDMMC.hpp:96:2:QAD_SDMMC::QAD_SDMMC()	16	static
+QAD_SDMMC.hpp:116:20:static QAD_SDMMC& QAD_SDMMC::get()	8	static
+QAD_SDMMC.hpp:125:19:static QA_Result QAD_SDMMC::init()	8	static
+QAD_SDMMC.hpp:137:19:static QA_Result QAD_SDMMC::process()	8	static
+QAD_SDMMC.hpp:145:32:static QAD_SDMMC_CardPresence QAD_SDMMC::getCardPresent()	8	static
+QAD_SDMMC.hpp:149:29:static QAD_SDMMC_CardState QAD_SDMMC::getCardState()	8	static
+QAD_SDMMC.hpp:157:18:static uint32_t QAD_SDMMC::getCardSizeMB()	8	static
+QAD_SDMMC.hpp:161:18:static uint32_t QAD_SDMMC::getBlockSize()	8	static
+QAD_SDMMC.hpp:165:18:static uint32_t QAD_SDMMC::getBlockCount()	8	static
+QAD_SDMMC.hpp:169:18:static uint32_t QAD_SDMMC::getCardType()	8	static
+QAD_SDMMC.hpp:173:18:static uint32_t QAD_SDMMC::getCardVersion()	8	static
+QAD_SDMMC.hpp:177:18:static uint32_t QAD_SDMMC::getCardClass()	8	static
 gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
 QAT_FIFO.hpp:67:2:QAT_FIFOBuffer::QAT_FIFOBuffer(uint16_t)	16	static
 QAS_Serial_Dev_Base.hpp:81:2:QAS_Serial_Dev_Base::QAS_Serial_Dev_Base(uint16_t, uint16_t, QAS_Serial_Dev_Base::DeviceType)	24	static
@@ -43,8 +53,11 @@ QAS_LCD.hpp:171:15:static void QAS_LCD::drawRect(QAT_Vector2_16, QAT_Vector2_16)
 QAS_LCD.hpp:178:15:static void QAS_LCD::drawRectFill(QAT_Vector2_16, QAT_Vector2_16)	16	static
 QAS_LCD.hpp:189:15:static void QAS_LCD::setFontByName(const char*)	16	static
 QAS_LCD.hpp:195:15:static void QAS_LCD::setFontByIndex(uint8_t)	16	static
+QAS_LCD.hpp:211:15:static void QAS_LCD::drawStrL(QAT_Vector2_16, const char*)	32	static
 QAS_LCD.hpp:219:15:static void QAS_LCD::drawStrC(QAT_Vector2_16, const char*)	32	static
-main.cpp:77:5:int main()	8648	static
+main.cpp:92:5:int main()	392	static
+main.cpp:273:11:QA_Result QA_DriverInit()	96	static
+main.cpp:439:11:QA_Result QA_SystemInit()	32	static
 unique_ptr.h:862:5:typename std::_MakeUniq<_Tp>::__array std::make_unique(std::size_t) [with _Tp = unsigned char []]	24	static
 unique_ptr.h:856:5:) [with _Tp = QAT_FIFOBuffer; _Args = {short unsigned int&}]	24	static
 unique_ptr.h:856:5:) [with _Tp = QAD_UART; _Args = {QAD_UART_InitStruct&}]	24	static

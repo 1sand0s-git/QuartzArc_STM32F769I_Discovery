@@ -145,6 +145,37 @@ public:
 #define QAD_QUADSPI_DATA3_AF              GPIO_AF9_QUADSPI
 
 
+	//-----------------
+	//SDMMC Definitions
+
+#define QAD_SDMMC_CARDDETECT_PORT         GPIOI
+#define QAD_SDMMC_CARDDETECT_PIN          GPIO_PIN_15        //I15
+
+#define QAD_SDMMC_CLK_PORT                GPIOD
+#define QAD_SDMMC_CLK_PIN                 GPIO_PIN_6         //D6
+#define QAD_SDMMC_CLK_AF                  GPIO_AF11_SDMMC2
+
+#define QAD_SDMMC_CMD_PORT                GPIOD
+#define QAD_SDMMC_CMD_PIN                 GPIO_PIN_7         //D7
+#define QAD_SDMMC_CMD_AF                  GPIO_AF11_SDMMC2
+
+#define QAD_SDMMC_DATA0_PORT              GPIOG
+#define QAD_SDMMC_DATA0_PIN               GPIO_PIN_9         //G9
+#define QAD_SDMMC_DATA0_AF                GPIO_AF11_SDMMC2
+
+#define QAD_SDMMC_DATA1_PORT              GPIOG
+#define QAD_SDMMC_DATA1_PIN               GPIO_PIN_10        //G10
+#define QAD_SDMMC_DATA1_AF                GPIO_AF11_SDMMC2
+
+#define QAD_SDMMC_DATA2_PORT              GPIOB
+#define QAD_SDMMC_DATA2_PIN               GPIO_PIN_3         //B3
+#define QAD_SDMMC_DATA2_AF                GPIO_AF10_SDMMC2
+
+#define QAD_SDMMC_DATA3_PORT              GPIOB
+#define QAD_SDMMC_DATA3_PIN               GPIO_PIN_4         //B4
+#define QAD_SDMMC_DATA3_AF                GPIO_AF10_SDMMC2
+
+
 	//------------------------------------------
 	//------------------------------------------
 	//------------------------------------------

@@ -51,7 +51,7 @@ Core/main.o: ../Core/main.cpp ../Core/main.hpp ../Core/setup.hpp \
  ../QA_Drivers/QAD_I2C.hpp \
  ../QA_Drivers/QAD_PeripheralManagers/QAD_I2CMgr.hpp \
  ../QA_Drivers/QAD_Devices/QAD_FT6206.hpp ../QA_Tools/QAT_Vector.hpp \
- ../QA_Drivers/QAD_QuadSPI.hpp \
+ ../QA_Drivers/QAD_QuadSPI.hpp ../QA_Drivers/QAD_SDMMC.hpp \
  ../QA_Systems/QAS_Serial/QAS_Serial_Dev_UART.hpp \
  ../QA_Tools/QAT_FIFO.hpp \
  ../QA_Systems/QAS_Serial/QAS_Serial_Dev_Base.hpp \
@@ -180,6 +180,8 @@ Core/main.o: ../Core/main.cpp ../Core/main.hpp ../Core/setup.hpp \
 ../QA_Tools/QAT_Vector.hpp:
 
 ../QA_Drivers/QAD_QuadSPI.hpp:
+
+../QA_Drivers/QAD_SDMMC.hpp:
 
 ../QA_Systems/QAS_Serial/QAS_Serial_Dev_UART.hpp:
 

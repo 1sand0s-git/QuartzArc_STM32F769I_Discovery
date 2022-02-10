@@ -6,8 +6,9 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="uWriteData"/>
+		<item key="selection" value="Exported"/>
 		<list key="findhistory">
+			<item value="Exported"/>
 			<item value="uReadData"/>
 			<item value="stm32f4"/>
 			<item value="RNG"/>
